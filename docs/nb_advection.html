@@ -109,7 +109,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../welcome.html">
-                    Welcome to the Climate Modelling and Data Analysis Course
+                    Welcome to the Field Course of Climatology and Environmental Hydrology
                 </a>
             </li>
         </ul>
@@ -127,70 +127,6 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="nb_python_exercises.html">
      Python exercises
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="analytical_models.html">
-   Lesson 1 - Global Energy Balance Model
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="ebm_model.html">
-     Simplified Energy Balance Model
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="nonlinearity.html">
-     Nonlinearity, Feedbacks and Predictability
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="greenhouse_model.html">
-     Greenhouse Model
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="numerical_models.html">
-   Lesson 2 - Numerical Models
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="fluid_dynamics.html">
-     Fluid dynamics
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="heat_equation.html">
-     Heat Equation
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="advection.html">
-     Advection-Diffusion
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="seb.html">
-     Surface Energy Balance model
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="coupled_model.html">
-     Coupled boundary layer model
     </a>
    </li>
   </ul>
@@ -254,7 +190,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/sauterto/climate_modelling/main?urlpath=tree/./docs/nb_advection.ipynb"
+        <a href="https://mybinder.org/v2/gh/sauterto/climate_modelling/main?urlpath=lab/tree/./docs/nb_advection.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -267,6 +203,24 @@ title="Launch on Binder"
     <img src="../_static/images/logo_binder.svg">
   </span>
 <span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://jupyterhub.cms.hu-berlin.de/hub/user-redirect/git-pull?repo=https%3A//github.com/sauterto/climate_modelling&urlpath=lab/tree/climate_modelling/./docs/nb_advection.ipynb&branch=main"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on JupyterHub"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_jupyterhub.svg">
+  </span>
+<span class="headerbtn__text-container">JupyterHub</span>
 </a>
 
       </li>
@@ -543,8 +497,8 @@ required dt (diffusion) &lt;= 0.0031 s
 </div>
 </div>
 <p><strong>Task 5</strong>: Solve the Advection-Diffusion equation, with the following initial impulse signal and boundary conditions:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-165cc7b5-46a4-4316-b971-ee88529b591d">
-<span class="eqno">()<a class="headerlink" href="#equation-165cc7b5-46a4-4316-b971-ee88529b591d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-d8ad52bc-9bb2-4e1d-9654-59ab8d0baf1b">
+<span class="eqno">()<a class="headerlink" href="#equation-d8ad52bc-9bb2-4e1d-9654-59ab8d0baf1b" title="Permalink to this equation">#</a></span>\[\begin{align}
 c(n,0) &amp;=exp^{\left(-\left(\frac{(x-10)}{2}\right)^2\right)} \\
 c(0,t) &amp;=0 \\
 c(L,t) &amp;=\frac{\partial c}{\partial x}=0
@@ -661,8 +615,8 @@ Characteristic diffusion time (d): 0.4480
 </div>
 </div>
 <p><strong>Task 6</strong>: Starting with the heat equation above simplify the equation to model the temperature evolution in the boundary layer from the surface up to H=2 km height. Assume a fair-weather condition with a subsidence of -0.001 m s-1. Also assume horizontal homogeneity. Parameterize the heat flux using the eddy-diffusivity closure with K=0.25 m s-2. Solve the simplified equation using the following initial and boundary conditions:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5e653af8-5e3b-49d0-ac15-967d46d5959d">
-<span class="eqno">()<a class="headerlink" href="#equation-5e653af8-5e3b-49d0-ac15-967d46d5959d" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-8dbfe10d-ccae-4583-9f0a-6361a2202752">
+<span class="eqno">()<a class="headerlink" href="#equation-8dbfe10d-ccae-4583-9f0a-6361a2202752" title="Permalink to this equation">#</a></span>\[\begin{align}
 \theta(z,0)=290~K \\
 \overline{w'\theta'}(z,0)=0~W~m^{−2} \\
 \theta(0,t)=290+10 \cdot sin\left(\frac{2\pi \cdot t}{86400}\right)~K \\
@@ -825,7 +779,7 @@ Characteristic diffusion time (d): 0.4480
 </div>
 </div>
 <p><strong>Task 7</strong>: Intense boundary layer convection may develop when cold air masses are advected over relatively warm surfaces. Develop a simple model for this by assuming that the time evolution of the boundary layer is determined by the vertical turbulent heat transport and the horizontal heat advection. Make the following assumptions: [Hint: use the eddy-diffusivity closure and the upwind scheme for the advection flux]</p>
-<img alt="../_images/lake_erie_exercise.png" src="../_images/lake_erie_exercise.png" />
+<img alt="docs/pics/lake_erie_exercise.png" src="docs/pics/lake_erie_exercise.png" />
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
