@@ -1,0 +1,730 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Greenhouse Model &#8212; Climate Modelling and Data Analysis</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Lesson 2 - Numerical Models" href="numerical_models.html" />
+    <link rel="prev" title="Nonlinearity, Feedbacks and Predictability" href="nonlinearity.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Climate Modelling and Data Analysis</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../welcome.html">
+                    Welcome to the Climate Modelling and Data Analysis Course
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="intro_to_python.html">
+   Lesson 0 -Introduction to Python
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="nb_python_exercises.html">
+     Python exercises
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="analytical_models.html">
+   Lesson 1 - Global Energy Balance Model
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="ebm_model.html">
+     Simplified Energy Balance Model
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="nonlinearity.html">
+     Nonlinearity, Feedbacks and Predictability
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Greenhouse Model
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="numerical_models.html">
+   Lesson 2 - Numerical Models
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="fluid_dynamics.html">
+     Fluid dynamics
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="heat_equation.html">
+     Heat Equation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="advection.html">
+     Advection-Diffusion
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="seb.html">
+     Surface Energy Balance model
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="coupled_model.html">
+     Coupled boundary layer model
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/sauterto/climate_modelling"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/sauterto/climate_modelling/issues/new?title=Issue%20on%20page%20%2Fdocs/greenhouse_model.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/docs/greenhouse_model.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#learning-objectives">
+   Learning objectives:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#after-the-exercise-you-should-be-able-to-answer-the-following-questions">
+   After the exercise you should be able to answer the following questions:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-notebooks">
+   Python Notebooks
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#energy-balance-of-the-one-layer-model">
+   Energy balance of the one-layer model
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#assumptions">
+     Assumptions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#energy-balance-of-the-two-layer-model">
+   Energy balance of the two-layer model
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Assumptions
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Greenhouse Model</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#learning-objectives">
+   Learning objectives:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#after-the-exercise-you-should-be-able-to-answer-the-following-questions">
+   After the exercise you should be able to answer the following questions:
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-notebooks">
+   Python Notebooks
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#energy-balance-of-the-one-layer-model">
+   Energy balance of the one-layer model
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#assumptions">
+     Assumptions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#energy-balance-of-the-two-layer-model">
+   Energy balance of the two-layer model
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Assumptions
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="greenhouse-model">
+<span id="greenhouse-header"></span><h1>Greenhouse Model<a class="headerlink" href="#greenhouse-model" title="Permalink to this headline">#</a></h1>
+<section id="learning-objectives">
+<h2>Learning objectives:<a class="headerlink" href="#learning-objectives" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Equilibrium states in the Earth system</p></li>
+<li><p>Greenhouse effect</p></li>
+<li><p>Develop a simple conceptual model</p></li>
+<li><p>Integrate a model in time</p></li>
+<li><p>How to set up sensitivity runs</p></li>
+</ul>
+</section>
+<section id="after-the-exercise-you-should-be-able-to-answer-the-following-questions">
+<h2>After the exercise you should be able to answer the following questions:<a class="headerlink" href="#after-the-exercise-you-should-be-able-to-answer-the-following-questions" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Why can we run climate simulations for many decades even though our predictability of weather events is very limited?</p></li>
+<li><p>With this model we will perform sensitivity simulations that will show us important processes in the atmosphere.</p></li>
+</ul>
+</section>
+<section id="python-notebooks">
+<h2>Python Notebooks<a class="headerlink" href="#python-notebooks" title="Permalink to this headline">#</a></h2>
+<p><a class="reference internal" href="nb_greenhouse.html#greenhouse-exercise"><span class="std std-ref">Greenhouse Model</span></a></p>
+<p><a class="reference internal" href="solution_nb_greenhouse.html#greenhouse-solution"><span class="std std-ref">Solution: Greenhouse Model</span></a></p>
+</section>
+<section id="energy-balance-of-the-one-layer-model">
+<h2>Energy balance of the one-layer model<a class="headerlink" href="#energy-balance-of-the-one-layer-model" title="Permalink to this headline">#</a></h2>
+<section id="assumptions">
+<h3>Assumptions<a class="headerlink" href="#assumptions" title="Permalink to this headline">#</a></h3>
+<p>Shortwave radiation:</p>
+<ul class="simple">
+<li><p>Atmosphere is completely transparent to shortwave solar radiation</p></li>
+<li><p>The surface absorbs shortwave radiation</p></li>
+</ul>
+<p>Longwave radiation</p>
+<ul class="simple">
+<li><p>Both surface and atmosphere emit radiation as blackbodies</p></li>
+<li><p>Atmosphere is a single layer of air</p></li>
+<li><p>Atmosphere is completely opaque to infrared radiation</p></li>
+<li><p>Atmosphere radiates equally up and down</p></li>
+<li><p>There are no other heat transfer mechanisms</p></li>
+</ul>
+<figure class="align-default" id="one-layer-model">
+<a class="reference internal image-reference" href="../_images/one_layer_model.png"><img alt="../_images/one_layer_model.png" src="../_images/one_layer_model.png" style="height: 450px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">One-layer greenhouse model. (Rose, Brian E. J. (2020, November 9). Insolation, The Climate Laboratory, <a class="reference external" href="https://brian-rose.github.io/ClimateLaboratoryBook/courseware/insolation.html">https://brian-rose.github.io/ClimateLaboratoryBook/courseware/insolation.html</a>).</span><a class="headerlink" href="#one-layer-model" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>As with the simple energy balance model, we draw up the energy balances. This
+time we look at the energy balance of each layer individually and solve the two
+equations according to the equilibrium surface temperature.</p>
+<p>The earth’s surface gains energy from the absorbed short-wave radiation and the
+long-wave radiation from the atmosphere. Only the outgoing long-wave radiation causes
+the Earth’s surface to lose energy. Thus, the energy balance equation can be
+written as follows:</p>
+<div class="math notranslate nohighlight" id="equation-eb-surface">
+<span class="eqno">(6)<a class="headerlink" href="#equation-eb-surface" title="Permalink to this equation">#</a></span>\[
+(1-\alpha) \cdot Q + \sigma T_a^4 = \sigma T_s^4.
+\]</div>
+<p>The atmosphere, on the other hand, receives additional energy through the
+long-wave radiation of the Earth’s surface and loses energy in the form of
+long-wave radiation in the direction of the Earth’s surface and outer space.
+The budget can thus be written as</p>
+<div class="math notranslate nohighlight" id="equation-eb-atm">
+<span class="eqno">(7)<a class="headerlink" href="#equation-eb-atm" title="Permalink to this equation">#</a></span>\[
+\sigma T_s^4 = 2 \sigma T_a^4.
+\]</div>
+<p>The factor 2 (on the right hand side) results from the fact that the atmosphere emits both towards the
+Earth’s surface and into space. Therefore, the surface temperature must have
+<span class="math notranslate nohighlight">\(T_s&gt;T_a\)</span> with <span class="math notranslate nohighlight">\(T_s = \sqrt[\leftroot{-2}\uproot{2}4]{2} \cdot T_a \approx 1.2
+\cdot T_a\)</span>.</p>
+<blockquote>
+<div><p><strong>Task 1</strong>: Plug Eq. <a class="reference internal" href="#equation-eb-atm">(7)</a> into Eq. <a class="reference internal" href="#equation-eb-surface">(6)</a> and solve for
+the radiative equilibrium suface temperature <span class="math notranslate nohighlight">\(T_e\)</span>. Since all
+the outgoing longwave radiation to outer space results from the atmosphere,
+the atmospheric temperture <span class="math notranslate nohighlight">\(T_a\)</span> is identical to the emission temperature <span class="math notranslate nohighlight">\(T_e\)</span>.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Task 2</strong>: Where in the atmosphere do we find the calculated <span class="math notranslate nohighlight">\(T_e\)</span>?
+(Live-coding, {download}`Download
+netCDF-file&lt;./files/air.mon.ltm.1981-2010.nc&gt; Plot the mean temperature profile.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Task 3</strong>: What is the surface temperature with the single layer model? Why
+does the model overestimate the surface temperature?</p>
+</div></blockquote>
+</section>
+</section>
+<section id="energy-balance-of-the-two-layer-model">
+<h2>Energy balance of the two-layer model<a class="headerlink" href="#energy-balance-of-the-two-layer-model" title="Permalink to this headline">#</a></h2>
+<p>In this part we want to introduce a more sophisticated two-layer model for the
+long-wave radiative transfer. In addition to an additional layer, we also
+assume that each layer absorbs only a part of the radiation. This conceptual
+model shows nicely how the greenhouse effect works.</p>
+<section id="id1">
+<h3>Assumptions<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>The atmosphere is transparent to shortwave radiation</p></li>
+<li><p>Divide the atmosphere up into two layers of equal mass (the dividing line is thus at 500 hPa pressure level)</p></li>
+<li><p>Each layer absorbs only a fraction <span class="math notranslate nohighlight">\(\epsilon\)</span> of whatever longwave radiation is incident upon it</p></li>
+<li><p>Assume <span class="math notranslate nohighlight">\(\epsilon\)</span> is the same in each layer</p></li>
+</ul>
+<p>This modelling approach is called the <strong>grey gas model</strong>. The designation grey is
+intended to indicate that there is no spectral dependence of absorption and
+emission.</p>
+<figure class="align-default" id="two-layer-model">
+<a class="reference internal image-reference" href="../_images/two_layer_model.png"><img alt="../_images/two_layer_model.png" src="../_images/two_layer_model.png" style="height: 450px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Two-layer greenhouse model. (Rose, Brian E. J. (2020, November 9). Insolation, The Climate Laboratory, <a class="reference external" href="https://brian-rose.github.io/ClimateLaboratoryBook/courseware/insolation.html">https://brian-rose.github.io/ClimateLaboratoryBook/courseware/insolation.html</a>).</span><a class="headerlink" href="#two-layer-model" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>In the following, we consider the upward beam of long-wave radiation, which is
+labelled U in fig. The earth’s surface emits long-wave energy according to
+the Stefan-Boltzmann law:</p>
+<div class="math notranslate nohighlight" id="equation-ts">
+<span class="eqno">(8)<a class="headerlink" href="#equation-ts" title="Permalink to this equation">#</a></span>\[
+U_0 = (\sigma T_s^4)
+\]</div>
+<p>A fraction of this radiation is absorbed by layer 0. The remaining portion is
+passed on to layer 1 with the additional radiation coming from layer 0. The flux
+between layer 0 and layer 1 can then be written as</p>
+<div class="math notranslate nohighlight" id="equation-u1">
+<span class="eqno">(9)<a class="headerlink" href="#equation-u1" title="Permalink to this equation">#</a></span>\[
+U_1=(1-\epsilon)\sigma T_s^4+\epsilon \sigma T_0^4
+\]</div>
+<p>Similarly, the upward longwave radiation above layer 1 can be determined and written as</p>
+<div class="math notranslate nohighlight" id="equation-u2">
+<span class="eqno">(10)<a class="headerlink" href="#equation-u2" title="Permalink to this equation">#</a></span>\[
+U_2=(1-\epsilon)U_1+\epsilon \sigma T_1^4
+\]</div>
+<blockquote>
+<div><p><strong>Task 4</strong>: Since there is no more atmosphere above layer 1, this upwelling
+beam is our OLR for this model. Plug <span class="math notranslate nohighlight">\(U_1\)</span> into the equation of <span class="math notranslate nohighlight">\(U_2\)</span> and
+solve the equation. What do the terms represent?</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Task 5</strong>: Write a Python function for the <code class="docutils literal notranslate"><span class="pre">OLR</span></code> (Task 3).</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Task 6</strong>: What happens if <span class="math notranslate nohighlight">\(\epsilon\)</span> is zero or one? What does this mean physically?</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Task 7</strong>: We will tune our model so that it reproduces the observed global mean OLR given observed global mean temperatures. Determine the average temperatures (1000-500 hPa, 500 hPa to tropopause) for the two-layer model from the following sounding.</p>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="../_images/vertical_profile.png"><img alt="../_images/vertical_profile.png" src="../_images/vertical_profile.png" style="height: 450px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Atmospheric sounding from the NCEP-Reanalysis data. (Rose, Brian E. J. (2020, November 9). Insolation, The Climate Laboratory, <a class="reference external" href="https://brian-rose.github.io/ClimateLaboratoryBook/courseware/insolation.html">https://brian-rose.github.io/ClimateLaboratoryBook/courseware/insolation.html</a>).</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Task 8</strong>: Find graphically the best fit value of <span class="math notranslate nohighlight">\(\epsilon\)</span> using the observed temperatures and OLR.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Task 9</strong>: Write a Python function to calculate each term in the OLR.
+Plug-in the observed temperatures and the tuned value for epsilon and
+calculate the terms.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Task 10</strong>: Changing the level of emission by adding absorbers <span class="math notranslate nohighlight">\(\epsilon=\epsilon+\Delta \epsilon\)</span>, e.g. by 10 %.
+Suppose further that this increase happens abruptly so that there is no time
+for the temperatures to respond to this change. We hold the temperatures
+fixed in the column and ask how the radiative fluxes change.
+Do you expect the OLR to increase or decrease? Which terms in the OLR go up and which go down?</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Task 11</strong>: Calculate the radiative forcing for the previous simulation.</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Task 12</strong>: What is the greenhouse effect for an isothermal atmosphere?</p>
+</div></blockquote>
+<blockquote>
+<div><p><strong>Task 13</strong>: For a more realistic example of radiative forcing due to an
+increase in greenhouse absorbers, we use our observed temperatures and the
+tuned value for epsilon. Assume an increase of epsilon by 2 %. What is the radiative forcing?
+What does this mean for the OLR?</p>
+</div></blockquote>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "sauterto/climate_modelling",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./docs"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="nonlinearity.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Nonlinearity, Feedbacks and Predictability</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="numerical_models.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Lesson 2 - Numerical Models</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Tobias Sauter<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

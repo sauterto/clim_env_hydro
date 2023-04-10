@@ -1,0 +1,28 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: welcome 
+chapters:
+- file: docs/intro_to_python  
+  sections:
+    - file: docs/nb_python_exercises
+    #- file: docs/solution_nb_python_exercises
+- file: docs/analytical_models.md
+  sections:
+    - file: docs/ebm_model
+    - file: docs/nonlinearity
+    - file: docs/greenhouse_model
+- file: docs/numerical_models 
+  sections:
+    - file: docs/fluid_dynamics.md
+      #- file: docs/finite_differences.md
+    - file: docs/heat_equation.md
+    - file: docs/advection.md
+    - file: docs/seb.md
+    - file: docs/coupled_model.md
+
+    #- file: docs/glacier_wind_model_numerical
+    #- file: docs/heat_equation
+    #- file: docs/heat_equation_vector
+    #- file: docs/advection_diffusion
