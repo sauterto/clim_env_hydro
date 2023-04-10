@@ -50,12 +50,14 @@ html:
   use_repository_button: true
 
 launch_buttons:
+  notebook_interface: "jupyterlab"  # or "classic"
   binderhub_url: "https://mybinder.org"
   binder_repo_org                  : "sauterto"  # The username or organization that owns this repository
   binder_repo_name                 : "climate_modelling"  # The name of the repository on the web
   binder_repo_branch               : "main"
   colab_url: "https://colab.research.google.com"
   thebe                            : true
+  jupyterhub_url: "https://jupyterhub.cms.hu-berlin.de"
 
 sphinx:
   config:
