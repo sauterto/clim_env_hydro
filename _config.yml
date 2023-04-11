@@ -58,6 +58,9 @@ launch_buttons:
   colab_url: "https://colab.research.google.com"
   thebe                            : true
   jupyterhub_url: "https://jupyterhub.cms.hu-berlin.de"
+  jupyterhub_repo_org                  : "sauterto"  # The username or organization that owns this repository
+  jupyterhub_repo_name                 : "clim_env_hydro"  # The name of the repository on the web
+  jupyterhub_repo_branch               : "main"
 
 sphinx:
   config:
