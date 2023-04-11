@@ -35,10 +35,10 @@ figclass: margin
 ---
 The download button for notebooks
 ```
-The CMS of Humboldt-Universität zu Berlin has set up a Jupyter -Hub that can be
+The CMS of Humboldt-Universität zu Berlin has set up a Jupyter-Hub that can be
 accessed via your HU account. The server can be reached
 [here](https://jupyterhub.cms.hu-berlin.de). To use the notebook, you must
-first download it to your computer. To do this, use the download button in the
+first download the .ipynb file to your computer. To do this, use the download button in the
 top menu (see {numref}`notebook_button`). Then you can upload the notebook to the local directory on the
 Jupyter Hub server. 
 
