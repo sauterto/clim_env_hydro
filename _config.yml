@@ -1,7 +1,7 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Climate Modelling and Data Analysis 
+title: Field Course of Climatology and Environmenal Hydrology 
 author: Tobias Sauter
 logo: logo.png
 
@@ -39,7 +39,7 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/sauterto/climate_modelling  # Online location of your book
+  url: https://github.com/sauterto/clim_env_hydro  # Online location of your book
   path_to_book: .  # Optional path to your book, relative to the repository root
   branch: main  # Which branch of the repository should be used when creating links (optional)
 
@@ -53,7 +53,7 @@ launch_buttons:
   notebook_interface: "jupyterlab"  # or "classic"
   binderhub_url: "https://mybinder.org"
   binder_repo_org                  : "sauterto"  # The username or organization that owns this repository
-  binder_repo_name                 : "climate_modelling"  # The name of the repository on the web
+  binder_repo_name                 : "clim_env_hydro"  # The name of the repository on the web
   binder_repo_branch               : "main"
   colab_url: "https://colab.research.google.com"
   thebe                            : true

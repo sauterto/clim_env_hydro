@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Advection diffusion equation &#8212; Climate Modelling and Data Analysis</title>
+    <title>Advection diffusion equation &#8212; Field Course of Climatology and Environmenal Hydrology</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -97,7 +97,7 @@ const thebe_selector_output = ".output, .cell_output"
       <img src="../_static/logo.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">Climate Modelling and Data Analysis</h1>
+      <h1 class="site-logo" id="site-title">Field Course of Climatology and Environmenal Hydrology</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
@@ -115,8 +115,8 @@ const thebe_selector_output = ".output, .cell_output"
         </ul>
         <ul class="nav bd-sidenav">
  <li class="toctree-l1 has-children">
-  <a class="reference internal" href="intro_to_python.html">
-   Lesson 0 -Introduction to Python
+  <a class="reference internal" href="installation.html">
+   Setup the Jupyter Notebook environment
   </a>
   <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
@@ -190,7 +190,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/sauterto/climate_modelling/main?urlpath=lab/tree/./docs/nb_advection.ipynb"
+        <a href="https://mybinder.org/v2/gh/sauterto/clim_env_hydro/main?urlpath=lab/tree/./docs/nb_advection.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -208,7 +208,7 @@ title="Launch on Binder"
       </li>
       
       <li>
-        <a href="https://jupyterhub.cms.hu-berlin.de/hub/user-redirect/git-pull?repo=https%3A//github.com/sauterto/climate_modelling&urlpath=lab/tree/climate_modelling/./docs/nb_advection.ipynb&branch=main"
+        <a href="https://jupyterhub.cms.hu-berlin.de/hub/user-redirect/git-pull?repo=https%3A//github.com/sauterto/clim_env_hydro&urlpath=lab/tree/clim_env_hydro/./docs/nb_advection.ipynb&branch=main"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -226,7 +226,7 @@ title="Launch on JupyterHub"
       </li>
       
       <li>
-        <a href="https://colab.research.google.com/github/sauterto/climate_modelling/blob/main/./docs/nb_advection.ipynb"
+        <a href="https://colab.research.google.com/github/sauterto/clim_env_hydro/blob/main/./docs/nb_advection.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -287,7 +287,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://github.com/sauterto/climate_modelling"
+        <a href="https://github.com/sauterto/clim_env_hydro"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -304,7 +304,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/sauterto/climate_modelling/issues/new?title=Issue%20on%20page%20%2Fdocs/nb_advection.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/sauterto/clim_env_hydro/issues/new?title=Issue%20on%20page%20%2Fdocs/nb_advection.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -497,8 +497,8 @@ required dt (diffusion) &lt;= 0.0031 s
 </div>
 </div>
 <p><strong>Task 5</strong>: Solve the Advection-Diffusion equation, with the following initial impulse signal and boundary conditions:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d8ad52bc-9bb2-4e1d-9654-59ab8d0baf1b">
-<span class="eqno">()<a class="headerlink" href="#equation-d8ad52bc-9bb2-4e1d-9654-59ab8d0baf1b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-41ad5858-4468-4bdd-a1e4-4b2b001649fd">
+<span class="eqno">()<a class="headerlink" href="#equation-41ad5858-4468-4bdd-a1e4-4b2b001649fd" title="Permalink to this equation">#</a></span>\[\begin{align}
 c(n,0) &amp;=exp^{\left(-\left(\frac{(x-10)}{2}\right)^2\right)} \\
 c(0,t) &amp;=0 \\
 c(L,t) &amp;=\frac{\partial c}{\partial x}=0
@@ -615,8 +615,8 @@ Characteristic diffusion time (d): 0.4480
 </div>
 </div>
 <p><strong>Task 6</strong>: Starting with the heat equation above simplify the equation to model the temperature evolution in the boundary layer from the surface up to H=2 km height. Assume a fair-weather condition with a subsidence of -0.001 m s-1. Also assume horizontal homogeneity. Parameterize the heat flux using the eddy-diffusivity closure with K=0.25 m s-2. Solve the simplified equation using the following initial and boundary conditions:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8dbfe10d-ccae-4583-9f0a-6361a2202752">
-<span class="eqno">()<a class="headerlink" href="#equation-8dbfe10d-ccae-4583-9f0a-6361a2202752" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-6ec43b8d-6775-4956-83d5-e78ae230fd72">
+<span class="eqno">()<a class="headerlink" href="#equation-6ec43b8d-6775-4956-83d5-e78ae230fd72" title="Permalink to this equation">#</a></span>\[\begin{align}
 \theta(z,0)=290~K \\
 \overline{w'\theta'}(z,0)=0~W~m^{−2} \\
 \theta(0,t)=290+10 \cdot sin\left(\frac{2\pi \cdot t}{86400}\right)~K \\
@@ -1427,7 +1427,7 @@ Minimum total warming rate : -17.49 K/h
     {
         requestKernel: true,
         binderOptions: {
-            repo: "sauterto/climate_modelling",
+            repo: "sauterto/clim_env_hydro",
             ref: "main",
         },
         codeMirrorConfig: {

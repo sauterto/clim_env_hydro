@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Lesson 0 -Introduction to Python &#8212; Field Course of Climatology and Environmenal Hydrology</title>
+    <title>Setup the Jupyter Notebook environment &#8212; Field Course of Climatology and Environmenal Hydrology</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,6 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Python exercises" href="nb_python_exercises.html" />
+    <link rel="prev" title="Welcome to the Field Course of Climatology and Environmental Hydrology" href="../welcome.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -111,12 +113,12 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="installation.html">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
    Setup the Jupyter Notebook environment
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
   <label for="toctree-checkbox-1">
    <i class="fas fa-chevron-down">
    </i>
@@ -219,7 +221,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/sauterto/clim_env_hydro/issues/new?title=Issue%20on%20page%20%2Fdocs/intro_to_python.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/sauterto/clim_env_hydro/issues/new?title=Issue%20on%20page%20%2Fdocs/installation.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -247,7 +249,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/docs/intro_to_python.md"
+        <a href="../_sources/docs/installation.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -284,23 +286,80 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#local-installation">
+   Local installation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyterhub-on-the-cms-server-of-the-hu-berlin">
+   Jupyterhub on the CMS Server of the HU Berlin
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#launch-live-jupyter-sessions">
+   Launch live Jupyter sessions
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Lesson 0 -Introduction to Python</h1>
+                <h1>Setup the Jupyter Notebook environment</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#local-installation">
+   Local installation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#jupyterhub-on-the-cms-server-of-the-hu-berlin">
+   Jupyterhub on the CMS Server of the HU Berlin
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#launch-live-jupyter-sessions">
+   Launch live Jupyter sessions
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -308,19 +367,58 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="lesson-0-introduction-to-python">
-<h1>Lesson 0 -Introduction to Python<a class="headerlink" href="#lesson-0-introduction-to-python" title="Permalink to this headline">#</a></h1>
-<p>The following lesson and exercises are not intended to replace an introduction
-to Python and Jupyter Notebook. Rather, the exercises are intended to refresh
-and recall existing knowledge. The notebooks are not about working out
-solutions independently, but are intended as a kind of cheatsheet. There are
-different sections that repeat different Python elements that are relevant for
-the further units. Those with experience in Python can safely skip the lessons.</p>
-<div class="admonition-notebooks admonition">
-<p class="admonition-title">Notebooks</p>
-<p><a class="reference internal" href="nb_python_exercises.html#python-exercise"><span class="std std-ref">Python Exercise</span></a></p>
-<p><span class="xref myst">Solution: Python Exercise</span></p>
-</div>
+  <section class="tex2jax_ignore mathjax_ignore" id="setup-the-jupyter-notebook-environment">
+<h1>Setup the Jupyter Notebook environment<a class="headerlink" href="#setup-the-jupyter-notebook-environment" title="Permalink to this headline">#</a></h1>
+<p>The materials provided are based on so-called Jupyter notebooks. You have
+several possibilities to use the notebooks. You need a Jupyter environment that
+allows you to use the notebooks. The following options are possible:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#local-install"><span class="std std-ref">Local installation of Jupyter</span></a></p></li>
+<li><p><a class="reference internal" href="#jupyterhub"><span class="std std-ref">Jupyterhub on the CMS Server of the HU Berlin</span></a></p></li>
+<li><p><a class="reference internal" href="#launch-env"><span class="std std-ref">Launch into interactive computing interfaces</span></a></p></li>
+</ul>
+<section id="local-installation">
+<span id="local-install"></span><h2>Local installation<a class="headerlink" href="#local-installation" title="Permalink to this headline">#</a></h2>
+<p>Local installation means that each computer is running the software that
+includes the Jupyter Notebook. Typically, this requires installing a
+distribution that includes Jupyter and Python.</p>
+<p>I recommend to use Anaconda, which is easy to install on Windows, Mac, and
+Linux. Anaconda is a package manager, an environment manager, a Python distribution, a
+collection of over 1,500+ open source packages, including Jupyter. It is free
+to download, open source, and easy to install, on any computer system (Windows,
+Mac OS X or Linux). It also includes the conda packaging utility to update and
+install new packages of the Python, and to manage
+computational environments. On the <a class="reference external" href="https://www.anaconda.com/products/distribution">Anaconda</a> homepage you will
+find all the information and files you need to install Anaconda.</p>
+</section>
+<section id="jupyterhub-on-the-cms-server-of-the-hu-berlin">
+<span id="jupyterhub"></span><h2>Jupyterhub on the CMS Server of the HU Berlin<a class="headerlink" href="#jupyterhub-on-the-cms-server-of-the-hu-berlin" title="Permalink to this headline">#</a></h2>
+<figure class="margin align-left" id="notebook-button">
+<a class="reference internal image-reference" href="../_images/notebook_button.png"><img alt="../_images/notebook_button.png" src="../_images/notebook_button.png" style="width: 200.0px; height: 103.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">The download button for notebooks</span><a class="headerlink" href="#notebook-button" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The CMS of Humboldt-Universität zu Berlin has set up a Jupyter -Hub that can be
+accessed via your HU account. The server can be reached
+<a class="reference external" href="https://jupyterhub.cms.hu-berlin.de">here</a>. To use the notebook, you must
+first download it to your computer. To do this, use the download button in the
+top menu (see <a class="reference internal" href="#notebook-button"><span class="std std-numref">Fig. 1</span></a>). Then you can upload the notebook to the local directory on the
+Jupyter Hub server.</p>
+</section>
+<section id="launch-live-jupyter-sessions">
+<span id="launch-env"></span><h2>Launch live Jupyter sessions<a class="headerlink" href="#launch-live-jupyter-sessions" title="Permalink to this headline">#</a></h2>
+<figure class="margin align-left" id="launch-button">
+<a class="reference internal image-reference" href="../_images/launch_button.png"><img alt="../_images/launch_button.png" src="../_images/launch_button.png" style="width: 302.0px; height: 166.0px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Launch buttons for interactive environments</span><a class="headerlink" href="#launch-button" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>You can launch live Jupyter sessions in the cloud directly from the notebook. This
+let you quickly interact with the content in a traditional coding interface.
+To launch the interactive environment click on the Launch Button at the top bar
+(see <a class="reference internal" href="#launch-button"><span class="std std-numref">Fig. 2</span></a>).</p>
+</section>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -352,6 +450,20 @@ the further units. Those with experience in Python can safely skip the lessons.<
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="../welcome.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Welcome to the Field Course of Climatology and Environmental Hydrology</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="nb_python_exercises.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Python exercises</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             </footer>
         </div>

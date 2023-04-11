@@ -4,7 +4,7 @@
 format: jb-book
 root: welcome 
 chapters:
-- file: docs/intro_to_python  
+- file: docs/installation.md  
   sections:
     - file: docs/nb_python_exercises
     #- file: docs/solution_nb_python_exercises
