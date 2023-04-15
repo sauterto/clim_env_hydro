@@ -1,3 +1,0 @@
-(wind)=
-# Regional Wind Systems 
-
