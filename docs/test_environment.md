@@ -1,5 +1,5 @@
 (test)=
-# Test the environment 
+# Testing the learning environment 
 
 Before we get started, we test the learning environment and the most important
 packages needed to run the notebooks. This is not so much a continuous coherent
