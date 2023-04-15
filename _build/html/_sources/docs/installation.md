@@ -8,6 +8,14 @@ allows you to use the notebooks. The following options are possible:
 - [Jupyterhub on the CMS Server of the HU Berlin](jupyterhub)
 - [Launch into interactive computing interfaces](launch_env)
 
+After the installation, further Python packages must be installed in order to
+be able to carry out all exercises. The most important packages are: 
+
+- [Pandas](https://pandas.pydata.org)
+- [xarray](https://docs.xarray.dev/en/stable/)
+- [MetPy](https://unidata.github.io/MetPy/latest/index.html)
+
+
 (local_install)=
 ## Local installation
 
@@ -23,6 +31,7 @@ Mac OS X or Linux). It also includes the conda packaging utility to update and
 install new packages of the Python, and to manage
 computational environments. On the [Anaconda](https://www.anaconda.com/products/distribution) homepage you will
 find all the information and files you need to install Anaconda.
+The necessary Python packages can be easily installed via Anaconda. 
 
 (jupyterhub)=
 ## Jupyterhub on the CMS Server of the HU Berlin
@@ -57,8 +66,6 @@ You can launch live Jupyter sessions in the cloud directly from the notebook. Th
 let you quickly interact with the content in a traditional coding interface.
 To launch the interactive environment click on the Launch Button at the top bar
 (see {numref}`launch_button`).
-
-
 
 
 

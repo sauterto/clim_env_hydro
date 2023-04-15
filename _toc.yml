@@ -3,26 +3,19 @@
 
 format: jb-book
 root: welcome 
-chapters:
-- file: docs/installation.md  
-  sections:
-    - file: docs/nb_python_exercises
-    #- file: docs/solution_nb_python_exercises
-    #- file: docs/analytical_models.md
-    #  sections:
-    #    - file: docs/ebm_model
-    #    - file: docs/nonlinearity
-    #    - file: docs/greenhouse_model
-    #- file: docs/numerical_models 
-    #  sections:
-    #    - file: docs/fluid_dynamics.md
-    #      #- file: docs/finite_differences.md
-    #    - file: docs/heat_equation.md
-    #    - file: docs/advection.md
-    #    - file: docs/seb.md
-    #    - file: docs/coupled_model.md
-    #
-    #- file: docs/glacier_wind_model_numerical
-    #- file: docs/heat_equation
-    #- file: docs/heat_equation_vector
-    #- file: docs/advection_diffusion
+  #options:
+  #numbered: true
+parts:
+- caption: Getting started 
+  numbered: true 
+  chapters:
+  - file: docs/installation.md  
+  - file: docs/test_environment.md
+- caption: Lectures 
+  numbered: true 
+  chapters:
+  - file: docs/climatology.md  
+  - file: docs/turbulence.md  
+  - file: docs/wind_system.md  
+  - file: docs/glacier.md  
+  - file: docs/hydrology.md  
