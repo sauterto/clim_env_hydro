@@ -32,7 +32,7 @@
 
 # To begin, import numpy, pandas and xarray using their customary abbreviations:
 
-# In[34]:
+# In[1]:
 
 
 # Import packages
@@ -53,24 +53,24 @@ import matplotlib.pyplot as plt
 # 
 # First, open the dataset
 
-# In[21]:
+# In[2]:
 
 
 # Load a netcdf dataset with xarray
-ds = xr.open_dataset("data/ear5_monthly_europe.nc")
+ds = xr.open_dataset("./data/air_temperature_monthly_europe.nc")
 
 
 # and let's have a look to the dataset structure
 
-# In[22]:
+# In[3]:
 
 
 ds
 
 
-# The dataset contains one data variable skt which has three coordinates: time, lat, and lon. We can access the coordinates very easily with
+# The dataset contains one data variable **t2m** which has three coordinates: time, lat, and lon. We can access the coordinates very easily with
 
-# In[23]:
+# In[4]:
 
 
 # Access the time coordinates
@@ -79,18 +79,18 @@ ds.time
 
 # We can quickly visualise the variable for a single month with
 
-# In[25]:
+# In[5]:
 
 
 # Here we plot the temperature for december 2022
-ds["u10"].sel(time='2022-12-01').plot(figsize=(10,5))
+ds["t2m"].sel(time='2022-12-02').plot(figsize=(10,7))
 
 
 # Suppose we want to calculate the seasonal average. To do this properly, we need to calculate the weighted average considering that each month has a different number of days.
 # 
 # We first have to come up with the weights - calculate the month length for each monthly data record 
 
-# In[26]:
+# In[6]:
 
 
 # Get the length of each monthly data record
@@ -102,7 +102,7 @@ month_length
 
 # Then we calculate the weights using groupby('time.season')
 
-# In[30]:
+# In[10]:
 
 
 # Calculate the weights by grouping by 'time.season'.
@@ -116,49 +116,49 @@ np.testing.assert_allclose(weights.groupby("time.season").sum().values, np.ones(
 
 # Finally, we can weight the months and sum the result
 
-# In[31]:
+# In[11]:
 
 
 # Calculate the weighted average
 ds_weighted = (ds * weights).groupby("time.season").sum(dim="time")
 
 
-# In[43]:
+# In[16]:
 
 
 # Quick plot to show the results
-notnull = pd.notnull(ds_weighted["u10"][0])
+notnull = pd.notnull(ds_weighted["t2m"][0])
 
 fig, axes = plt.subplots(nrows=2, ncols=2, figsize=(12, 8))
 
-ds_weighted["u10"].sel(season='DJF').where(notnull).plot.pcolormesh(
+ds_weighted["t2m"].sel(season='DJF').where(notnull).plot.pcolormesh(
     ax=axes[0, 0],
-    vmin=-10,
-    vmax=10,
+    vmin=250,
+    vmax=310,
     cmap="Spectral_r",
     add_colorbar=True,
     extend="both",
 )
-ds_weighted["u10"].sel(season='MAM').where(notnull).plot.pcolormesh(
+ds_weighted["t2m"].sel(season='MAM').where(notnull).plot.pcolormesh(
     ax=axes[0, 1],
-    vmin=-10,
-    vmax=10,
+    vmin=250,
+    vmax=310,
     cmap="Spectral_r",
     add_colorbar=True,
     extend="both",
 )
-ds_weighted["u10"].sel(season='JJA').where(notnull).plot.pcolormesh(
+ds_weighted["t2m"].sel(season='JJA').where(notnull).plot.pcolormesh(
     ax=axes[1, 0],
-    vmin=-10,
-    vmax=10,
+    vmin=250,
+    vmax=310,
     cmap="Spectral_r",
     add_colorbar=True,
     extend="both",
 )
-ds_weighted["u10"].sel(season='SON').where(notnull).plot.pcolormesh(
+ds_weighted["t2m"].sel(season='SON').where(notnull).plot.pcolormesh(
     ax=axes[1, 1],
-    vmin=-10,
-    vmax=10,
+    vmin=250,
+    vmax=310,
     cmap="Spectral_r",
     add_colorbar=True,
     extend="both",
