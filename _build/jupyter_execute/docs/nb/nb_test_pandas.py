@@ -27,7 +27,7 @@
 # Start using pandas. To load the pandas package and start working with it, import the package. The community agreed alias for pandas is pd. 
 # 
 
-# In[130]:
+# In[ ]:
 
 
 # Load the pandas package
@@ -48,7 +48,7 @@ import pandas as pd
 
 # Let's start and load a automatic weather station file into a pandas dataframe
 
-# In[43]:
+# In[ ]:
 
 
 # Read the data into a DataFrame
@@ -57,7 +57,7 @@ df = pd.read_csv("../data/aws_valley_data_10min.csv", header=1, index_col='TIMES
 
 # and have a look at the dataframe
 
-# In[35]:
+# In[ ]:
 
 
 # A simple way to plot the DataFrame
@@ -66,7 +66,7 @@ df.head()
 
 # We can select a Series from the DataFrame with
 
-# In[31]:
+# In[ ]:
 
 
 # Retrieve the air temperature series from the DataFrame
@@ -75,7 +75,7 @@ df['AirTC_1']
 
 # do some calculations
 
-# In[32]:
+# In[ ]:
 
 
 # Get the maximum of the air temperature series
@@ -86,7 +86,7 @@ df['AirTC_1'].max()
 
 # You can also get some basic statistics of the data with
 
-# In[33]:
+# In[ ]:
 
 
 df.describe()
@@ -96,7 +96,7 @@ df.describe()
 
 # You can simply select specific columns from a DataFrame with
 
-# In[47]:
+# In[ ]:
 
 
 # That's how you select the AirTC_1 and RH_1 columns from the df DataFrame
@@ -108,7 +108,7 @@ df_subset.head()
 
 # The shape of the DataFrame can be accessed with
 
-# In[42]:
+# In[ ]:
 
 
 # Access the shape attribute. Please note, do not use parentheses for attributes. 
@@ -121,7 +121,7 @@ df_subset.shape
 
 # With the following command you can simply select all rows with temperatures above 5ºC
 
-# In[54]:
+# In[ ]:
 
 
 # Select all rows with temerature greather than 5 degrees celsius
@@ -133,7 +133,7 @@ T_subset.head()
 
 # It is possible to combine multiple conditional statements, each condition must be surrounded by parentheses (). Moreover, you can not use or/and but need to use the or operator | and the and operator &. Here is an example
 
-# In[60]:
+# In[ ]:
 
 
 # Select all rows with temerature greather than 5 degrees celsius and a relative humidity above 70%
@@ -149,7 +149,7 @@ T_RH_subset.head()
 
 # To make use of the plotting function you need to load the matplotlib package
 
-# In[62]:
+# In[ ]:
 
 
 # Import matplotlib
@@ -158,7 +158,7 @@ import matplotlib.pyplot as plt
 
 # You can quickly check the data visually
 
-# In[106]:
+# In[ ]:
 
 
 # Plot the temperature time series
@@ -170,7 +170,7 @@ plt.xticks(rotation=30);
 
 # Or create horizontally stacked plots, add two time series in one plot etc. 
 
-# In[116]:
+# In[ ]:
 
 
 # Create two subplots (1 row, 2 columns)
@@ -190,7 +190,7 @@ ax2.set_xticklabels(ax.get_xticklabels(), rotation=45, ha='right');
 
 # Here is an example of a box plot
 
-# In[100]:
+# In[ ]:
 
 
 df[["AirTC_1","RH_1","H_Flux"]].plot.box(figsize=(10,5))
@@ -198,7 +198,7 @@ df[["AirTC_1","RH_1","H_Flux"]].plot.box(figsize=(10,5))
 
 # And a simple way to plot all variables in a DataFrame
 
-# In[129]:
+# In[ ]:
 
 
 # Create subplots

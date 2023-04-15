@@ -32,7 +32,7 @@
 
 # To begin, import numpy, pandas and xarray using their customary abbreviations:
 
-# In[1]:
+# In[ ]:
 
 
 # Import packages
@@ -53,7 +53,7 @@ import matplotlib.pyplot as plt
 # 
 # First, open the dataset
 
-# In[2]:
+# In[ ]:
 
 
 # Load a netcdf dataset with xarray
@@ -62,7 +62,7 @@ ds = xr.open_dataset("./data/air_temperature_monthly_europe.nc")
 
 # and let's have a look to the dataset structure
 
-# In[3]:
+# In[ ]:
 
 
 ds
@@ -70,7 +70,7 @@ ds
 
 # The dataset contains one data variable **t2m** which has three coordinates: time, lat, and lon. We can access the coordinates very easily with
 
-# In[4]:
+# In[ ]:
 
 
 # Access the time coordinates
@@ -79,7 +79,7 @@ ds.time
 
 # We can quickly visualise the variable for a single month with
 
-# In[5]:
+# In[ ]:
 
 
 # Here we plot the temperature for december 2022
@@ -90,7 +90,7 @@ ds["t2m"].sel(time='2022-12-02').plot(figsize=(10,7))
 # 
 # We first have to come up with the weights - calculate the month length for each monthly data record 
 
-# In[6]:
+# In[ ]:
 
 
 # Get the length of each monthly data record
@@ -102,7 +102,7 @@ month_length
 
 # Then we calculate the weights using groupby('time.season')
 
-# In[10]:
+# In[ ]:
 
 
 # Calculate the weights by grouping by 'time.season'.
@@ -116,14 +116,14 @@ np.testing.assert_allclose(weights.groupby("time.season").sum().values, np.ones(
 
 # Finally, we can weight the months and sum the result
 
-# In[11]:
+# In[ ]:
 
 
 # Calculate the weighted average
 ds_weighted = (ds * weights).groupby("time.season").sum(dim="time")
 
 
-# In[16]:
+# In[ ]:
 
 
 # Quick plot to show the results
@@ -181,7 +181,7 @@ fig.suptitle("Seasonal Surface Air Temperature", fontsize=16, y=1.02)
 
 # You can write the results to disc
 
-# In[45]:
+# In[ ]:
 
 
 # Use *.to_netcdf to the write a dataset to a netcdf file
