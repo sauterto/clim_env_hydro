@@ -159,6 +159,11 @@ const thebe_selector_output = ".output, .cell_output"
    5. Hydrology
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../weather_maps.html">
+   6. Weather maps
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -441,7 +446,7 @@ title="Print to PDF"
               <div>
                 
   <section class="tex2jax_ignore mathjax_ignore" id="using-pandas">
-<span id="testing-pandas-exercise"></span><h1>Using pandas<a class="headerlink" href="#using-pandas" title="Permalink to this headline">#</a></h1>
+<span id="nb-testing-pandas"></span><h1>Using pandas<a class="headerlink" href="#using-pandas" title="Permalink to this headline">#</a></h1>
 <p>Before we get started, we test the learning environment and the most important packages needed to run the notebooks. This is not so much a continuous coherent exercise as individual examples based on the different packages.This exercise is neither an introduction to Python nor extensive tutorials for the individual packages. I advise you, if you have little or no experience with the packages, to work through the relevant tutorial on the websites. All packages offer very good and extensive tutorials. Most of the functions presented here have been taken from these websites.</p>
 <div class="alert alert-block alert-success">
 <b>Learning objectives:</b><br>
@@ -467,10 +472,8 @@ title="Print to PDF"
 </div>
 </div>
 <p>Data in Pandas is represented as a table, the so-called DataFrame. A DataFrame is a 2-dimensional data structure that can store data of different types (including characters, integers, floating point values, categorical data and more) in columns. It is similar to a spreadsheet, a SQL table or the data.frame in R. Each column in a DataFrame is a Series.</p>
-<table><tr>
-    <td><img align="center" valign='top' src="images/01_table_dataframe.svg" height=150 >
-    <td><img align="center" valign='top' src="images/01_table_series.svg" height=150 >
-</tr></table><p>We start by reading data from a csv file into a DataFrame. pandas provides the read_csv() function to read data stored as a csv file into a pandas DataFrame. pandas supports many different file formats or data sources out of the box (csv, excel, sql, json, parquet, …), each of them with the prefix read_*.</p>
+<a class="reference internal image-reference" href="../../_images/01_table_dataframe.svg"><img alt="../../_images/01_table_dataframe.svg" class="align-center" height="300" src="../../_images/01_table_dataframe.svg" /></a>
+<p>We start by reading data from a csv file into a DataFrame. pandas provides the read_csv() function to read data stored as a csv file into a pandas DataFrame. pandas supports many different file formats or data sources out of the box (csv, excel, sql, json, parquet, …), each of them with the prefix read_*.</p>
 <a class="reference internal image-reference" href="../../_images/02_io_readwrite.svg"><img alt="../../_images/02_io_readwrite.svg" class="align-center" src="../../_images/02_io_readwrite.svg" width="700" /></a>
 <p>Let’s start and load a automatic weather station file into a pandas dataframe</p>
 <div class="cell docutils container">
@@ -598,12 +601,12 @@ title="Print to PDF"
 <span class="c1"># Plot the temperature time series</span>
 <span class="n">df</span><span class="p">[</span><span class="s2">&quot;AirTC_1&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax1</span><span class="p">);</span>
 <span class="c1"># Rotate the x-labels for better readability</span>
-<span class="n">ax1</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">ax</span><span class="o">.</span><span class="n">get_xticklabels</span><span class="p">(),</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">);</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">ax1</span><span class="o">.</span><span class="n">get_xticklabels</span><span class="p">(),</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">);</span>
 
 <span class="c1"># Plot two temperature time series in one plot</span>
 <span class="n">df</span><span class="p">[[</span><span class="s2">&quot;AirTC_2&quot;</span><span class="p">,</span><span class="s2">&quot;AirTC_1&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">ax</span><span class="o">=</span><span class="n">ax2</span><span class="p">);</span>
 <span class="c1"># Rotate the x-labels for better readability</span>
-<span class="n">ax2</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">ax</span><span class="o">.</span><span class="n">get_xticklabels</span><span class="p">(),</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">);</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_xticklabels</span><span class="p">(</span><span class="n">ax2</span><span class="o">.</span><span class="n">get_xticklabels</span><span class="p">(),</span> <span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">);</span>
 </pre></div>
 </div>
 </div>
