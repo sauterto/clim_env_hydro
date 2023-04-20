@@ -26,7 +26,7 @@ Explore this article &rarr;
 :::
 
 :::{grid-item-card} 
-:link: aws 
+:link:  
 :link-type: ref
 <center><b>Weather observations</b></center>
 ^^^
@@ -40,7 +40,7 @@ Explore notebook &rarr;
 :::
 
 :::{grid-item-card} 
-:link: turbulence 
+:link:  
 :link-type: ref
 <center><b>Turbulence and Energy Balance</b></center>
 ^^^
@@ -58,7 +58,7 @@ Explore notebook &rarr;
 :gutter: 3
 
 :::{grid-item-card} 
-:link: wind
+:link: 
 :link-type: ref
 <center><b>Regional Wind Systems</b></center>
 ^^^
@@ -72,7 +72,7 @@ Explore notebook &rarr;
 :::
 
 :::{grid-item-card} 
-:link: glacier
+:link: 
 :link-type: ref
 <center><b>Alpine glacier and snow</b></center>
 ^^^
@@ -86,7 +86,7 @@ Explore notebook &rarr;
 :::
 
 :::{grid-item-card} 
-:link: hydrology
+:link: 
 :link-type: ref
 <center><b>Hydrology</b></center>
 ^^^
