@@ -60,7 +60,7 @@ import matplotlib.pyplot as plt
 
 
 # Load a netcdf dataset with xarray
-ds = xr.open_dataset("surface_temperature_monthly_europe.nc")
+ds = xr.open_dataset("air_temperature_monthly_europe.nc")
 
 
 # and let's have a look to the dataset structure
