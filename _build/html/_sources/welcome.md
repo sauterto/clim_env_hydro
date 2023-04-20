@@ -109,7 +109,7 @@ Explore notebook &rarr;
 :link-type: ref
 <center><b>Weather analysis</b></center>
 ^^^
-```{figure} ./docs/figures/mountain.png
+```{figure} ./docs/figures/pressure.png
 :width: 100px
 :name: glacier_icon
 ```
