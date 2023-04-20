@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# (testing_pandas:exercise)=
+# (nb_testing_pandas)=
 # # Using pandas
 # 
 # Before we get started, we test the learning environment and the most important packages needed to run the notebooks. This is not so much a continuous coherent exercise as individual examples based on the different packages.This exercise is neither an introduction to Python nor extensive tutorials for the individual packages. I advise you, if you have little or no experience with the packages, to work through the relevant tutorial on the websites. All packages offer very good and extensive tutorials. Most of the functions presented here have been taken from these websites.
@@ -36,10 +36,7 @@ import pandas as pd
 
 # Data in Pandas is represented as a table, the so-called DataFrame. A DataFrame is a 2-dimensional data structure that can store data of different types (including characters, integers, floating point values, categorical data and more) in columns. It is similar to a spreadsheet, a SQL table or the data.frame in R. Each column in a DataFrame is a Series.
 
-# <table><tr>
-#     <td><img align="center" valign='top' src="images/01_table_dataframe.svg" height=150 >
-#     <td><img align="center" valign='top' src="images/01_table_series.svg" height=150 >
-# </tr></table>
+# <img align="center" valign='top' src="./images/01_table_dataframe.svg" height=300 >
 
 # We start by reading data from a csv file into a DataFrame. pandas provides the read_csv() function to read data stored as a csv file into a pandas DataFrame. pandas supports many different file formats or data sources out of the box (csv, excel, sql, json, parquet, …), each of them with the prefix read_*.
 # 
@@ -180,12 +177,12 @@ fig.suptitle('Horzontally stacked subplots')
 # Plot the temperature time series
 df["AirTC_1"].plot(ax=ax1);
 # Rotate the x-labels for better readability
-ax1.set_xticklabels(ax.get_xticklabels(), rotation=45, ha='right');
+ax1.set_xticklabels(ax1.get_xticklabels(), rotation=45, ha='right');
 
 # Plot two temperature time series in one plot
 df[["AirTC_2","AirTC_1"]].plot(ax=ax2);
 # Rotate the x-labels for better readability
-ax2.set_xticklabels(ax.get_xticklabels(), rotation=45, ha='right');
+ax2.set_xticklabels(ax2.get_xticklabels(), rotation=45, ha='right');
 
 
 # Here is an example of a box plot

@@ -1,3 +1,4 @@
+(installation)=
 # Setup the Jupyter Notebook environment
 
 The materials provided are based on so-called Jupyter notebooks. You have

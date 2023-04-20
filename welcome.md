@@ -12,7 +12,7 @@ The lecutre materials consist of several lessons covering specific elements of t
 :gutter: 3
 
 :::{grid-item-card} 
-:link: fundamentals
+:link: installation 
 :link-type: ref
 <center><b>Getting started</b></center>
 ^^^
@@ -105,9 +105,9 @@ Explore notebook &rarr;
 :::{grid-item}
 :columns: 4
 ````{card} 
-:link: glacier
+:link: weather
 :link-type: ref
-<center><b>Glacier</b></center>
+<center><b>Weather analysis</b></center>
 ^^^
 ```{figure} ./docs/figures/mountain.png
 :width: 100px
