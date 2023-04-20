@@ -493,11 +493,12 @@ title="Print to PDF"
 <li>Dataset is a multi-dimensional, in-memory array database. It is a dict-like container of DataArray objects aligned along any number of shared dimensions, and serves a similar purpose in xarray to the pandas.DataFrame.
 </ul>
 <p>In climate science we often use the NetCDF file format. You can directly read and write xarray objects to disk using to_netcdf(), open_dataset() and open_dataarray(). Suppose you have a netCDF of monthly mean data and we want to calculate the seasonal average. To do this properly, we need to calculate the weighted average considering that each month has a different number of days.</p>
+<p>Here you can download the file <a class="reference external" href="https://github.com/sauterto/clim_env_hydro/blob/main/docs/nb/data/air_temperature_monthly_europe.nc">air_temperature_monthly_europe.nc</a>, which is needed for this exercise. Create a subdirectory with the name data and place the file there.</p>
 <p>First, open the dataset</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load a netcdf dataset with xarray</span>
-<span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s2">&quot;./data/air_temperature_monthly_europe.nc&quot;</span><span class="p">)</span>
+<span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s2">&quot;./data/surface_temperature_monthly_europe.nc&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>

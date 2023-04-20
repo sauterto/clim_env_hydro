@@ -49,7 +49,7 @@ import pandas as pd
 
 
 # Read the data into a DataFrame
-df = pd.read_csv("../data/aws_valley_data_10min.csv", header=1, index_col='TIMESTAMP')
+df = pd.read_csv("https://raw.githubusercontent.com/sauterto/clim_env_hydro/main/docs/nb/data/aws_valley_data_10min.csv", header=1, index_col='TIMESTAMP')
 
 
 # and have a look at the dataframe

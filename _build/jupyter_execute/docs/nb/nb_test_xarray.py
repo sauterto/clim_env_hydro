@@ -51,13 +51,16 @@ import matplotlib.pyplot as plt
 # 
 # In climate science we often use the NetCDF file format. You can directly read and write xarray objects to disk using to_netcdf(), open_dataset() and open_dataarray(). Suppose you have a netCDF of monthly mean data and we want to calculate the seasonal average. To do this properly, we need to calculate the weighted average considering that each month has a different number of days.
 # 
+# Here you can download the file [air_temperature_monthly_europe.nc](https://github.com/sauterto/clim_env_hydro/blob/main/docs/nb/data/air_temperature_monthly_europe.nc), which is needed for this exercise. Create a subdirectory with the name data and place the file there. 
+# 
+# 
 # First, open the dataset
 
 # In[ ]:
 
 
 # Load a netcdf dataset with xarray
-ds = xr.open_dataset("./data/air_temperature_monthly_europe.nc")
+ds = xr.open_dataset("./data/surface_temperature_monthly_europe.nc")
 
 
 # and let's have a look to the dataset structure
