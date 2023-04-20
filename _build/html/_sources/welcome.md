@@ -34,7 +34,7 @@ Explore this article &rarr;
 :width: 100px
 :name: aws_icon
 ```
-<center>This notebook deals with the basics of climatology</center>
+<center>wind, temperature, and radiation</center>
 +++
 Explore notebook &rarr;
 :::
@@ -48,7 +48,7 @@ Explore notebook &rarr;
 :width: 100px
 :name: turbulence_icon
 ```
-<center>Information about the learning platform and first Jupyter Notebook</center>
+<center>turbulence closure, surface energy balance, and soil</center>
 +++
 Explore notebook &rarr;
 :::
@@ -66,7 +66,7 @@ Explore notebook &rarr;
 :width: 100px
 :name: wind_icon
 ```
-<center>Information about the learning platform and first Jupyter Notebook</center>
+<center>atmospheric motions and microclimates</center>
 +++
 Explore notebook &rarr;
 :::
@@ -74,13 +74,13 @@ Explore notebook &rarr;
 :::{grid-item-card} 
 :link: glacier
 :link-type: ref
-<center><b>Glacier</b></center>
+<center><b>Alpine glacier and snow</b></center>
 ^^^
 ```{figure} ./docs/figures/mountain.png
 :width: 100px
 :name: glacier_icon
 ```
-<center>This notebook deals with the basics of climatology</center>
+<center>energy- and mass-balance</center>
 +++
 Explore notebook &rarr;
 :::
@@ -94,7 +94,7 @@ Explore notebook &rarr;
 :width: 100px
 :name: hydro_icon
 ```
-<center>Information about the learning platform and first Jupyter Notebook</center>
+<center>precipitation, evaporation, and runoff</center>
 +++
 Explore notebook &rarr;
 :::
@@ -113,7 +113,7 @@ Explore notebook &rarr;
 :width: 100px
 :name: glacier_icon
 ```
-<center>This notebook deals with the basics of climatology</center>
+<center>weather maps and radiosoundings</center>
 +++
 Explore notebook &rarr;
 ````
