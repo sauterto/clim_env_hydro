@@ -40,13 +40,13 @@ Explore notebook &rarr;
 :::
 
 :::{grid-item-card} 
-:link: wind
+:link: turbulence 
 :link-type: ref
-<center><b>Regional Wind Systems</b></center>
+<center><b>Turbulence and Energy Balance</b></center>
 ^^^
-```{figure} ./docs/figures/wind.png
+```{figure} ./docs/figures/mess.png
 :width: 100px
-:name: wind_icon
+:name: turbulence_icon
 ```
 <center>Information about the learning platform and first Jupyter Notebook</center>
 +++
@@ -58,13 +58,13 @@ Explore notebook &rarr;
 :gutter: 3
 
 :::{grid-item-card} 
-:link: turbulence
+:link: wind
 :link-type: ref
-<center><b>Turbulence</b></center>
+<center><b>Regional Wind Systems</b></center>
 ^^^
-```{figure} ./docs/figures/mess.png
+```{figure} ./docs/figures/wind.png
 :width: 100px
-:name: turbulence_icon
+:name: wind_icon
 ```
 <center>Information about the learning platform and first Jupyter Notebook</center>
 +++
