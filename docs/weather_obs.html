@@ -367,6 +367,77 @@ title="Print to PDF"
 </div>
 </div>
 </div>
+<div class="attention admonition">
+<p class="admonition-title">Homework Assignment  </p>
+<p><strong>Title</strong>: Weather station data analysis and comparison with ERA5 reanalysis data</p>
+<p><strong>Objective</strong>:</p>
+<p>To perform an in-depth quality assessment of weather station data
+and compare it with ERA5 reanalysis data using Python and Jupyter notebooks.
+The exercise can be solved using the knowledge and skills taught in the
+provided exercise notebooks, including data importing, data cleaning and
+quality assessment, data visualization, and comparison with ERA5 data. Make
+sure to review the notebooks carefully and use the appropriate functions and
+libraries to complete the exercise.</p>
+<p><strong>Materials</strong>:</p>
+<ul class="simple">
+<li><p>Weather station data in CSV format. The station is located at 81.4721E and
+30.2711N, and measures temperature (T), relative humidity(RH), air pressure
+(Pressure), shortwave radiation (Radiation), wind speed (WS), and wind
+direction (WD)</p></li>
+<li><p>ERA5 reanalysis data in netCDF format (needs to be downloaded from the ECMWF webpage)</p></li>
+<li><p>Jupyter notebook with Python 3 kernel</p></li>
+<li><p>Python libraries: pandas, xarray, MetPy, plotly, rosely</p></li>
+</ul>
+<p><em>Procedure:</em></p>
+<p><strong>Part 1: Quality Assessment of Weather Station Data</strong></p>
+<ol class="simple">
+<li><p>Import the weather station data into a pandas DataFrame using the read_csv function.</p></li>
+<li><p>Check for missing data, outliers, and unrealistic values. Remove or fill in missing data and outliers as necessary.</p>
+<ul class="simple">
+<li><p>Are there any outliers? If so, which ones and when do they occur?</p></li>
+<li><p>Are there any missing data? If so, when do they occur and try to fill them?</p></li>
+</ul>
+</li>
+<li><p>Calculate basic statistics (e.g. mean, standard deviation, minimum, maximum) for each variable in the data set. Analyze the statistics to identify any unusual patterns or trends.</p>
+<ul class="simple">
+<li><p>Do the statistics meet expectations?</p></li>
+<li><p>What are the monthly, seasonal and annual averages?</p></li>
+</ul>
+</li>
+</ol>
+<p><strong>Part 2: Visualization and Analysis of Weather Station Data</strong></p>
+<ol class="simple">
+<li><p>Create graphs to visualize the weather station data using matplotlib and/or plotly. Use line graphs for time series data and a windrose plots for wind speed and direction.</p></li>
+<li><p>Analyze the data and answer the following questions:</p>
+<ul class="simple">
+<li><p>What climate zone is the station located in?</p></li>
+<li><p>What is the wettest/driest and warmest/coldest season?</p></li>
+<li><p>What is the predominant wind direction?</p></li>
+<li><p>Can differences in wind direction be detected during the course of the day?</p></li>
+</ul>
+</li>
+</ol>
+<p><strong>Part 3: Comparison of Weather Station Data with ERA5 Reanalysis Data</strong></p>
+<ol class="simple">
+<li><p>Download ERA5 reanalysis data for temperature, relative humidity and wind for the same region/location as the weather station data.</p></li>
+<li><p>Import the ERA5 reanalysis data using xarray.</p></li>
+<li><p>Calculate basic statistics for each variable in the ERA5 reanalysis data set.</p></li>
+<li><p>Compare the ERA5 reanalysis data with the weather station data using MetPy, xarray, pandas and rosely.</p>
+<ul class="simple">
+<li><p>Correlate the ERA5 data with the station data using the <strong>xarray.corr()</strong> function. Check the xarray webpage for details.</p></li>
+<li><p>How well does the ERA5 reanalysis data represent the location?</p></li>
+<li><p>Which variables are well represented, which less so?</p></li>
+<li><p>Does the agreement improve when monthly or annual averages are compared?</p></li>
+</ul>
+</li>
+</ol>
+<p><strong>Assessment</strong>:</p>
+<p>Your work will be assessed on the basis of the accuracy and completeness of
+the analysis and the ability to present your results clearly and concisely. It
+should be evident that you have a basic understanding of the process of
+assessing the quality of weather station data and comparing it with ERA5
+reanalysis data.</p>
+</div>
 </section>
 
     <script type="text/x-thebe-config">
