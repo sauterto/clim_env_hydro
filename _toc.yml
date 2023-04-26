@@ -14,7 +14,7 @@ parts:
 - caption: Lectures 
   numbered: true 
   chapters:
-  - file: docs/climatology.md  
+  - file: docs/weather_obs.md  
   - file: docs/turbulence.md  
   - file: docs/wind_system.md  
   - file: docs/glacier.md  

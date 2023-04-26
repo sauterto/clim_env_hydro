@@ -37,7 +37,7 @@ import pandas as pd
 import numpy as np
 
 # Load CSV file
-df = pd.read_csv("./data/FLX_CH-Dav_missing.csv", parse_dates=True, index_col=0)
+df = pd.read_csv("https://raw.githubusercontent.com/sauterto/clim_env_hydro/main/docs/nb/data/FLX_CH-Dav_missing.csv", parse_dates=True, index_col=0)
 
 # The file contains:
 # Air temperature       :: t2m
