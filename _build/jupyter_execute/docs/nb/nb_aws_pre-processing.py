@@ -187,11 +187,13 @@ else:
 # In[ ]:
 
 
-# resample dataframe with different aggregation for each column and return NaN for 
-# columns with insufficient elements
-threshold =  23 # minimum number of elements required in resampling set
-resampled_thres = resampled_hourly.resample('1M').agg({'t2m': lambda x: x.dropna().mean() if x.isna().sum() < threshold else np.nan,
-                                    'RH': lambda x: x.dropna().mean() if x.isna().sum() < threshold else np.nan})
+# resample dataframe to monthly mean values with different aggregation for each column and return NaN for 
+# columns with insufficient valid elements
+threshold =  10 # What is the maximum percentage of NaNs that may be included in the averaging? Here, we set the threshold to 10%
+
+# This is a pythonic way in solving this problem
+resampled_thres = resampled_hourly.resample('1M').agg({'t2m': lambda x: x.dropna().mean() if (((x.isna().sum())/len(x))*100) < threshold else np.nan,
+                                    'RH': lambda x: x.dropna().mean() if (((x.isna().sum())/len(x))*100) < threshold else np.nan})
 
 # Find dates with missing data
 missing_dates = resampled_thres['t2m'][resampled_thres['t2m'].isnull()].index
@@ -208,7 +210,7 @@ resampled_thres['t2m'].plot()
 
 
 # <div class="alert alert-block alert-warning">
-# <b>Tip!</b> Change the threshold and watch how the time series changes.
+# <b>Tip!</b> Change the threshold (percetage) and watch how the time series changes.
 # </div>
 
 # Here is another example. We can calculate the seasonal mean by resampling the data using the resample() method, and taking the mean of each season:
