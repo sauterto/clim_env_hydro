@@ -4,7 +4,7 @@
 # (nb_aws)=
 # # Weather station observations
 # 
-# In this exercise, we will use **pandas**, **xarray**, **MetPy** and **plotly** to analyze weather station data from a csv file. We will perform data cleaning, manipulation, and visualization to gain insights into the data and explore its characteristics.
+# In this exercise, we will use **pandas**, **xarray**, **MetPy**, **plotly**, and **rosely** to analyze weather station data from a csv file. We will perform data cleaning, manipulation, and visualization to gain insights into the data and explore its characteristics.
 # 
 
 # <div class="alert alert-block alert-success">
@@ -22,7 +22,8 @@
 # <ul>
 # <li>Basic knowledge of Python, Jupyter Notebooks, and data analysis</li>
 # <li>Familiarity with MetPy, Pandas, and Xarray</li>
-# <li>A csv file containing weather station data (can be downloaded <a href="https://github.com/sauterto/clim_env_hydro/blob/main/docs/nb/data/FLX_CH-Dav_missing.csv" download>here</a>)</li>
+#     <li>The additional packages <b>rosely</b> and <b>plotly</b> must be installed
+# <li>A csv file containing weather station data (can also be downloaded <a href="https://github.com/sauterto/clim_env_hydro/blob/main/docs/nb/data/FLX_CH-Dav_missing.csv" download>here</a>)</li>
 # </ul>  
 # </div>
 
