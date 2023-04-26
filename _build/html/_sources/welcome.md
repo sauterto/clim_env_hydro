@@ -29,7 +29,7 @@ Explore this article &rarr;
 :::
 
 :::{grid-item-card} 
-:link:  
+:link: aws  
 :link-type: ref
 <center><b>Weather observations</b></center>
 ^^^
