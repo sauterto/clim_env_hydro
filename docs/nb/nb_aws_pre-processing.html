@@ -1,0 +1,1025 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Weather station observations &#8212; Field Course of Climatology and Environmenal Hydrology</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Field Course of Climatology and Environmenal Hydrology</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../welcome.html">
+                    Welcome to the Field Course of Climatology and Environmental Hydrology
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Getting started
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../installation.html">
+   1. Setup the Jupyter Notebook environment
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../test_environment.html">
+   2. Testing the learning environment
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Lectures
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../turbulence.html">
+   1. Turbulence and Energy Fluxes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../wind_system.html">
+   2. Regional Wind Systems
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../glacier.html">
+   3. Glaciers and Snow
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../hydrology.html">
+   4. Hydrology
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../weather_maps.html">
+   5. Weather maps
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/sauterto/clim_env_hydro/main?urlpath=lab/tree/./docs/nb/nb_aws_pre-processing.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://colab.research.google.com/github/sauterto/clim_env_hydro/blob/main/./docs/nb/nb_aws_pre-processing.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="initThebeSBT()"
+  class="headerbtn headerbtn-launch-thebe"
+  data-toggle="tooltip"
+data-placement="left"
+title="Launch Thebe"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="headerbtn__text-container">Live Code</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/sauterto/clim_env_hydro"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/sauterto/clim_env_hydro/issues/new?title=Issue%20on%20page%20%2Fdocs/nb/nb_aws_pre-processing.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/docs/nb/nb_aws_pre-processing.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#load-weather-station-data">
+   Load weather station data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#replace-missing-data">
+   Replace missing data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#resample-data">
+   Resample data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#visualize-temperature-and-relative-humdity">
+   Visualize temperature and relative humdity
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#visualize-precipitation-data">
+   Visualize precipitation data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quality-assessment-of-wind-data">
+   Quality assessment of wind data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-a-windrose">
+   Create a Windrose
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#calculate-some-indices">
+   Calculate some indices
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Weather station observations</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#load-weather-station-data">
+   Load weather station data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#replace-missing-data">
+   Replace missing data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#resample-data">
+   Resample data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#visualize-temperature-and-relative-humdity">
+   Visualize temperature and relative humdity
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#visualize-precipitation-data">
+   Visualize precipitation data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quality-assessment-of-wind-data">
+   Quality assessment of wind data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#create-a-windrose">
+   Create a Windrose
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#calculate-some-indices">
+   Calculate some indices
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="weather-station-observations">
+<span id="nb-aws"></span><h1>Weather station observations<a class="headerlink" href="#weather-station-observations" title="Permalink to this headline">#</a></h1>
+<p>In this exercise, we will use <strong>pandas</strong>, <strong>xarray</strong>, <strong>MetPy</strong> and <strong>plotly</strong> to analyze weather station data from a csv file. We will perform data cleaning, manipulation, and visualization to gain insights into the data and explore its characteristics.</p>
+<div class="alert alert-block alert-success">
+<b>Learning objectives:</b><br>
+<ul>
+ <li>Get familiar with weather station data</li>
+ <li>Quality assessment of measurement time series</li>
+ <li>Data resampling</li>
+ <li>Visualisation with interactive plots</li>
+</ul>  
+</div><div class="alert alert-block alert-info">
+<b>Prerequisites</b><br>
+<ul>
+<li>Basic knowledge of Python, Jupyter Notebooks, and data analysis</li>
+<li>Familiarity with MetPy, Pandas, and Xarray</li>
+<li>A csv file containing weather station data (can be downloaded <a href="https://github.com/sauterto/clim_env_hydro/blob/main/docs/nb/data/FLX_CH-Dav_missing.csv" download>here</a>)</li>
+</ul>  
+</div><section id="load-weather-station-data">
+<h2>Load weather station data<a class="headerlink" href="#load-weather-station-data" title="Permalink to this headline">#</a></h2>
+<p>In this example, the code reads in the 30-min weather stations data from a CSV file using the ‘<strong>read_csv()</strong>’ method from pandas, with the parse_dates and index_col parameters set to True and 0, respectively. This ensures that the first column of the CSV file (the timestamps) is used as the index of the DataFrame, and that the timestamps are converted to datetime objects.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Load CSV file</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;./data/FLX_CH-Dav_missing.csv&quot;</span><span class="p">,</span> <span class="n">parse_dates</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># The file contains:</span>
+<span class="c1"># Air temperature       :: t2m</span>
+<span class="c1"># Relative humdity      :: RH</span>
+<span class="c1"># Precipitation         :: precip</span>
+<span class="c1"># Wind speed            :: WS</span>
+<span class="c1"># Wind direction        :: WD</span>
+<span class="c1"># Net radiation         :: NETRAD</span>
+<span class="c1"># Incoming shortwave    :: SW_IN</span>
+<span class="c1"># Outgoing shortwave    :: SW_OUT</span>
+<span class="c1"># Incoming longwave     :: LW_IN</span>
+<span class="c1"># Outgoing longwave     :: LW_OUT</span>
+<span class="c1"># Sensible heat flux    :: H</span>
+<span class="c1"># Latent heat flux      :: LE</span>
+<span class="c1"># Ground heat flux      :: QG</span>
+<span class="c1"># Surface temperature   :: TS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-block alert-warning">
+<b>Broaden Knowledge & Comprehension</b></br>
+Which other file formats can be read in with pandas?
+</div></section>
+<section id="replace-missing-data">
+<h2>Replace missing data<a class="headerlink" href="#replace-missing-data" title="Permalink to this headline">#</a></h2>
+<p>Next, we want to view the data to ensure it has been loaded correctly. We use the head() method from Pandas to display the first five rows of the DataFrame.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The DataFrame has missing values with the dummy value -9999. We then use the replace method to replace all occurrences of -9999 with NaN (Not a Number), using the NumPy np.nan constant. Finally, we print the updated DataFrame. The inplace=True argument ensures that the original DataFrame is modified, rather than a copy being created.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># replace -9999 with NaN</span>
+<span class="n">df</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="o">-</span><span class="mi">9999</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">df</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-block alert-warning">
+<b>Hint!</b> Compare the SW_OUT and LW_OUT column with those of the previous table.
+</div><p>To check for missing values in a Pandas DataFrame, you can use the <strong>isna()</strong> or <strong>isnull()</strong> method, which returns a Boolean DataFrame of the same shape indicating which cells contain missing values.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># check for missing values</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">isna</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>You can also use the isna() or isnull() method along with the <strong>sum()</strong> method to count the number of missing values in each column:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># count the number of missing values in each column</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-block alert-warning">
+<b>Broaden Knowledge & Comprehension</b></br> Find out how to delete all rows containing NaNs with pandas. Note: Check the pandas webpage.
+</div><p>We can also check whether whole periods (missing timestamps) are missing, by generating a date range using the ‘<strong>date_range()</strong>’ method from pandas, with the start and end parameters set to the minimum and maximum timestamps in the DataFrame, respectively, and the freq parameter set to the expected frequency of the time series (e.g. ‘30T’ for every 30 minutes).</p>
+<p>The “<strong>difference()</strong>’ method is then used to compare the date range to the DataFrame index. If there are any missing periods in the time series, then the resulting set will be non-empty, and the code will print ‘The time series is not continuous’. Otherwise, the time series is continuous and the code will print ‘The time series is continuous’.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Check for missing periods</span>
+<span class="k">if</span> <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">end</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;30T&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">difference</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The time series is continuous </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The time series is not continuous </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">((</span><span class="s1">&#39;These dates are missing: </span><span class="se">\n</span><span class="s1"> </span><span class="si">{0}</span><span class="s1">&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">end</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> 
+                                                                 <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;30T&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">difference</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Calculate some statistics and check if ranges are reasonable</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 95th-Quantile (extremes)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="n">q</span><span class="o">=</span><span class="mf">0.95</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Standard deviation</span>
+<span class="n">df</span><span class="o">.</span><span class="n">std</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Mean values</span>
+<span class="n">df</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-block alert-warning">
+<b>Broaden Knowledge & Comprehension</b></br> Are these values reasonable?
+</div></section>
+<section id="resample-data">
+<h2>Resample data<a class="headerlink" href="#resample-data" title="Permalink to this headline">#</a></h2>
+<p>The ‘<strong>resample()</strong>’ method is then used to resample the data to hourly frequency, with different aggregation methods specified for each column using the ‘<strong>agg()</strong>’ method. The Temperature column is aggregated using the mean() method, the Relative Humidity column is aggregated using the min() method, the Wind Speed column is aggregated using the max() method, the Wind Direction column is aggregated using the last() method, and the Radiation fluxs are aggregated using the mean() method. This effectively aggregates the data to hourly intervals using different aggregation methods for each column.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Resample the data to hourly frequency with different aggregation methods for each column</span>
+<span class="n">resampled_hourly</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;1H&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s1">&#39;t2m&#39;</span><span class="p">:</span> <span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="s1">&#39;RH&#39;</span><span class="p">:</span> <span class="s1">&#39;min&#39;</span><span class="p">,</span>
+                                  <span class="s1">&#39;WS&#39;</span><span class="p">:</span> <span class="s1">&#39;max&#39;</span><span class="p">,</span> <span class="s1">&#39;WD&#39;</span><span class="p">:</span> <span class="s1">&#39;last&#39;</span><span class="p">,</span> <span class="s1">&#39;NETRAD&#39;</span><span class="p">:</span> <span class="s1">&#39;mean&#39;</span><span class="p">,</span>
+                                 <span class="s1">&#39;precip&#39;</span><span class="p">:</span><span class="s1">&#39;sum&#39;</span><span class="p">,</span> <span class="s1">&#39;SW_IN&#39;</span><span class="p">:</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span> <span class="s1">&#39;SW_OUT&#39;</span><span class="p">:</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span>
+                                 <span class="s1">&#39;LW_IN&#39;</span><span class="p">:</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span> <span class="s1">&#39;LW_OUT&#39;</span><span class="p">:</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span> <span class="s2">&quot;H&quot;</span><span class="p">:</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span> <span class="s1">&#39;LE&#39;</span><span class="p">:</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span>
+                                  <span class="s1">&#39;QG&#39;</span><span class="p">:</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span> <span class="s1">&#39;TS&#39;</span><span class="p">:</span><span class="s2">&quot;mean&quot;</span><span class="p">})</span>
+
+<span class="c1"># Find dates with missing data</span>
+<span class="n">missing_dates</span> <span class="o">=</span> <span class="n">resampled_hourly</span><span class="p">[</span><span class="s1">&#39;t2m&#39;</span><span class="p">][</span><span class="n">resampled_hourly</span><span class="p">[</span><span class="s1">&#39;t2m&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">()]</span><span class="o">.</span><span class="n">index</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dates with missing data:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">resampled_hourly</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">missing_dates</span><span class="p">])</span>
+
+<span class="c1"># Check if the time series is continuous (having missing dates)</span>
+<span class="k">if</span> <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">end</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;H&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">difference</span><span class="p">(</span><span class="n">resampled_hourly</span><span class="o">.</span><span class="n">index</span><span class="p">)</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The time series is continuous </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The time series is not continuous </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-block alert-warning">
+<b>Broaden Knowledge & Comprehension</b></br> How do you modify the code to get annual means? Note: See the information on the Pandas page about the resample method, and check <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#timeseries-offset-aliases">here</a> for a list of frequency aliases.
+</div><p>If there are long periods without data, the resampling process will still produce hourly intervals with NaNs in place of missing values. The length of the gaps between valid data points will be reflected in the number of consecutive NaN values in the resampled DataFrame.</p>
+<p>You can also simply determine the minimum number of elements that must be included in the resampling. To resample a DataFrame and return NaN values for columns that do not have sufficient number of elements in the resampling set, you can use the ‘<strong>resample()</strong>’ method in combination with’‘<strong>agg()</strong>’ method and a custom aggregation function that checks for the number of elements in each column and returns NaN if the count is less than a specific threshold. Here’s an example:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># resample dataframe with different aggregation for each column and return NaN for </span>
+<span class="c1"># columns with insufficient elements</span>
+<span class="n">threshold</span> <span class="o">=</span>  <span class="mi">23</span> <span class="c1"># minimum number of elements required in resampling set</span>
+<span class="n">resampled_thres</span> <span class="o">=</span> <span class="n">resampled_hourly</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;1M&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s1">&#39;t2m&#39;</span><span class="p">:</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">&lt;</span> <span class="n">threshold</span> <span class="k">else</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span>
+                                    <span class="s1">&#39;RH&#39;</span><span class="p">:</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">&lt;</span> <span class="n">threshold</span> <span class="k">else</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">})</span>
+
+<span class="c1"># Find dates with missing data</span>
+<span class="n">missing_dates</span> <span class="o">=</span> <span class="n">resampled_thres</span><span class="p">[</span><span class="s1">&#39;t2m&#39;</span><span class="p">][</span><span class="n">resampled_thres</span><span class="p">[</span><span class="s1">&#39;t2m&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">()]</span><span class="o">.</span><span class="n">index</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dates with missing data:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">resampled_thres</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">missing_dates</span><span class="p">])</span>
+
+<span class="c1"># Check if the time series is continuous</span>
+<span class="k">if</span> <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">end</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;H&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">difference</span><span class="p">(</span><span class="n">resampled_hourly</span><span class="o">.</span><span class="n">index</span><span class="p">)</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The time series is continuous </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The time series is not continuous </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+    
+<span class="c1"># Plot the temperature time series</span>
+<span class="n">resampled_thres</span><span class="p">[</span><span class="s1">&#39;t2m&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-block alert-warning">
+<b>Tip!</b> Change the threshold and watch how the time series changes.
+</div><p>Here is another example. We can calculate the seasonal mean by resampling the data using the resample() method, and taking the mean of each season:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Resample to the seasonal mean starting from December</span>
+<span class="n">seasonal_mean</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;QS-DEC&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s1">&#39;t2m&#39;</span><span class="p">:</span> <span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="s1">&#39;RH&#39;</span><span class="p">:</span> <span class="s1">&#39;min&#39;</span><span class="p">,</span>
+                                  <span class="s1">&#39;WS&#39;</span><span class="p">:</span> <span class="s1">&#39;max&#39;</span><span class="p">,</span> <span class="s1">&#39;WD&#39;</span><span class="p">:</span> <span class="s1">&#39;last&#39;</span><span class="p">,</span> <span class="s1">&#39;NETRAD&#39;</span><span class="p">:</span> <span class="s1">&#39;mean&#39;</span><span class="p">,</span>
+                                 <span class="s1">&#39;precip&#39;</span><span class="p">:</span><span class="s1">&#39;sum&#39;</span><span class="p">,</span> <span class="s1">&#39;SW_IN&#39;</span><span class="p">:</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span> <span class="s1">&#39;SW_OUT&#39;</span><span class="p">:</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span>
+                                 <span class="s1">&#39;LW_IN&#39;</span><span class="p">:</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span> <span class="s1">&#39;LW_OUT&#39;</span><span class="p">:</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span> <span class="s2">&quot;H&quot;</span><span class="p">:</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span> <span class="s1">&#39;LE&#39;</span><span class="p">:</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span>
+                                  <span class="s1">&#39;QG&#39;</span><span class="p">:</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span> <span class="s1">&#39;TS&#39;</span><span class="p">:</span><span class="s2">&quot;mean&quot;</span><span class="p">})</span>
+
+<span class="c1"># Find out which year had the hottest season</span>
+<span class="n">hottest_season_year</span> <span class="o">=</span> <span class="n">seasonal_mean</span><span class="p">[</span><span class="s1">&#39;t2m&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">idxmax</span><span class="p">()</span><span class="o">.</span><span class="n">year</span>
+
+<span class="c1"># Print the hottest year</span>
+<span class="nb">print</span><span class="p">((</span><span class="s1">&#39;The hottest year was in </span><span class="si">{0}</span><span class="s1">&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">hottest_season_year</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>To find the hottest seasons (indices) above a certain quantile using pandas, you can use the quantile() method to calculate the value of the quantile, and then use boolean indexing to filter the DataFrame based on the values above that quantile.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calculate the 95th percentile</span>
+<span class="n">quantile_95</span> <span class="o">=</span> <span class="n">seasonal_mean</span><span class="p">[</span><span class="s1">&#39;t2m&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.95</span><span class="p">)</span>
+
+<span class="c1"># Filter the DataFrame based on values above the 95th percentile</span>
+<span class="n">indices_above_quantile</span> <span class="o">=</span> <span class="n">seasonal_mean</span><span class="p">[</span><span class="n">seasonal_mean</span><span class="p">[</span><span class="s1">&#39;t2m&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">quantile_95</span><span class="p">]</span><span class="o">.</span><span class="n">index</span>
+
+<span class="c1"># Print the hottest years above the 95% quantile</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The hottest years were in: </span><span class="se">\b</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">indices_above_quantile</span><span class="o">.</span><span class="n">format</span><span class="p">()))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-block alert-warning">
+<b>Broaden Knowledge & Comprehension</b></br> How do you modify the code to get annual means? Note: See the information on the Pandas page about the resample method, and check <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html#timeseries-offset-aliases">here</a> for a list of frequency aliases. Try to identify the coldest year.
+</div></section>
+<section id="visualize-temperature-and-relative-humdity">
+<h2>Visualize temperature and relative humdity<a class="headerlink" href="#visualize-temperature-and-relative-humdity" title="Permalink to this headline">#</a></h2>
+<p>Finally, we can visualize the data to identify patterns and trends in the weather. We use the ‘<strong>plotly</strong>’ library to create interactive plots. In this code, we use ‘<strong>make_subplots()</strong>’
+to create two panels in a single figure, with a shared x-axis. We then added the temperature and precipitation data as dashed lines in their respective panels using ‘<strong>go.Scatter()</strong>’
+.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import the plotly library</span>
+<span class="kn">import</span> <span class="nn">plotly.graph_objs</span> <span class="k">as</span> <span class="nn">go</span>
+<span class="kn">from</span> <span class="nn">plotly.subplots</span> <span class="kn">import</span> <span class="n">make_subplots</span>
+
+<span class="c1"># Creating the plot with two rows and one column. The plots share the same x-axis so that only labels </span>
+<span class="c1"># for the lower plots are shown</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">make_subplots</span><span class="p">(</span><span class="n">rows</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">cols</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">shared_xaxes</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Adding the temperature data as a dashed line in the top panel</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">resampled_thres</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">resampled_thres</span><span class="p">[</span><span class="s1">&#39;t2m&#39;</span><span class="p">],</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;royalblue&#39;</span><span class="p">,</span> <span class="n">dash</span><span class="o">=</span><span class="s1">&#39;solid&#39;</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Temperature (°C)&#39;</span><span class="p">),</span>
+                         <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Adding the precipitation data as a dashed line in the bottom panel</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">resampled_thres</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">resampled_thres</span><span class="p">[</span><span class="s1">&#39;RH&#39;</span><span class="p">],</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">dash</span><span class="o">=</span><span class="s1">&#39;solid&#39;</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Precipitation (mm)&#39;</span><span class="p">),</span>
+                         <span class="n">row</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Adjusting the layout</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Temperature and Precipitation&#39;</span><span class="p">,</span> <span class="n">plot_bgcolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+                  <span class="n">yaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Temperature (°C)&#39;</span><span class="p">,</span> <span class="n">showgrid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">gridcolor</span><span class="o">=</span><span class="s1">&#39;lightgray&#39;</span><span class="p">,</span> <span class="n">gridwidth</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+                  <span class="n">yaxis2</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Precipitation (mm)&#39;</span><span class="p">,</span> <span class="n">showgrid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">gridcolor</span><span class="o">=</span><span class="s1">&#39;lightgray&#39;</span><span class="p">,</span> <span class="n">gridwidth</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+                  <span class="n">xaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">tickformat</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1">.%m.%Y&#39;</span><span class="p">,</span> <span class="n">showgrid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">gridcolor</span><span class="o">=</span><span class="s1">&#39;lightgray&#39;</span><span class="p">,</span> <span class="n">gridwidth</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+                  <span class="n">xaxis2</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="n">tickformat</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1">.%m.%Y&#39;</span><span class="p">,</span> <span class="n">showgrid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">gridcolor</span><span class="o">=</span><span class="s1">&#39;lightgray&#39;</span><span class="p">,</span> <span class="n">gridwidth</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+
+
+<span class="c1"># Adjusting the axes</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_xaxes</span><span class="p">(</span><span class="n">nticks</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span><span class="n">nticks</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_xaxes</span><span class="p">(</span><span class="n">nticks</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span><span class="n">nticks</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Showing the plot</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="visualize-precipitation-data">
+<h2>Visualize precipitation data<a class="headerlink" href="#visualize-precipitation-data" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+
+<span class="c1"># Resample the data to hourly frequency with different aggregation methods for each column</span>
+<span class="n">resampled_monthly</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;1M&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s1">&#39;t2m&#39;</span><span class="p">:</span> <span class="s1">&#39;mean&#39;</span><span class="p">,</span> <span class="s1">&#39;RH&#39;</span><span class="p">:</span> <span class="s1">&#39;min&#39;</span><span class="p">,</span>
+                                  <span class="s1">&#39;WS&#39;</span><span class="p">:</span> <span class="s1">&#39;max&#39;</span><span class="p">,</span> <span class="s1">&#39;WD&#39;</span><span class="p">:</span> <span class="s1">&#39;last&#39;</span><span class="p">,</span> <span class="s1">&#39;NETRAD&#39;</span><span class="p">:</span> <span class="s1">&#39;mean&#39;</span><span class="p">,</span>
+                                 <span class="s1">&#39;precip&#39;</span><span class="p">:</span><span class="s1">&#39;sum&#39;</span><span class="p">,</span> <span class="s1">&#39;SW_IN&#39;</span><span class="p">:</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span> <span class="s1">&#39;SW_OUT&#39;</span><span class="p">:</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span>
+                                 <span class="s1">&#39;LW_IN&#39;</span><span class="p">:</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span> <span class="s1">&#39;LW_OUT&#39;</span><span class="p">:</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span> <span class="s2">&quot;H&quot;</span><span class="p">:</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span> <span class="s1">&#39;LE&#39;</span><span class="p">:</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span>
+                                  <span class="s1">&#39;QG&#39;</span><span class="p">:</span><span class="s2">&quot;mean&quot;</span><span class="p">,</span> <span class="s1">&#39;TS&#39;</span><span class="p">:</span><span class="s2">&quot;mean&quot;</span><span class="p">})</span>
+
+<span class="c1"># Create a bar plot with Plotly Express</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">resampled_monthly</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">resampled_monthly</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;precip&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;precip&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Monthly Precipitation&#39;</span><span class="p">)</span>
+
+<span class="c1"># Add axis labels and title</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">xaxis_title</span><span class="o">=</span><span class="s1">&#39;Month&#39;</span><span class="p">,</span> <span class="n">yaxis_title</span><span class="o">=</span><span class="s1">&#39;Precipitation (mm)&#39;</span><span class="p">,</span> <span class="n">title_x</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span>
+                  <span class="n">plot_bgcolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">400</span><span class="p">,)</span>
+
+<span class="c1"># Show the plot</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>We can also plot the distribution of the monthly precipitation. To do this, we estimate the probability density function with a kernel-density estimate using Gaussian kernels ‘<strong>gaussian_kde()</strong>’. Kernel density estimation is a way to estimate the probability density function (PDF) of a random variable in a non-parametric way.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">stats</span>
+<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
+
+<span class="c1"># estimate PDF with KDE</span>
+<span class="n">kde</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">gaussian_kde</span><span class="p">(</span><span class="n">resampled_monthly</span><span class="p">[</span><span class="s1">&#39;precip&#39;</span><span class="p">])</span>
+
+<span class="c1"># create a grid of x values for plotting</span>
+<span class="n">x_vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">resampled_monthly</span><span class="p">[</span><span class="s1">&#39;precip&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="n">num</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+
+<span class="c1"># evaluate the PDF at the x values</span>
+<span class="n">pdf_vals</span> <span class="o">=</span> <span class="n">kde</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">x_vals</span><span class="p">)</span>
+
+<span class="c1"># plot the PDF with Plotly</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x_vals</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">pdf_vals</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="quality-assessment-of-wind-data">
+<h2>Quality assessment of wind data<a class="headerlink" href="#quality-assessment-of-wind-data" title="Permalink to this headline">#</a></h2>
+<p>We remove rows where the wind speed is greater than 100, since that value is likely an outlier. Finally, we remove any rows where the wind direction is not between 0 and 360 degrees, or where the wind direction is not a number using boolean indexing. You can modify this code to perform additional quality assessment checks, depending on your specific requirements.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Drop rows with missing wind data</span>
+<span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;WS&quot;</span><span class="p">,</span> <span class="s2">&quot;WD&quot;</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Remove rows where wind speed is 0</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;WS&quot;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">]</span>
+
+<span class="c1"># Remove rows where wind speed is greater than 100</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;WS&quot;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">]</span>
+
+<span class="c1"># Remove rows where wind direction is not between 0 and 360 degrees</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;WS&quot;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;WS&quot;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">360</span><span class="p">)]</span>
+
+<span class="c1"># Remove rows where wind direction is not a number</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">isfinite</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;WD&quot;</span><span class="p">])]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="create-a-windrose">
+<h2>Create a Windrose<a class="headerlink" href="#create-a-windrose" title="Permalink to this headline">#</a></h2>
+<p>In this example, we use the <strong>rosely</strong> library to create a WindRose object to create the windrose chart.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import rosely</span>
+<span class="kn">from</span> <span class="nn">rosely</span> <span class="kn">import</span> <span class="n">WindRose</span>
+
+<span class="c1"># Create a WindRose object with the resampled hourly data</span>
+<span class="n">WR</span> <span class="o">=</span> <span class="n">WindRose</span><span class="p">(</span><span class="n">resampled_hourly</span><span class="p">)</span>
+
+<span class="c1"># create renaming dictionary - the WindRose object requires the variable names ws and wd. We have</span>
+<span class="c1"># to tell the Object the name of our Variables: WS, WD</span>
+<span class="n">names</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;WS&#39;</span><span class="p">:</span><span class="s1">&#39;ws&#39;</span><span class="p">,</span> <span class="s1">&#39;WD&#39;</span><span class="p">:</span><span class="s1">&#39;wd&#39;</span><span class="p">}</span>
+
+<span class="c1"># calculate wind statistics for 8 sectors</span>
+<span class="n">WR</span><span class="o">.</span><span class="n">calc_stats</span><span class="p">(</span><span class="n">normed</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span> <span class="n">variable_names</span><span class="o">=</span><span class="n">names</span><span class="p">)</span>
+
+<span class="c1"># Generate windrose plot</span>
+<span class="n">WR</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+    <span class="n">template</span><span class="o">=</span><span class="s1">&#39;plotly_dark&#39;</span><span class="p">,</span>
+    <span class="n">colors</span><span class="o">=</span><span class="s1">&#39;haline&#39;</span><span class="p">,</span>
+    <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Davos, Switzerland&#39;</span><span class="p">,</span>
+    <span class="n">output_type</span><span class="o">=</span><span class="s1">&#39;show&#39;</span><span class="p">,</span>
+    <span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+    <span class="n">height</span><span class="o">=</span><span class="mi">600</span>
+<span class="p">)</span>
+
+<span class="c1"># To view the results of the wind statistics that will be used for the wind rose later, </span>
+<span class="c1"># view the WindRose.wind_df which is created after running WindRose.calc_stats()</span>
+<span class="c1"># Here we all speed and fequencies for the northerly sector</span>
+<span class="n">WR</span><span class="o">.</span><span class="n">wind_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">WR</span><span class="o">.</span><span class="n">wind_df</span><span class="o">.</span><span class="n">direction</span><span class="o">==</span><span class="s1">&#39;N&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-block alert-warning">
+<b>Broaden Knowledge & Comprehension</b></br> Plot the statistics for other sectors.
+</div></section>
+<section id="calculate-some-indices">
+<h2>Calculate some indices<a class="headerlink" href="#calculate-some-indices" title="Permalink to this headline">#</a></h2>
+<p>In this example, we load the weather data from a CSV file and convert the temperature from Fahrenheit to Celsius. We then calculate the wind direction and speed, dew point temperature, heat index, and wind chill using MetPy functions. We also create a daily resampled DataFrame and plot the daily mean temperature and a wind rose.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">metpy.calc</span> <span class="k">as</span> <span class="nn">mpcalc</span>
+<span class="kn">from</span> <span class="nn">metpy.units</span> <span class="kn">import</span> <span class="n">units</span>
+
+<span class="c1"># Convert the temperature from Fahrenheit to Celsius</span>
+<span class="n">resampled_monthly</span><span class="p">[</span><span class="s1">&#39;t2m&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">((</span><span class="n">resampled_monthly</span><span class="p">[</span><span class="s1">&#39;t2m&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="mi">32</span><span class="p">)</span> <span class="o">*</span> <span class="mi">5</span><span class="o">/</span><span class="mi">9</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># Calculate the wind direction from the U and V components</span>
+<span class="n">u</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">mpcalc</span><span class="o">.</span><span class="n">wind_components</span><span class="p">(</span><span class="n">resampled_monthly</span><span class="p">[</span><span class="s1">&#39;WS&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span> <span class="o">*</span> <span class="n">units</span><span class="p">(</span><span class="s1">&#39;m/s&#39;</span><span class="p">),</span> 
+                              <span class="n">resampled_monthly</span><span class="p">[</span><span class="s1">&#39;WD&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">deg</span><span class="p">)</span>
+<span class="n">wind_direction</span> <span class="o">=</span> <span class="n">mpcalc</span><span class="o">.</span><span class="n">wind_direction</span><span class="p">(</span><span class="n">u</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="s1">&#39;deg&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">magnitude</span>
+<span class="n">resampled_monthly</span><span class="p">[</span><span class="s1">&#39;WD&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">wind_direction</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># Calculate the wind speed in knots</span>
+<span class="n">resampled_monthly</span><span class="p">[</span><span class="s1">&#39;WS kts&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">resampled_monthly</span><span class="p">[</span><span class="s1">&#39;WS&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span> <span class="o">*</span> <span class="n">units</span><span class="p">(</span><span class="s1">&#39;m/s&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="s1">&#39;knots&#39;</span><span class="p">)</span>
+
+<span class="c1"># Calculate the relative humidity</span>
+<span class="n">resampled_monthly</span><span class="p">[</span><span class="s1">&#39;Dew Point&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">mpcalc</span><span class="o">.</span><span class="n">dewpoint_from_relative_humidity</span><span class="p">(</span><span class="n">resampled_monthly</span><span class="p">[</span><span class="s1">&#39;t2m&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">degC</span><span class="p">,</span> <span class="n">resampled_monthly</span><span class="p">[</span><span class="s1">&#39;RH&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">percent</span><span class="p">)</span>
+
+<span class="c1"># Calculate the heat index</span>
+<span class="n">resampled_monthly</span><span class="p">[</span><span class="s1">&#39;Heat Index&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">mpcalc</span><span class="o">.</span><span class="n">heat_index</span><span class="p">(</span><span class="n">resampled_monthly</span><span class="p">[</span><span class="s1">&#39;t2m&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">degC</span><span class="p">,</span> 
+                                       <span class="n">resampled_monthly</span><span class="p">[</span><span class="s1">&#39;RH&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">percent</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="s1">&#39;degC&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># Calculate the wind chill</span>
+<span class="n">resampled_monthly</span><span class="p">[</span><span class="s1">&#39;Wind Chill&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">mpcalc</span><span class="o">.</span><span class="n">windchill</span><span class="p">(</span><span class="n">resampled_monthly</span><span class="p">[</span><span class="s1">&#39;t2m&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span> <span class="o">*</span> <span class="n">units</span><span class="o">.</span><span class="n">degC</span><span class="p">,</span> 
+                                      <span class="n">resampled_monthly</span><span class="p">[</span><span class="s1">&#39;WS&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span> <span class="o">*</span> <span class="n">units</span><span class="p">(</span><span class="s1">&#39;m/s&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="s1">&#39;degC&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-block alert-warning">
+<b>Broaden Knowledge & Comprehension</b></br>What other indices can we calculate with MetPy?
+</div><p>Let’s create a plot. Here, we plot the difference between the temperature and dew point temperture. This is another measure to identify wet/dry months.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Creating the plot with two rows and one column. The plots share the same x-axis so that only labels </span>
+<span class="c1"># for the lower plots are shown</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">make_subplots</span><span class="p">(</span><span class="n">rows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">cols</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">resampled_monthly</span>
+
+<span class="c1"># Adding the temperature data as a dashed line in the top panel</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;t2m&#39;</span><span class="p">]</span><span class="o">-</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;Dew Point&#39;</span><span class="p">],</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;royalblue&#39;</span><span class="p">,</span> <span class="n">dash</span><span class="o">=</span><span class="s1">&#39;solid&#39;</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Temperature (°C)&#39;</span><span class="p">))</span>
+
+<span class="c1"># Adjusting the layout</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Difference Plot between temperature and dew point&#39;</span><span class="p">,</span> <span class="n">plot_bgcolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1200</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span>
+                  <span class="n">yaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Temperature (°C)&#39;</span><span class="p">,</span> <span class="n">showgrid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">gridcolor</span><span class="o">=</span><span class="s1">&#39;lightgray&#39;</span><span class="p">,</span> <span class="n">gridwidth</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+                  <span class="n">yaxis2</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Precipitation (mm)&#39;</span><span class="p">,</span> <span class="n">showgrid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">gridcolor</span><span class="o">=</span><span class="s1">&#39;lightgray&#39;</span><span class="p">,</span> <span class="n">gridwidth</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+                  <span class="n">xaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">tickformat</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1">.%m.%Y&#39;</span><span class="p">,</span> <span class="n">showgrid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">gridcolor</span><span class="o">=</span><span class="s1">&#39;lightgray&#39;</span><span class="p">,</span> <span class="n">gridwidth</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+                  <span class="n">xaxis2</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="n">tickformat</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1">.%m.%Y&#39;</span><span class="p">,</span> <span class="n">showgrid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">gridcolor</span><span class="o">=</span><span class="s1">&#39;lightgray&#39;</span><span class="p">,</span> <span class="n">gridwidth</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+
+
+<span class="c1"># Adjusting the axes</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_xaxes</span><span class="p">(</span><span class="n">nticks</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span><span class="n">nticks</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_xaxes</span><span class="p">(</span><span class="n">nticks</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span><span class="n">nticks</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Showing the plot</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-block alert-warning">
+<b>Broaden Knowledge & Comprehension</b></br> What are the driest months?
+</div></section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "sauterto/clim_env_hydro",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "meteo"
+        },
+        kernelOptions: {
+            kernelName: "meteo",
+            path: "./docs/nb"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'meteo'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Tobias Sauter<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

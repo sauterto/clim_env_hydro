@@ -1,7 +1,7 @@
 (aws)=
 # Weather observations 
 
-%::::{grid}
+::::{grid}
 %
 %:::{grid-item}
 %:columns: 4
@@ -20,22 +20,22 @@
 %````
 %:::
 %
-%:::{grid-item}
-%:columns: 4
-%````{card} 
-%:link: glacier
-%:link-type: ref
-%<center><b>Weather Station</b></center>
-%^^^
-%```{figure} ./figures/aws.png
-%:width: 100px
-%:name: glacier_icon
-%```
-%<center>This notebook deals with the basics of climatology</center>
-%+++
-%Explore notebook &rarr;
-%````
-%:::
+:::{grid-item}
+:columns: 4
+````{card} 
+:link: nb_aws
+:link-type: ref
+<center><b>Weather Station</b></center>
+^^^
+```{figure} ./figures/aws.png
+:width: 100px
+:name: glacier_icon
+```
+<center>This notebook deals with the basics of climatology</center>
++++
+Explore notebook &rarr;
+````
+:::
 %
 %:::{grid-item}
 %:columns: 4
@@ -54,4 +54,4 @@
 %````
 %:::
 %
-%::::
+::::
