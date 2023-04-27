@@ -6,7 +6,7 @@ deepen the learned contents and to apply them to real-world cases. The
 materials consist of exercises as well as a variety of examples. The materials
 assume a basic knowledge of Python and the use of the Jupyter environment. 
 
-{Download}`Here <./docs/presentations/Lecture_01.pdf>` you will find the
+{Download}`Here <./docs/presentations/Lecture_00.pdf>` you will find the
 organisational information about the course.
 
 The lecutre materials consist of several lessons covering specific elements of the course. 
