@@ -40,7 +40,7 @@ libraries to complete the exercise.
 
 **Materials**:
 
-- Weather station data in CSV format. The station is located at 81.4721E and
+- Weather station data in CSV format (the file can be downloaded {Download}`here <https://raw.githubusercontent.com/sauterto/clim_env_hydro/main/docs/nb/data/weather_station_data_v2.csv>`). The station is located at 81.4721E and
   30.2711N, and measures temperature (T), relative humidity(RH), air pressure
 (Pressure), shortwave radiation (Radiation), wind speed (WS), and wind
 direction (WD)

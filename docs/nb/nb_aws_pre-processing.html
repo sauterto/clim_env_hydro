@@ -577,6 +577,91 @@ Which other file formats can be read in with pandas?
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>T</th>
+      <th>RH</th>
+      <th>Pressure</th>
+      <th>Radiation</th>
+      <th>WS</th>
+      <th>WD</th>
+    </tr>
+    <tr>
+      <th>TIMESTAMP</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2018-03-09 14:00:00</th>
+      <td>22.2</td>
+      <td>27.8</td>
+      <td>1001.2</td>
+      <td>4.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2018-03-09 15:00:00</th>
+      <td>22.2</td>
+      <td>26.0</td>
+      <td>1001.5</td>
+      <td>0.3</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2018-03-09 16:00:00</th>
+      <td>22.1</td>
+      <td>26.1</td>
+      <td>1002.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2018-03-09 17:00:00</th>
+      <td>22.0</td>
+      <td>25.8</td>
+      <td>1002.3</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2018-03-09 18:00:00</th>
+      <td>22.0</td>
+      <td>25.7</td>
+      <td>1002.6</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 <p>The DataFrame has missing values with the dummy value -9999. We then use the replace method to replace all occurrences of -9999 with NaN (Not a Number), using the NumPy np.nan constant. Finally, we print the updated DataFrame. The inplace=True argument ensures that the original DataFrame is modified, rather than a copy being created.</p>
 <div class="cell docutils container">
@@ -587,6 +672,146 @@ Which other file formats can be read in with pandas?
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>T</th>
+      <th>RH</th>
+      <th>Pressure</th>
+      <th>Radiation</th>
+      <th>WS</th>
+      <th>WD</th>
+    </tr>
+    <tr>
+      <th>TIMESTAMP</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2018-03-09 14:00:00</th>
+      <td>22.2</td>
+      <td>27.8</td>
+      <td>1001.2</td>
+      <td>4.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2018-03-09 15:00:00</th>
+      <td>22.2</td>
+      <td>26.0</td>
+      <td>1001.5</td>
+      <td>0.3</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2018-03-09 16:00:00</th>
+      <td>22.1</td>
+      <td>26.1</td>
+      <td>1002.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2018-03-09 17:00:00</th>
+      <td>22.0</td>
+      <td>25.8</td>
+      <td>1002.3</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2018-03-09 18:00:00</th>
+      <td>22.0</td>
+      <td>25.7</td>
+      <td>1002.6</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>2021-12-21 06:00:00</th>
+      <td>-14.8</td>
+      <td>53.2</td>
+      <td>524.7</td>
+      <td>697.8</td>
+      <td>9.5</td>
+      <td>213.3</td>
+    </tr>
+    <tr>
+      <th>2021-12-21 07:00:00</th>
+      <td>-14.5</td>
+      <td>54.7</td>
+      <td>524.1</td>
+      <td>704.2</td>
+      <td>5.2</td>
+      <td>219.8</td>
+    </tr>
+    <tr>
+      <th>2021-12-21 08:00:00</th>
+      <td>-14.2</td>
+      <td>52.9</td>
+      <td>523.6</td>
+      <td>629.5</td>
+      <td>5.7</td>
+      <td>195.8</td>
+    </tr>
+    <tr>
+      <th>2021-12-21 09:00:00</th>
+      <td>-14.4</td>
+      <td>53.3</td>
+      <td>523.3</td>
+      <td>126.7</td>
+      <td>5.5</td>
+      <td>221.1</td>
+    </tr>
+    <tr>
+      <th>2021-12-21 10:00:00</th>
+      <td>-15.6</td>
+      <td>61.6</td>
+      <td>523.1</td>
+      <td>59.7</td>
+      <td>5.4</td>
+      <td>231.0</td>
+    </tr>
+  </tbody>
+</table>
+<p>32305 rows × 6 columns</p>
+</div></div></div>
 </div>
 <div class="alert alert-block alert-warning">
 <b>Hint!</b> Compare the SW_OUT and LW_OUT column with those of the previous table.
@@ -598,12 +823,42 @@ Which other file formats can be read in with pandas?
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>                         T     RH  Pressure  Radiation     WS     WD
+TIMESTAMP                                                           
+2018-03-09 14:00:00  False  False     False      False  False  False
+2018-03-09 15:00:00  False  False     False      False  False  False
+2018-03-09 16:00:00  False  False     False      False  False  False
+2018-03-09 17:00:00  False  False     False      False  False  False
+2018-03-09 18:00:00  False  False     False      False  False  False
+...                    ...    ...       ...        ...    ...    ...
+2021-12-21 06:00:00  False  False     False      False  False  False
+2021-12-21 07:00:00  False  False     False      False  False  False
+2021-12-21 08:00:00  False  False     False      False  False  False
+2021-12-21 09:00:00  False  False     False      False  False  False
+2021-12-21 10:00:00  False  False     False      False  False  False
+
+[32305 rows x 6 columns]
+</pre></div>
+</div>
+</div>
 </div>
 <p>You can also use the isna() or isnull() method along with the <strong>sum()</strong> method to count the number of missing values in each column:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># count the number of missing values in each column</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>T            4
+RH           0
+Pressure     0
+Radiation    0
+WS           3
+WD           3
+dtype: int64
 </pre></div>
 </div>
 </div>
@@ -621,6 +876,25 @@ Which other file formats can be read in with pandas?
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The time series is not continuous </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">((</span><span class="s1">&#39;These dates are missing: </span><span class="se">\n</span><span class="s1"> </span><span class="si">{0}</span><span class="s1">&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">end</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> 
                                                                  <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;30T&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">difference</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The time series is not continuous 
+
+These dates are missing: 
+ DatetimeIndex([&#39;2018-03-09 14:30:00&#39;, &#39;2018-03-09 15:30:00&#39;,
+               &#39;2018-03-09 16:30:00&#39;, &#39;2018-03-09 17:30:00&#39;,
+               &#39;2018-03-09 18:30:00&#39;, &#39;2018-03-09 19:30:00&#39;,
+               &#39;2018-03-09 20:30:00&#39;, &#39;2018-03-09 21:30:00&#39;,
+               &#39;2018-03-09 22:30:00&#39;, &#39;2018-03-09 23:30:00&#39;,
+               ...
+               &#39;2021-12-21 00:30:00&#39;, &#39;2021-12-21 01:30:00&#39;,
+               &#39;2021-12-21 02:30:00&#39;, &#39;2021-12-21 03:30:00&#39;,
+               &#39;2021-12-21 04:30:00&#39;, &#39;2021-12-21 05:30:00&#39;,
+               &#39;2021-12-21 06:30:00&#39;, &#39;2021-12-21 07:30:00&#39;,
+               &#39;2021-12-21 08:30:00&#39;, &#39;2021-12-21 09:30:00&#39;],
+              dtype=&#39;datetime64[ns]&#39;, length=34072, freq=None)
 </pre></div>
 </div>
 </div>
