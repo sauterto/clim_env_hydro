@@ -27,7 +27,7 @@
 # </ul>  
 # </div>
 
-# In[ ]:
+# In[1]:
 
 
 import numpy as np
@@ -43,7 +43,7 @@ import plotly.graph_objs as go
 
 # This exercise uses functions from the module HU_learning_material. The module was developed for this course and consists of a collection of functions discussed in the course. The module can be used with
 
-# In[ ]:
+# In[2]:
 
 
 # Import the learning module
@@ -52,7 +52,7 @@ from hu_tools import HU_learning_material
 
 # This is a so-called Python class. The class is called **HU_learning_material** and must be instantiated. This is done with
 
-# In[ ]:
+# In[3]:
 
 
 #-----------------------------
@@ -220,7 +220,7 @@ print('Net shortwave radiation: {:.2f}'.format(SWin-hu.SWout(SWin,albedo)))
 # 
 # First, we load the digital elevation model. The georeferenced Geotiff has already been saved here in netcdf format.
 
-# In[ ]:
+# In[4]:
 
 
 #------------------------------
@@ -367,7 +367,7 @@ A = hu.calcRad(solPars, timeCorr, doy, hour, lat, tempgrid[::-1, :], pgrid[::-1,
 # Plot data
 #---------------------------
 # Generate sample data
-x = lons
+x = de
 y = lats
 X, Y = np.meshgrid(x, y)
 
