@@ -43,7 +43,7 @@ Explore notebook &rarr;
 :::
 
 :::{grid-item-card} 
-:link:  
+:link: turbulence 
 :link-type: ref
 <center><b>Turbulence and Energy Balance</b></center>
 ^^^
