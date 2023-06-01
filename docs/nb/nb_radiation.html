@@ -525,7 +525,7 @@ title="Print to PDF"
 <li>Basic knowledge of Python, Jupyter Notebooks, and data analysis</li>
 <li>Familiarity with MetPy, Pandas, Xarray, and Plotly</li>
     <li>The additional package <b>xrspatial</b> must be installed
-<li>A netcdf file containing a digital elevation model from Torres del Paine (can also be downloaded <a href="https://github.com/sauterto/clim_env_hydro/blob/main/docs/nb/data/paine_dem" download>here</a>)</li>
+<li>A netcdf file with the shadings and sky-view factors (can be downloaded <a href="https://box.hu-berlin.de/f/fad79e62bbfe4403a604/?dl=1" download>here</a>)
 </ul>  
 </div><div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -798,7 +798,7 @@ Review the 'Global Energy Fluxes' figure on slide 4 of the presentation and iden
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load the dataset</span>
-<span class="n">ds_LUT</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;./data/LUT_Rad.nc&#39;</span><span class="p">)</span>
+<span class="n">ds_LUT</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;LUT_Rad.nc&#39;</span><span class="p">)</span>
 
 <span class="c1"># Read the shading field for a complete year</span>
 <span class="n">shad1yr</span> <span class="o">=</span> <span class="n">ds_LUT</span><span class="o">.</span><span class="n">SHADING</span><span class="o">.</span><span class="n">values</span>
