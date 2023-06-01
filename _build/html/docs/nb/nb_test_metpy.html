@@ -50,6 +50,7 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -135,28 +136,33 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
+  <a class="reference internal" href="../weather_obs.html">
+   1. Weather observations
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../turbulence.html">
-   1. Turbulence and Energy Fluxes
+   2. Turbulence and Energy Fluxes
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../wind_system.html">
-   2. Regional Wind Systems
+   3. Regional Wind Systems
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../glacier.html">
-   3. Glaciers and Snow
+   4. Glaciers and Snow
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../hydrology.html">
-   4. Hydrology
+   5. Hydrology
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../weather_maps.html">
-   5. Weather maps
+   6. Weather maps
   </a>
  </li>
 </ul>
@@ -498,7 +504,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="getting-started-with-metpy">
+  <section id="getting-started-with-metpy">
 <span id="nb-testing-metpy"></span><h1>Getting started with MetPy<a class="headerlink" href="#getting-started-with-metpy" title="Permalink to this headline">#</a></h1>
 <p>Before we get started, we test the learning environment and the most important packages needed to run the notebooks. This is not so much a continuous coherent exercise as individual examples based on the different packages.This exercise is neither an introduction to Python nor extensive tutorials for the individual packages. I advise you, if you have little or no experience with the packages, to work through the relevant tutorial on the websites. All packages offer very good and extensive tutorials. Most of the functions presented here have been taken from these websites.</p>
 <div class="alert alert-block alert-success">
@@ -551,7 +557,9 @@ title="Print to PDF"
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><table><tbody><tr><th>Magnitude</th><td style='text-align:left;'><pre>[0.5 0.5 0.5 0.5]</pre></td></tr><tr><th>Units</th><td style='text-align:left;'>meter/second</td></tr></tbody></table></div></div>
+<div class="output text_latex math notranslate nohighlight">
+\[\begin{pmatrix}0.5 &amp; 0.5 &amp; 0.5 &amp; 0.5\end{pmatrix}\ \frac{\mathrm{meter}}{\mathrm{second}}\]</div>
+</div>
 </div>
 <section id="metpy-with-xarray">
 <h2>MetPy with xarray<a class="headerlink" href="#metpy-with-xarray" title="Permalink to this headline">#</a></h2>
@@ -9220,7 +9228,7 @@ Attributes:
 </div>
 </section>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="plotting">
+<section id="plotting">
 <h1>Plotting<a class="headerlink" href="#plotting" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">

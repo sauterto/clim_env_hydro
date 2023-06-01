@@ -60,16 +60,23 @@ launch_buttons:
   thebe                            : true
 
 sphinx:
+  extra_extensions:
+    - "sphinx.ext.mathjax"
+    - "sphinx_jupyterbook_latex"
   config:
     mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+      #mathjax_config:
+      #tex2jax:
+      #  inlineMath: [["$","$"]]
+    myst_update_mathjax: false
     nb_render_priority:
       html:
       - "application/vnd.jupyter.widget-view+json"
+      - "text/latex"
       - "application/javascript"
       - "text/html"
       - "image/svg+xml"
       - "image/png"
       - "image/jpeg"
       - "text/markdown"
-      - "text/latex"
       - "text/plain"
