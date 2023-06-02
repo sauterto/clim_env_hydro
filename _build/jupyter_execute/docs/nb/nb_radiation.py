@@ -22,8 +22,8 @@
 # <li>Familiarity with MetPy, Pandas, Xarray, and Plotly</li>
 #     <li>The additional package <b>xrspatial</b> must be installed
 # <li>A netcdf file with the shadings and sky-view factors (can be downloaded <a href="https://box.hu-berlin.de/f/fad79e62bbfe4403a604/?dl=1" download>here</a>)
-# <li><a href="https://box.hu-berlin.de/f/c410656d0ea844149cfa/?dl=1" download>hu_tools</a>
-# <li><a href="https://box.hu-berlin.de/f/a12a656832104b7487c5/?dl=1" download>Paine elevation</a>
+# <li>Download <a href="https://box.hu-berlin.de/f/c410656d0ea844149cfa/?dl=1" download>here</a> the hu_tools library
+# <li>Download <a href="https://box.hu-berlin.de/f/a12a656832104b7487c5/?dl=1" download>here</a> the digital elevation model of Torres des Paine
 # </ul>  
 # </div>
 
