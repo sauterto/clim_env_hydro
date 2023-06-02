@@ -226,7 +226,7 @@ print('Net shortwave radiation: {:.2f}'.format(SWin-hu.SWout(SWin,albedo)))
 #------------------------------
 # Read digital elevation model
 #------------------------------
-dem = xr.open_dataset('./data/paine_elevation.nc')
+dem = xr.open_dataset('paine_elevation.nc')
 dem
 
 
