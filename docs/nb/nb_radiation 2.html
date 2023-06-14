@@ -1,0 +1,1331 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Radiation and ground heat flux &#8212; Field Course of Climatology and Environmenal Hydrology</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Field Course of Climatology and Environmenal Hydrology</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../welcome.html">
+                    Welcome to the Field Course of Climatology and Environmental Hydrology
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Getting started
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../installation.html">
+   1. Setup the Jupyter Notebook environment
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../test_environment.html">
+   2. Testing the learning environment
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Lectures
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../weather_obs.html">
+   1. Weather observations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../turbulence.html">
+   2. Turbulence and Energy Fluxes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../wind_system.html">
+   3. Regional Wind Systems
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../glacier.html">
+   4. Glaciers and Snow
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../hydrology.html">
+   5. Hydrology
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../weather_maps.html">
+   6. Weather maps
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/sauterto/clim_env_hydro/main?urlpath=lab/tree/./docs/nb/nb_radiation 2.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://colab.research.google.com/github/sauterto/clim_env_hydro/blob/main/./docs/nb/nb_radiation 2.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="initThebeSBT()"
+  class="headerbtn headerbtn-launch-thebe"
+  data-toggle="tooltip"
+data-placement="left"
+title="Launch Thebe"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="headerbtn__text-container">Live Code</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/sauterto/clim_env_hydro"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/sauterto/clim_env_hydro/issues/new?title=Issue%20on%20page%20%2Fdocs/nb/nb_radiation 2.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/docs/nb/nb_radiation 2.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Radiation and ground heat flux
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#solar-parameters-and-transmissivity">
+   Solar parameters and transmissivity
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#shortwave-radiation-and-albedo">
+   Shortwave radiation and albedo
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#longwave-radiation">
+   Longwave radiation
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ground-heat-flux-and-heat-equation">
+   Ground heat flux and heat equation
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#more-realistic-example">
+     More realistic example
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#replace-missing-data">
+     Replace missing data
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Radiation and ground heat flux</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Radiation and ground heat flux
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#solar-parameters-and-transmissivity">
+   Solar parameters and transmissivity
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#shortwave-radiation-and-albedo">
+   Shortwave radiation and albedo
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#longwave-radiation">
+   Longwave radiation
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ground-heat-flux-and-heat-equation">
+   Ground heat flux and heat equation
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#more-realistic-example">
+     More realistic example
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#replace-missing-data">
+     Replace missing data
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="radiation-and-ground-heat-flux">
+<span id="nb-radiation"></span><h1>Radiation and ground heat flux<a class="headerlink" href="#radiation-and-ground-heat-flux" title="Permalink to this headline">#</a></h1>
+<p>While large-scale weather shapes environmental conditions, energy exchange in mountain valleys is controlled by micrometeorological conditions. Given the complex topography with its different surface properties, it is not trivial to close the scale gap between the large-scale conditions and the local properties. The micrometeorological state of the surface layer is directly influenced by the Earth’s surface and responds rapidly to changes in the surface energy budget. Radiative and turbulent heat fluxes cool and heat the near-surface air layer and determine the temperature distribution over the topography. Local temperature surpluses and deficits generate upwelling forces that drive thermal wind systems, including valley circulations, slope and glacier winds</p>
+<div class="alert alert-block alert-success">
+<b>Learning objectives:</b><br>
+<ul>
+ <li>Parametrization of radiation fluxes</li>
+ <li>Ground heat flux</li>
+</ul>  
+</div><div class="alert alert-block alert-info">
+<b>Prerequisites</b><br>
+<ul>
+<li>Basic knowledge of Python, Jupyter Notebooks, and data analysis</li>
+<li>Familiarity with MetPy, Pandas, Xarray, and Plotly</li>
+    <li>The additional package <b>xrspatial</b> must be installed
+<li>A netcdf file containing a digital elevation model from Torres del Paine (can also be downloaded <a href="https://github.com/sauterto/clim_env_hydro/blob/main/docs/nb/data/paine_dem" download>here</a>)</li>
+</ul>  
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>
+
+<span class="c1"># Import the plotly library</span>
+<span class="kn">from</span> <span class="nn">plotly.subplots</span> <span class="kn">import</span> <span class="n">make_subplots</span>
+<span class="kn">import</span> <span class="nn">plotly.subplots</span> <span class="k">as</span> <span class="nn">sp</span>
+<span class="kn">import</span> <span class="nn">plotly.graph_objs</span> <span class="k">as</span> <span class="nn">go</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>This exercise uses functions from the module HU_learning_material. The module was developed for this course and consists of a collection of functions discussed in the course. The module can be used with</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import the learning module</span>
+<span class="kn">from</span> <span class="nn">hu_tools</span> <span class="kn">import</span> <span class="n">HU_learning_material</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>This is a so-called Python class. The class is called <strong>HU_learning_material</strong> and must be instantiated. This is done with</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#-----------------------------</span>
+<span class="c1"># Load the learning materials</span>
+<span class="c1">#-----------------------------</span>
+<span class="n">hu</span> <span class="o">=</span> <span class="n">HU_learning_material</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The functions can then be accessed with <strong>hu</strong>*.function()*, where the placeholder <em>function</em> stands for the various functions available. With the following command, all functions/methods within the class can be displayed.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">class_methods</span> <span class="o">=</span> <span class="p">[</span><span class="n">method</span> <span class="k">for</span> <span class="n">method</span> <span class="ow">in</span> <span class="nb">dir</span><span class="p">(</span><span class="n">hu</span><span class="p">)</span>
+                 <span class="k">if</span> <span class="ow">not</span> <span class="n">method</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;__&#39;</span><span class="p">)</span>
+                 <span class="ow">and</span> <span class="n">callable</span><span class="p">(</span><span class="nb">getattr</span><span class="p">(</span><span class="n">hu</span><span class="p">,</span> <span class="n">method</span><span class="p">))</span>
+                 <span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">class_methods</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<p>You can find out more about the function/method and its arguments with</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example: Information about the emissivity() method</span>
+<span class="n">help</span><span class="p">(</span><span class="n">hu</span><span class="o">.</span><span class="n">emissivity</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="solar-parameters-and-transmissivity">
+<h1>Solar parameters and transmissivity<a class="headerlink" href="#solar-parameters-and-transmissivity" title="Permalink to this headline">#</a></h1>
+<p>We start with solar paramters and transmissivity (see slides). To calculate the local elevation angle of the sun, we need the coordinates of the location and the time.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#----------------------</span>
+<span class="c1"># Site</span>
+<span class="c1">#----------------------</span>
+<span class="n">lat</span> <span class="o">=</span> <span class="mf">45.0</span>  <span class="c1"># Latitude of location</span>
+<span class="n">lon</span> <span class="o">=</span> <span class="mf">10.0</span>  <span class="c1"># Longitud of location</span>
+<span class="n">UTC</span> <span class="o">=</span> <span class="mf">19.5</span>  <span class="c1"># UTC at location</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>First, we create a time vector for the period for which we want to calculate the local sun angle.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a date vector for which the solar parameters and transmisivity are calculated</span>
+<span class="n">timestamp</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="s1">&#39;01-01-2002&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;31-12-2002&#39;</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;D&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Then we can calculate the angle with the function <strong>local_elevation_angle()</strong>. The function returns the sine of the angle (see slides). To obtain the final angle (radian), the arc sine of this value must be taken. Finally, we convert the radian into degrees with the function <strong>rad2deg()</strong>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Local elevation angle using th HU-Tools</span>
+<span class="n">angle</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">rad2deg</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arcsin</span><span class="p">(</span><span class="n">hu</span><span class="o">.</span><span class="n">local_elevation_angle</span><span class="p">(</span><span class="n">lat</span><span class="p">,</span><span class="n">lon</span><span class="p">,</span><span class="n">UTC</span><span class="p">,</span><span class="n">timestamp</span><span class="o">.</span><span class="n">dayofyear</span><span class="p">,</span><span class="mi">173</span><span class="p">,</span><span class="n">timestamp</span><span class="o">.</span><span class="n">size</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>For the calculation of the transmissivity, the proportions of the cloud cover in the different cloud levels are required.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#----------------------</span>
+<span class="c1"># Parameters</span>
+<span class="c1">#----------------------</span>
+<span class="n">ch</span> <span class="o">=</span> <span class="mf">0.0</span>    <span class="c1"># High cloud fraction</span>
+<span class="n">cm</span> <span class="o">=</span> <span class="mf">0.0</span>    <span class="c1"># Middle cloud fraction</span>
+<span class="n">cl</span> <span class="o">=</span> <span class="mf">0.0</span>    <span class="c1"># Low cloud fraction</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>This allows the transmissivity at a given place and time to be approximated using the function <strong>tau()</strong>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Calculate transmissivity using th HU-Tools</span>
+<span class="n">data</span>  <span class="o">=</span> <span class="n">hu</span><span class="o">.</span><span class="n">tau</span><span class="p">(</span><span class="n">ch</span><span class="p">,</span> <span class="n">cm</span><span class="p">,</span> <span class="n">cl</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">lon</span><span class="p">,</span> <span class="n">UTC</span><span class="p">,</span> <span class="n">timestamp</span><span class="o">.</span><span class="n">dayofyear</span><span class="p">,</span> <span class="mi">173</span><span class="p">,</span> <span class="n">timestamp</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>To facilitate working with the results, we write the results into a Pandas DataFrame.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a pandas DataFrame from the calculated arrays and the date vector</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">timestamp</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;tau&#39;</span><span class="p">])</span>
+
+<span class="c1"># Add the local elevation angle to the DataFrame</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;angle&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">angle</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Plotly is a good way to display the data.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#----------------------</span>
+<span class="c1"># Plot the results</span>
+<span class="c1">#----------------------</span>
+<span class="c1"># Creating the plot with two rows and one column. The plots share the same x-axis so that only labels </span>
+<span class="c1"># for the lower plots are shown</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">make_subplots</span><span class="p">(</span><span class="n">rows</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">cols</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">shared_xaxes</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Adding the transmissivity data as a  line in the top panel</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">tau</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;royalblue&#39;</span><span class="p">,</span> <span class="n">dash</span><span class="o">=</span><span class="s1">&#39;solid&#39;</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Transmissitivty [-]&#39;</span><span class="p">),</span>
+                        <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Adding the local elevation angle as line in the bottom panel</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">angle</span><span class="p">,</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">dash</span><span class="o">=</span><span class="s1">&#39;solid&#39;</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Local elevation angle [º]&#39;</span><span class="p">),</span>
+                         <span class="n">row</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Adjusting the layout</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Transmissivity and local elevation angle&#39;</span><span class="p">,</span> <span class="n">plot_bgcolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+                  <span class="n">yaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Transmissitivty [-]&#39;</span><span class="p">,</span> <span class="n">showgrid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">gridcolor</span><span class="o">=</span><span class="s1">&#39;lightgray&#39;</span><span class="p">,</span> <span class="n">gridwidth</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+                  <span class="n">yaxis2</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Local elevation angle [º]&#39;</span><span class="p">,</span> <span class="n">showgrid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">gridcolor</span><span class="o">=</span><span class="s1">&#39;lightgray&#39;</span><span class="p">,</span> <span class="n">gridwidth</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+                  <span class="n">xaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">tickformat</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1">.%m.%Y&#39;</span><span class="p">,</span> <span class="n">showgrid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">gridcolor</span><span class="o">=</span><span class="s1">&#39;lightgray&#39;</span><span class="p">,</span> <span class="n">gridwidth</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+                  <span class="n">xaxis2</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="n">tickformat</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1">.%m.%Y&#39;</span><span class="p">,</span> <span class="n">showgrid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">gridcolor</span><span class="o">=</span><span class="s1">&#39;lightgray&#39;</span><span class="p">,</span> <span class="n">gridwidth</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+
+
+<span class="c1"># Adjusting the axes</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_xaxes</span><span class="p">(</span><span class="n">nticks</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span><span class="n">nticks</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_xaxes</span><span class="p">(</span><span class="n">nticks</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span><span class="n">nticks</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Showing the plot</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-block alert-warning">
+<b>Broaden Knowledge & Comprehension</b></br>
+In what period of time is the sun still above the horizon at 45º north and 10º east after 7:30pm?
+How sensitive is the transmissivity to clouds in the low, middle and high atmosphere? Look at the equation for transmissivity and find out why there are differences. What is a weakness of the parameterisation?
+</div></section>
+<section id="shortwave-radiation-and-albedo">
+<h1>Shortwave radiation and albedo<a class="headerlink" href="#shortwave-radiation-and-albedo" title="Permalink to this headline">#</a></h1>
+<p>Most weather stations measure the short-wave irradiation directly.  If the albedo of the surfaces is known, the short-wave radiation balance can be calculated very easily.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">albedo</span> <span class="o">=</span> <span class="mf">0.7</span>  <span class="c1"># [-] </span>
+<span class="n">SWin</span> <span class="o">=</span> <span class="mi">342</span>    <span class="c1"># W/mˆ2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Incoming shortwave radiation: </span><span class="si">{:.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SWin</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Outgoing shortwave radiation: </span><span class="si">{:.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">hu</span><span class="o">.</span><span class="n">SWout</span><span class="p">(</span><span class="n">SWin</span><span class="p">,</span><span class="n">albedo</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Net shortwave radiation: </span><span class="si">{:.2f}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">SWin</span><span class="o">-</span><span class="n">hu</span><span class="o">.</span><span class="n">SWout</span><span class="p">(</span><span class="n">SWin</span><span class="p">,</span><span class="n">albedo</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-block alert-warning">
+<b>Broaden Knowledge & Comprehension</b></br>
+Review the 'Global Energy Fluxes' figure on slide 4 of the presentation and identify the outgoing shortwave radiation. Use this information to determine the global albedo.
+<p>Here the value 342 <span class="math notranslate nohighlight">\(W/m^{2}\)</span> was used, which corresponds to the average global incoming solar radiation. Why is this value lower than the solar constant, which has a value of ~1362 <span class="math notranslate nohighlight">\(W/m^{2}\)</span>?</p>
+</div>
+<p>In many cases it is necessary to calculate the direct and diffuse radiation in complex terrain. In order to calculate the radiation fluxes, the shading effects must be taken into account. In this section we briefly discuss how this can be done.</p>
+<p>First, we load the digital elevation model. The georeferenced Geotiff has already been saved here in netcdf format.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#------------------------------</span>
+<span class="c1"># Read digital elevation model</span>
+<span class="c1">#------------------------------</span>
+<span class="n">dem</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;./data/paine_elevation.nc&#39;</span><span class="p">)</span>
+<span class="n">dem</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The file contains the variable band_data which contains the height information. The dimension of the variable is band_data(x, y) where x corresponds to the longitude values and y to the latitude values. We can now read the 2D data from the variable <em>band_data</em> from the file and do a quick plot.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Read the elevation data from netcdf file</span>
+<span class="n">elvgrid</span> <span class="o">=</span> <span class="n">dem</span><span class="p">[</span><span class="s1">&#39;band_data&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>For the calculation of the shading effects, the slope and aspect of the cells must also be specified. For this you can use the library <strong>xrspatial</strong> which provides the two functions <strong>slope()</strong> and <strong>aspect()</strong>. The terrain model is passed to the two functions and the corresponding grid is returned.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load the xrspatial library</span>
+<span class="kn">from</span> <span class="nn">xrspatial</span> <span class="kn">import</span> <span class="n">slope</span><span class="p">,</span> <span class="n">aspect</span>
+
+<span class="c1"># Read slope data</span>
+<span class="n">slopegrid</span> <span class="o">=</span> <span class="n">slope</span><span class="p">(</span><span class="n">elvgrid</span><span class="p">)</span>
+<span class="c1"># Read aspect data</span>
+<span class="n">aspectgrid</span> <span class="o">=</span> <span class="n">aspect</span><span class="p">(</span><span class="n">elvgrid</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Again, use plotly to plot the data</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#---------------------------</span>
+<span class="c1"># Plot data</span>
+<span class="c1">#---------------------------</span>
+<span class="c1"># Generate sample data</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">lons</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">lats</span>
+<span class="n">X</span><span class="p">,</span> <span class="n">Y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="c1"># Create the subplots</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">make_subplots</span><span class="p">(</span><span class="n">rows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">cols</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="c1"># Add the first subplot</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Contour</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="n">slopegrid</span><span class="p">,</span> <span class="n">colorscale</span><span class="o">=</span><span class="s1">&#39;Viridis&#39;</span><span class="p">,</span> <span class="n">showscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                         <span class="n">colorbar</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">0.12</span><span class="p">,</span> <span class="n">y</span><span class="o">=-</span><span class="mf">0.35</span><span class="p">,</span> <span class="nb">len</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">yanchor</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">,</span> <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;h&#39;</span><span class="p">,</span>
+                                      <span class="n">title</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;Slope in degrees&#39;</span><span class="p">,</span> <span class="n">titleside</span><span class="o">=</span><span class="s1">&#39;top&#39;</span><span class="p">)),</span> <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Add the second subplot</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Contour</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="n">aspectgrid</span><span class="p">,</span> <span class="n">colorscale</span><span class="o">=</span><span class="s1">&#39;YlOrRd&#39;</span><span class="p">,</span> <span class="n">showscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                         <span class="n">colorbar</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">y</span><span class="o">=-</span><span class="mf">0.35</span><span class="p">,</span> <span class="nb">len</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">yanchor</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">,</span> <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;h&#39;</span><span class="p">,</span> 
+                                       <span class="n">title</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;Aspect in degrees north&#39;</span><span class="p">,</span> <span class="n">titleside</span><span class="o">=</span><span class="s1">&#39;top&#39;</span><span class="p">)),</span> <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># Add the second subplot</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Contour</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="n">elvgrid</span><span class="p">,</span> <span class="n">colorscale</span><span class="o">=</span><span class="s1">&#39;YlOrRd&#39;</span><span class="p">,</span> <span class="n">showscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                         <span class="n">colorbar</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">0.85</span><span class="p">,</span> <span class="n">y</span><span class="o">=-</span><span class="mf">0.35</span><span class="p">,</span> <span class="nb">len</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">yanchor</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">,</span> <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;h&#39;</span><span class="p">,</span> 
+                                       <span class="n">title</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;Digital elevation model&#39;</span><span class="p">,</span> <span class="n">titleside</span><span class="o">=</span><span class="s1">&#39;top&#39;</span><span class="p">)),</span> <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+
+<span class="c1"># Add title and axis labels</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">xaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Longitude&#39;</span><span class="p">,</span><span class="n">title_standoff</span><span class="o">=</span><span class="mi">5</span><span class="p">),</span>
+    <span class="n">xaxis2</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Longitude&#39;</span><span class="p">,</span><span class="n">title_standoff</span><span class="o">=</span><span class="mi">5</span><span class="p">),</span>
+    <span class="n">yaxis_title</span><span class="o">=</span><span class="s1">&#39;Latitude&#39;</span><span class="p">,</span>
+    <span class="n">width</span><span class="o">=</span><span class="mi">1200</span><span class="p">,</span>  <span class="c1"># Set the width of the figure</span>
+    <span class="n">height</span><span class="o">=</span><span class="mi">600</span>  <span class="c1"># Set the height of the figure</span>
+<span class="p">)</span>
+
+<span class="c1"># Show the plot</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>For simplicity, the shading and the sky-view factor for the terrain model have already been calculated and written into the file LUT_Rad.nc. However, the two functions <strong>LUTshad()</strong> and <strong>LUTsvf()</strong> are available with which both can be calculated (caution: the calculations take a very long time depending on the DEM). We load the sky-view factor and the shading for a complete in the variables <em>svf</em> and <em>shad1yr</em>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load the dataset</span>
+<span class="n">ds_LUT</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;./data/LUT_Rad.nc&#39;</span><span class="p">)</span>
+
+<span class="c1"># Read the shading field for a complete year</span>
+<span class="n">shad1yr</span> <span class="o">=</span> <span class="n">ds_LUT</span><span class="o">.</span><span class="n">SHADING</span><span class="o">.</span><span class="n">values</span>
+
+<span class="c1"># Read the sky-view factor</span>
+<span class="n">svf</span> <span class="o">=</span> <span class="n">ds_LUT</span><span class="o">.</span><span class="n">SVF</span><span class="o">.</span><span class="n">values</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Direct and diffuse radiation both depend on several variables: Temperature, pressure, humidity and cloudiness. We assume that the same conditions prevail throughout the domain. To do this, we create new 2D arrays with the corresponding values.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create additional arrays which are needed by the radiation module</span>
+<span class="c1"># Temperature grid</span>
+<span class="n">tempgrid</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones_like</span><span class="p">(</span><span class="n">elvgrid</span><span class="p">)</span> <span class="o">*</span> <span class="mf">285.0</span>
+<span class="c1"># Pressure grid</span>
+<span class="n">pgrid</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones_like</span><span class="p">(</span><span class="n">elvgrid</span><span class="p">)</span> <span class="o">*</span> <span class="mf">1000.0</span>
+<span class="c1"># Relative humditiy grid</span>
+<span class="n">rhgrid</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones_like</span><span class="p">(</span><span class="n">elvgrid</span><span class="p">)</span> <span class="o">*</span> <span class="mi">70</span>
+<span class="c1"># Cloud grid</span>
+<span class="n">ngrid</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones_like</span><span class="p">(</span><span class="n">elvgrid</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.0</span>
+<span class="c1"># Mask grid (in case only part of the DEM is used</span>
+<span class="n">maskgrid</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">elvgrid</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now we can use this information to calculate the radiation fluxes.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Site information</span>
+<span class="n">lat</span> <span class="o">=</span> <span class="o">-</span><span class="mf">50.9</span> <span class="c1"># Latitude of the domain center</span>
+<span class="n">doy</span> <span class="o">=</span> <span class="mi">15</span>    <span class="c1"># Doy of the year</span>
+<span class="n">hour</span> <span class="o">=</span> <span class="mi">14</span>   <span class="c1"># Hour of the day</span>
+<span class="n">tcart</span> <span class="o">=</span> <span class="mi">0</span>   <span class="c1"># Time shifts [do not change]</span>
+<span class="n">dtstep</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="mi">3600</span> <span class="c1"># Time step between the shading values [do not change]</span>
+
+<span class="c1"># Get lon/lat values from the elevation model</span>
+<span class="n">lons</span> <span class="o">=</span> <span class="n">elvgrid</span><span class="o">.</span><span class="n">x</span>
+<span class="n">lats</span> <span class="o">=</span> <span class="n">elvgrid</span><span class="o">.</span><span class="n">y</span>
+
+<span class="c1">#---------------------------</span>
+<span class="c1"># Calculate solar Parameters</span>
+<span class="c1">#---------------------------</span>
+<span class="n">solPars</span><span class="p">,</span> <span class="n">timeCorr</span> <span class="o">=</span> <span class="n">hu</span><span class="o">.</span><span class="n">solpars</span><span class="p">(</span><span class="n">lats</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+<span class="c1">#---------------------------</span>
+<span class="c1"># Calc radiation</span>
+<span class="c1">#---------------------------</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">hu</span><span class="o">.</span><span class="n">calcRad</span><span class="p">(</span><span class="n">solPars</span><span class="p">,</span> <span class="n">timeCorr</span><span class="p">,</span> <span class="n">doy</span><span class="p">,</span> <span class="n">hour</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">tempgrid</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="p">:],</span> <span class="n">pgrid</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="p">:],</span> <span class="n">rhgrid</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="p">:],</span> 
+        <span class="n">ngrid</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="p">:],</span> <span class="n">np</span><span class="o">.</span><span class="n">flipud</span><span class="p">(</span><span class="n">elvgrid</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">flipud</span><span class="p">(</span><span class="n">maskgrid</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">flipud</span><span class="p">(</span><span class="n">slopegrid</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">flipud</span><span class="p">(</span><span class="n">aspectgrid</span><span class="p">),</span> <span class="n">shad1yr</span><span class="p">,</span> <span class="n">svf</span><span class="p">,</span> <span class="n">dtstep</span><span class="p">,</span> <span class="n">tcart</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Plot the fields</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#---------------------------</span>
+<span class="c1"># Plot data</span>
+<span class="c1">#---------------------------</span>
+<span class="c1"># Generate sample data</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">lons</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">lats</span>
+<span class="n">X</span><span class="p">,</span> <span class="n">Y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+<span class="c1"># Create the subplots</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">sp</span><span class="o">.</span><span class="n">make_subplots</span><span class="p">(</span><span class="n">rows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">cols</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># Add the first subplot</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Contour</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="n">elvgrid</span><span class="p">,</span> <span class="n">colorscale</span><span class="o">=</span><span class="s1">&#39;Viridis&#39;</span><span class="p">,</span> <span class="n">showscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                         <span class="n">colorbar</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">y</span><span class="o">=-</span><span class="mf">0.22</span><span class="p">,</span> <span class="nb">len</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">yanchor</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">,</span> <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;h&#39;</span><span class="p">,</span>
+                                      <span class="n">title</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;$\text{Incoming shortwave radiation}~\text</span><span class="si">{W}</span><span class="s1"> m^{-2}$&#39;</span><span class="p">,</span> <span class="n">titleside</span><span class="o">=</span><span class="s1">&#39;top&#39;</span><span class="p">)),</span> <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Add the second subplot</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Contour</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="n">A</span><span class="p">,</span> <span class="n">colorscale</span><span class="o">=</span><span class="s1">&#39;YlOrRd&#39;</span><span class="p">,</span> <span class="n">showscale</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                         <span class="n">colorbar</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">y</span><span class="o">=-</span><span class="mf">0.22</span><span class="p">,</span> <span class="nb">len</span><span class="o">=</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">yanchor</span><span class="o">=</span><span class="s1">&#39;bottom&#39;</span><span class="p">,</span> <span class="n">orientation</span><span class="o">=</span><span class="s1">&#39;h&#39;</span><span class="p">,</span> 
+                                       <span class="n">title</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;$\text{Incoming shortwave radiation}~\text</span><span class="si">{W}</span><span class="s1"> m^{-2}$&#39;</span><span class="p">,</span> <span class="n">titleside</span><span class="o">=</span><span class="s1">&#39;top&#39;</span><span class="p">)),</span> <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+
+
+<span class="c1"># Add title and axis labels</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">xaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Longitude&#39;</span><span class="p">,</span><span class="n">title_standoff</span><span class="o">=</span><span class="mi">5</span><span class="p">),</span>
+    <span class="n">xaxis2</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Longitude&#39;</span><span class="p">,</span><span class="n">title_standoff</span><span class="o">=</span><span class="mi">5</span><span class="p">),</span>
+    <span class="n">yaxis_title</span><span class="o">=</span><span class="s1">&#39;Latitude&#39;</span><span class="p">,</span>
+    <span class="n">width</span><span class="o">=</span><span class="mi">1200</span><span class="p">,</span>  <span class="c1"># Set the width of the figure</span>
+    <span class="n">height</span><span class="o">=</span><span class="mi">600</span>  <span class="c1"># Set the height of the figure</span>
+<span class="p">)</span>
+
+<span class="c1"># Show the plot</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-block alert-warning">
+<b>Broaden Knowledge & Comprehension</b></br>
+Which areas receive the highest levels of radiation? How does the field change during the day? What would the field look like with the same topography in the northern hemisphere?
+</div>
+</section>
+<section id="longwave-radiation">
+<h1>Longwave radiation<a class="headerlink" href="#longwave-radiation" title="Permalink to this headline">#</a></h1>
+<p>Long-wave radiation fluxes are important terms in the net radiation balance. The long-wave radiation based on the Stephan-Boltzmann equation can be calculated with the function <strong>LW()</strong> of the <strong>HU_learning_material</strong> class. It is also possible to calculate the wavelength of the emission maximum with Kirchoff’s law using the <strong>lambda_max()</strong> function.</p>
+<p>Let’s assume the emissivity of the body is 1.0 …</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define a emissivity</span>
+<span class="n">epsilon</span> <span class="o">=</span> <span class="mf">1.0</span>
+
+<span class="c1"># Radiated energy at zero degrees celcius</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Radiated energy at zero degrees celcius: </span><span class="si">{:.4}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">hu</span><span class="o">.</span><span class="n">LW</span><span class="p">(</span><span class="n">epsilon</span><span class="p">,</span> <span class="mi">273</span><span class="p">)))</span>
+
+<span class="c1"># Wave length of emission maximum</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Wave length of emission maximum: </span><span class="si">{:.4}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">hu</span><span class="o">.</span><span class="n">lambda_max</span><span class="p">(</span><span class="mi">273</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-block alert-success">
+<b>Evaluate and Analyze</b><br>
+<ul>
+<li>Calculate the long-wave radiation for different temperatures. What is the relationship between temperature and radiated energy? [Hint: Take a look at the Stephan-Boltzmann Law]
+<li>Plot the wavelength of the emission maximum against the radiated energy in the range from 250 K to 310 K. Which gases absorb in this spectral range? Comment on the influence of the most important gases on the greenhouse effect?
+<li>Compare the values with those of the short-wave radiation. What are the most important radiation terms on a summer day in the mountains?
+</ul>
+</div><div class="alert alert-block alert-warning">
+<b>Broaden Knowledge & Comprehension</b></br>
+What must be taken into account when measuring long-wave radiation in order to obtain reliable values?
+</div></section>
+<section id="ground-heat-flux-and-heat-equation">
+<h1>Ground heat flux and heat equation<a class="headerlink" href="#ground-heat-flux-and-heat-equation" title="Permalink to this headline">#</a></h1>
+<p>The radiation terms are the largest in terms of magnitude. However, the soil heat flux, although much smaller, also plays an important role in the energy balance of a surface. The soil heat flux is coupled to the soil temperature profile. The function <strong>heat_equation()</strong> approximates the temperature profile. This requires to define some boundary conditions, such as the temperature at the surface or at bottom. In addition, information on the model depth, integration time, time step and soil thermal diffusivity is required.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#-----------------------</span>
+<span class="c1"># Boundary conditions</span>
+<span class="c1">#-----------------------</span>
+<span class="n">Ts</span> <span class="o">=</span> <span class="mf">20.</span>   <span class="c1"># Temperature at the surface [K]</span>
+<span class="n">Tb</span> <span class="o">=</span> <span class="mf">5.</span>    <span class="c1"># Temperature at the bottom [K]</span>
+<span class="n">D</span>  <span class="o">=</span> <span class="mf">2.</span>    <span class="c1"># Depth [m]</span>
+<span class="n">Nz</span> <span class="o">=</span> <span class="mi">100</span>   <span class="c1"># Number of grid points in the vertical (soil)</span>
+<span class="n">dt</span> <span class="o">=</span> <span class="mf">60.</span>   <span class="c1"># time step [s]</span>
+<span class="n">t7200</span>  <span class="o">=</span> <span class="mi">7200</span>  <span class="c1"># integration time [s]</span>
+<span class="n">t86400</span> <span class="o">=</span> <span class="mi">86400</span> <span class="c1"># integration time [s]</span>
+<span class="n">alpha</span> <span class="o">=</span> <span class="mf">1.2e-6</span> <span class="c1"># soil thermal diffusivity [m^2 s^-1]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>We now run the model for two different integration periods and plot both temperature profiles</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#-----------------------</span>
+<span class="c1"># Run the heat equation</span>
+<span class="c1">#-----------------------</span>
+<span class="n">T</span><span class="p">,</span> <span class="n">dz</span> <span class="o">=</span> <span class="n">hu</span><span class="o">.</span><span class="n">heat_equation</span><span class="p">(</span><span class="n">Ts</span><span class="p">,</span> <span class="n">Tb</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span> <span class="n">Nz</span><span class="p">,</span> <span class="n">t7200</span><span class="p">,</span> <span class="n">dt</span><span class="p">,</span> <span class="n">alpha</span><span class="p">)</span>
+<span class="n">T2</span><span class="p">,</span> <span class="n">dz</span> <span class="o">=</span> <span class="n">hu</span><span class="o">.</span><span class="n">heat_equation</span><span class="p">(</span><span class="n">Ts</span><span class="p">,</span> <span class="n">Tb</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span> <span class="n">Nz</span><span class="p">,</span> <span class="n">t86400</span><span class="p">,</span> <span class="n">dt</span><span class="p">,</span> <span class="n">alpha</span><span class="p">)</span>
+
+<span class="c1">#-----------------------</span>
+<span class="c1"># Make plots</span>
+<span class="c1">#-----------------------</span>
+<span class="c1"># Creating the plot with two rows and one column. The plots share the same x-axis so that only labels </span>
+<span class="c1"># for the lower plots are shown</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">make_subplots</span><span class="p">(</span><span class="n">rows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">cols</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">shared_yaxes</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Adding the temperature data as a dashed line in the top panel</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">T</span><span class="p">,</span> <span class="n">y</span><span class="o">=-</span><span class="n">dz</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">Nz</span><span class="p">),</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;royalblue&#39;</span><span class="p">,</span> <span class="n">dash</span><span class="o">=</span><span class="s1">&#39;solid&#39;</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Temperature after 7200 s&#39;</span><span class="p">),</span>
+                        <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Adding the temperature data as a dashed line in the top panel</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">T2</span><span class="p">,</span> <span class="n">y</span><span class="o">=-</span><span class="n">dz</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">Nz</span><span class="p">),</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="n">dash</span><span class="o">=</span><span class="s1">&#39;solid&#39;</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Temperature after 86400&#39;</span><span class="p">),</span>
+                        <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Adjusting the layout</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Soil temperature&#39;</span><span class="p">,</span> <span class="n">plot_bgcolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+                  <span class="n">yaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Depth [m]&#39;</span><span class="p">,</span> <span class="n">showgrid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">gridcolor</span><span class="o">=</span><span class="s1">&#39;lightgray&#39;</span><span class="p">,</span> <span class="n">gridwidth</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+                  <span class="n">xaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Temperature [K]&#39;</span><span class="p">,</span> <span class="n">tickformat</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1">.%m.%Y&#39;</span><span class="p">,</span> <span class="n">showgrid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">gridcolor</span><span class="o">=</span><span class="s1">&#39;lightgray&#39;</span><span class="p">,</span> <span class="n">gridwidth</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+
+
+<span class="c1"># Adjusting the axes</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_xaxes</span><span class="p">(</span><span class="n">nticks</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="nb">range</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">20</span><span class="p">],</span> <span class="n">dtick</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span><span class="n">nticks</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Showing the plot</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-block alert-warning">
+<b>Broaden Knowledge & Comprehension</b></br>
+<ul>
+<li>How can the ground heat flux be determined from the temperature profile? 
+<li>Derive the ground heat flux from the figure. 
+<li>Write a function to calculate the soil heat flux.
+</ul>
+</div><p>In nature, the surface temperature is determined by the energy fluxes. We can simply modify the model to allow for varying surface temperature. We create a Pandas DataFrame with an artificial temperature time series with daily mean temperatures.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#-----------------------------</span>
+<span class="c1"># Create pandas dataframe with</span>
+<span class="c1"># the surface temperature</span>
+<span class="c1">#-----------------------------</span>
+<span class="c1"># timestamp from/to</span>
+<span class="n">timestamp</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="s1">&#39;2000-01-01T00:00:00&#39;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39;2003-12-31T00:00:00&#39;</span><span class="p">,</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;D&#39;</span><span class="p">)</span>
+
+<span class="c1"># Surrogate surface temperature timeseries</span>
+<span class="n">T</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">-</span> <span class="mi">20</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">((</span><span class="mi">2</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">timestamp</span><span class="o">.</span><span class="n">dayofyear</span><span class="p">)</span><span class="o">/</span><span class="mi">365</span><span class="p">)</span>
+
+<span class="c1"># Create a pandas DataFrame from the calculated arrays</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="n">timestamp</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;T&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>In the next step, we set the boundary conditions and run the heat_equation_daily()</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#-----------------------------</span>
+<span class="c1"># Run the time-dependent heat</span>
+<span class="c1"># equation</span>
+<span class="c1">#-----------------------------</span>
+<span class="n">D</span>  <span class="o">=</span> <span class="mi">20</span>   <span class="c1"># Depth of the domain in meter</span>
+<span class="n">dz</span> <span class="o">=</span> <span class="mf">0.5</span>  <span class="c1"># Spacing between grid points in meter</span>
+<span class="n">T</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span> <span class="n">dz</span> <span class="o">=</span> <span class="n">hu</span><span class="o">.</span><span class="n">heat_equation_daily</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;T&#39;</span><span class="p">],</span> <span class="n">D</span><span class="p">,</span> <span class="n">dz</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">1.2e-6</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Finally, we plot the results</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#-----------------------------</span>
+<span class="c1"># Plot the results</span>
+<span class="c1">#-----------------------------</span>
+<span class="c1"># Generate the plotting grid</span>
+<span class="c1"># y-axis values</span>
+<span class="n">y_values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="n">D</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">dz</span><span class="p">)</span>
+<span class="c1"># then the x-axis values</span>
+<span class="n">x_values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">))</span>
+<span class="c1"># Generate the 2D plotting grid</span>
+<span class="n">X</span><span class="p">,</span> <span class="n">Y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">x_values</span><span class="p">,</span> <span class="n">y_values</span><span class="p">)</span>
+
+<span class="c1"># Create the filled contour trace</span>
+<span class="n">trace</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Contour</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">y_values</span><span class="p">,</span>
+    <span class="n">z</span><span class="o">=</span><span class="n">T</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span>
+    <span class="n">colorscale</span><span class="o">=</span><span class="s1">&#39;Viridis&#39;</span><span class="p">,</span>
+    <span class="n">contours</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">coloring</span><span class="o">=</span><span class="s1">&#39;fill&#39;</span><span class="p">,</span>
+        <span class="n">showlabels</span><span class="o">=</span><span class="kc">True</span>
+    <span class="p">),</span>
+    <span class="n">colorbar</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">title</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+            <span class="n">text</span><span class="o">=</span><span class="s1">&#39;Temperature [ºC]&#39;</span><span class="p">,</span>
+            <span class="c1">#standoff=15,</span>
+            <span class="n">side</span><span class="o">=</span><span class="s1">&#39;right&#39;</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+
+<span class="c1"># Create the layout</span>
+<span class="n">layout</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Layout</span><span class="p">(</span>
+    <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Soil temperature&#39;</span><span class="p">,</span>
+    <span class="n">xaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="n">tickformat</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1">.%m.%Y&#39;</span><span class="p">,</span> <span class="n">tickangle</span><span class="o">=</span><span class="mi">45</span><span class="p">,</span> <span class="n">dtick</span><span class="o">=</span><span class="s1">&#39;M3&#39;</span><span class="p">),</span>
+    <span class="n">yaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Depth [m]&#39;</span><span class="p">),</span>
+    <span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="c1"># Create the figure</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">[</span><span class="n">trace</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">layout</span><span class="p">)</span>
+
+<span class="c1"># Show the plot</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-block alert-warning">
+<b>Broaden Knowledge & Comprehension</b></br>
+<ul>
+<li> Change the soil thermal diffusivity and see how the profile changes (Use realistic values of different soil types) 
+<li> Describe how the temperature profile changes over time
+<li> Integrate the model over a few decades and find out how long it takes to reach a steady-state (stable temperature profile).
+</ul>
+</div>
+<p>The amplitude of the temperature fluctuations decreases with depth. Let’s plot the temperatures at 5 and 10 m depth.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Creating the plot with two rows and one column. The plots share the same x-axis so that only labels </span>
+<span class="c1"># for the lower plots are shown</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">make_subplots</span><span class="p">(</span><span class="n">rows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">cols</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">shared_xaxes</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Adding the temperature data as a dashed line in the top panel</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">T</span><span class="p">[</span><span class="mi">10</span><span class="p">,:],</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;royalblue&#39;</span><span class="p">,</span> <span class="n">dash</span><span class="o">=</span><span class="s1">&#39;solid&#39;</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;5 m&#39;</span><span class="p">),</span>
+                        <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Adding the temperature data as a dashed line in the top panel</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scatter</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">T</span><span class="p">[</span><span class="mi">20</span><span class="p">,:],</span> <span class="n">line</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="n">dash</span><span class="o">=</span><span class="s1">&#39;solid&#39;</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;10 m&#39;</span><span class="p">),</span>
+                        <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Adjusting the layout</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Soil temperature&#39;</span><span class="p">,</span> <span class="n">plot_bgcolor</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
+                  <span class="n">yaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Soil temperature [K]&#39;</span><span class="p">,</span> <span class="n">showgrid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">gridcolor</span><span class="o">=</span><span class="s1">&#39;lightgray&#39;</span><span class="p">,</span> <span class="n">gridwidth</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
+                  <span class="n">xaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">tickformat</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1">.%m.%Y&#39;</span><span class="p">,</span> <span class="n">showgrid</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">gridcolor</span><span class="o">=</span><span class="s1">&#39;lightgray&#39;</span><span class="p">,</span> <span class="n">gridwidth</span><span class="o">=</span><span class="mi">1</span><span class="p">))</span>
+
+
+<span class="c1"># Adjusting the axes</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_xaxes</span><span class="p">(</span><span class="n">nticks</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">tickformat</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1">.%m.%Y&#39;</span><span class="p">,</span> <span class="n">tickangle</span><span class="o">=</span><span class="mi">45</span><span class="p">,</span> <span class="n">dtick</span><span class="o">=</span><span class="s1">&#39;M3&#39;</span><span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">update_yaxes</span><span class="p">(</span><span class="n">nticks</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">col</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># Showing the plot</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-block alert-warning">
+<b>Broaden Knowledge & Comprehension</b></br>
+<ul>
+<li> What can you observe?
+<li> Describe the differences between the time series.
+<li> How would the time series change if the thermal diffusivity is increased? Why?
+</ul>
+</div><section id="more-realistic-example">
+<h2>More realistic example<a class="headerlink" href="#more-realistic-example" title="Permalink to this headline">#</a></h2>
+<p>In this example, the code reads in the 30-min weather stations data from a CSV file using the ‘<strong>read_csv()</strong>’ method from pandas, with the parse_dates and index_col parameters set to True and 0, respectively. This ensures that the first column of the CSV file (the timestamps) is used as the index of the DataFrame, and that the timestamps are converted to datetime objects.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># Load CSV file</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/sauterto/clim_env_hydro/main/docs/nb/data/FLX_CH-Dav.csv&quot;</span><span class="p">,</span> <span class="n">parse_dates</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># The file contains:</span>
+<span class="c1"># Air temperature       :: t2m</span>
+<span class="c1"># Relative humdity      :: RH</span>
+<span class="c1"># Precipitation         :: precip</span>
+<span class="c1"># Wind speed            :: WS</span>
+<span class="c1"># Wind direction        :: WD</span>
+<span class="c1"># Net radiation         :: NETRAD</span>
+<span class="c1"># Incoming shortwave    :: SW_IN</span>
+<span class="c1"># Outgoing shortwave    :: SW_OUT</span>
+<span class="c1"># Incoming longwave     :: LW_IN</span>
+<span class="c1"># Outgoing longwave     :: LW_OUT</span>
+<span class="c1"># Sensible heat flux    :: H</span>
+<span class="c1"># Latent heat flux      :: LE</span>
+<span class="c1"># Ground heat flux      :: QG</span>
+<span class="c1"># Surface temperature   :: TS</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-block alert-warning">
+<b>Broaden Knowledge & Comprehension</b></br>
+Which other file formats can be read in with pandas?
+</div></section>
+<section id="replace-missing-data">
+<h2>Replace missing data<a class="headerlink" href="#replace-missing-data" title="Permalink to this headline">#</a></h2>
+<p>Next, we want to view the data to ensure it has been loaded correctly. We use the head() method from Pandas to display the first five rows of the DataFrame.</p>
+<p>The DataFrame has missing values with the dummy value -9999. We then use the replace method to replace all occurrences of -9999 with NaN (Not a Number), using the NumPy np.nan constant. Finally, we print the updated DataFrame. The inplace=True argument ensures that the original DataFrame is modified, rather than a copy being created.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># replace -9999 with NaN</span>
+<span class="n">df</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="o">-</span><span class="mi">9999</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Keep only the surface temeperature</span>
+<span class="n">ds</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;TS&#39;</span><span class="p">]</span>
+
+<span class="c1"># check for missing values</span>
+<span class="n">ds</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Show time series</span>
+<span class="n">ds</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-block alert-warning">
+<b>Hint!</b> Compare the SW_OUT and LW_OUT column with the table before the missing values have been removed.
+</div><p>To check for missing values in a Pandas DataFrame, you can use the <strong>isna()</strong> or <strong>isnull()</strong> method, which returns a Boolean DataFrame of the same shape indicating which cells contain missing values.</p>
+<p>You can also use the isna() or isnull() method along with the <strong>sum()</strong> method to count the number of missing values in each column:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># resample dataframe to monthly mean values with different aggregation for each column and return NaN for </span>
+<span class="c1"># columns with insufficient valid elements</span>
+<span class="n">threshold</span> <span class="o">=</span>  <span class="mi">50</span> <span class="c1"># What is the maximum percentage of NaNs that may be included in the averaging? Here, we set the threshold to 10%</span>
+
+<span class="c1"># This is a pythonic way in solving this problem</span>
+<span class="n">ds_daily</span> <span class="o">=</span> <span class="n">ds</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="s1">&#39;1D&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">agg</span><span class="p">({</span><span class="s1">&#39;TS&#39;</span><span class="p">:</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="k">if</span> <span class="p">(((</span><span class="n">x</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">))</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">threshold</span> <span class="k">else</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">})</span>
+
+<span class="c1"># Find dates with missing data</span>
+<span class="n">missing_dates</span> <span class="o">=</span> <span class="n">ds_daily</span><span class="p">[</span><span class="s1">&#39;TS&#39;</span><span class="p">][</span><span class="n">ds_daily</span><span class="p">[</span><span class="s1">&#39;TS&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isnull</span><span class="p">()]</span><span class="o">.</span><span class="n">index</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Dates with missing data:</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span><span class="n">ds_daily</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">missing_dates</span><span class="p">])</span>
+
+<span class="c1"># Check if the time series is continuous</span>
+<span class="k">if</span> <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="n">ds_daily</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">end</span><span class="o">=</span><span class="n">ds_daily</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span> <span class="n">freq</span><span class="o">=</span><span class="s1">&#39;D&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">difference</span><span class="p">(</span><span class="n">ds_daily</span><span class="o">.</span><span class="n">index</span><span class="p">)</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The time series is continuous </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The time series is not continuous </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+    
+<span class="c1"># Plot the temperature time series</span>
+<span class="n">ds_daily</span><span class="p">[</span><span class="s1">&#39;TS&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Instead of an artificial time series for the surface temperature, we now use the observed temperature <em>TS</em>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#-----------------------------</span>
+<span class="c1"># Run the time-dependent heat</span>
+<span class="c1"># equation</span>
+<span class="c1">#-----------------------------</span>
+<span class="n">D</span>  <span class="o">=</span> <span class="mi">10</span>   <span class="c1"># Depth of the domain</span>
+<span class="n">dz</span> <span class="o">=</span> <span class="mf">0.5</span>  <span class="c1"># Spacing between grid points</span>
+
+<span class="c1"># Create a short subset for better visualization</span>
+<span class="n">df_hourly_subset</span> <span class="o">=</span> <span class="n">ds_daily</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="s1">&#39;2010&#39;</span><span class="p">:</span><span class="s1">&#39;2014&#39;</span><span class="p">]</span>
+
+<span class="c1"># Integrate the heat equation </span>
+<span class="n">T</span><span class="p">,</span> <span class="n">D</span><span class="p">,</span> <span class="n">dz</span> <span class="o">=</span> <span class="n">hu</span><span class="o">.</span><span class="n">heat_equation_daily</span><span class="p">(</span><span class="n">df_hourly_subset</span><span class="p">[</span><span class="s1">&#39;TS&#39;</span><span class="p">],</span> <span class="n">D</span><span class="p">,</span> <span class="n">dz</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">1.2e-6</span><span class="p">)</span>
+
+<span class="c1">#-----------------------------</span>
+<span class="c1"># Plot the results</span>
+<span class="c1">#-----------------------------</span>
+<span class="c1"># Generate the plotting grid</span>
+<span class="c1"># y-axis values</span>
+<span class="n">y_values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="n">D</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">dz</span><span class="p">)</span>
+<span class="c1"># then the x-axis values</span>
+<span class="n">x_values</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">df_hourly_subset</span><span class="o">.</span><span class="n">index</span><span class="p">))</span>
+<span class="c1"># Generate the 2D plotting grid</span>
+<span class="n">X</span><span class="p">,</span> <span class="n">Y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">x_values</span><span class="p">,</span> <span class="n">y_values</span><span class="p">)</span>
+
+<span class="c1"># Create the filled contour trace</span>
+<span class="n">trace</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Contour</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">df_hourly_subset</span><span class="o">.</span><span class="n">index</span><span class="p">,</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">y_values</span><span class="p">,</span>
+    <span class="n">z</span><span class="o">=</span><span class="n">T</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span>
+    <span class="n">colorscale</span><span class="o">=</span><span class="s1">&#39;Viridis&#39;</span><span class="p">,</span>
+    <span class="n">contours</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">coloring</span><span class="o">=</span><span class="s1">&#39;fill&#39;</span><span class="p">,</span>
+        <span class="n">showlabels</span><span class="o">=</span><span class="kc">True</span>
+    <span class="p">),</span>
+    <span class="n">colorbar</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+        <span class="n">title</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+            <span class="n">text</span><span class="o">=</span><span class="s1">&#39;Temperature [ºC]&#39;</span><span class="p">,</span>
+            <span class="c1">#standoff=15,</span>
+            <span class="n">side</span><span class="o">=</span><span class="s1">&#39;right&#39;</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+
+<span class="c1"># Create the layout</span>
+<span class="n">layout</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Layout</span><span class="p">(</span>
+    <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Soil temperature&#39;</span><span class="p">,</span>
+    <span class="n">xaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Date&#39;</span><span class="p">,</span> <span class="n">tickformat</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%d</span><span class="s1">.%m.%Y&#39;</span><span class="p">,</span> <span class="n">tickangle</span><span class="o">=</span><span class="mi">45</span><span class="p">,</span> <span class="n">dtick</span><span class="o">=</span><span class="s1">&#39;M3&#39;</span><span class="p">),</span>
+    <span class="n">yaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Depth [m]&#39;</span><span class="p">),</span>
+    <span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span>
+<span class="p">)</span>
+
+<span class="c1"># Create the figure</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">[</span><span class="n">trace</span><span class="p">],</span> <span class="n">layout</span><span class="o">=</span><span class="n">layout</span><span class="p">)</span>
+
+<span class="c1"># Show the plot</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "sauterto/clim_env_hydro",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "meteo"
+        },
+        kernelOptions: {
+            kernelName: "meteo",
+            path: "./docs/nb"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'meteo'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Tobias Sauter<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
