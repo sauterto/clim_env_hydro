@@ -56,7 +56,7 @@ in this study area?
 | 12:00 h | 284.28 | 284.35 | 2.985 | 2.996 |
 | 18:00 h | 280.02 | 280.01 | 2.675 | 2.628 | 
 
-**Exercise 2**: Assume that the mean vertical eddy moisture flux is 7.2⋅10^(−4)
+**Exercise 2**: Assume that the mean vertical eddy moisture flux is $7.2\cdot10^{−4}$
 [kg kg-1 m s-1]. What is the turbulent latent heat flux?
 
 **Exercise 3**: What vertical temperature difference is necessary across the
