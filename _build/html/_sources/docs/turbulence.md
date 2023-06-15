@@ -99,7 +99,7 @@ friction velocity using an analytical approach (logarithmic wind law).
 |10 | 3.15 |
 
 **Exercise 10**: Given $K_H=5~m^2 s^{-1}$ for turbulence within a stable
-background environment, where the local lapse rateis $\partial\theta/\partial
+background environment, where the local lapse rate is $\partial\theta/\partial
 z=0.01~K/m$. Find the kinetic heat flux $\overline{w'\theta'}$.
 
 ```
