@@ -1,0 +1,776 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Mountain waves and orographic precipitation &#8212; Field Course of Climatology and Environmenal Hydrology</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Field Course of Climatology and Environmenal Hydrology</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../welcome.html">
+                    Welcome to the Field Course of Climatology and Environmental Hydrology
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Getting started
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../installation.html">
+   1. Setup the Jupyter Notebook environment
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../test_environment.html">
+   2. Testing the learning environment
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Lectures
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../weather_obs.html">
+   1. Weather observations
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../turbulence.html">
+   2. Turbulence and Energy Fluxes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../glacier.html">
+   3. Glaciers and Snow
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../hydrology.html">
+   4. Hydrology
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../weather_maps.html">
+   5. Weather maps
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/sauterto/clim_env_hydro/main?urlpath=lab/tree/./docs/nb/nb_mountain_waves.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://colab.research.google.com/github/sauterto/clim_env_hydro/blob/main/./docs/nb/nb_mountain_waves.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../../_static/images/logo_colab.png">
+  </span>
+<span class="headerbtn__text-container">Colab</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="initThebeSBT()"
+  class="headerbtn headerbtn-launch-thebe"
+  data-toggle="tooltip"
+data-placement="left"
+title="Launch Thebe"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="headerbtn__text-container">Live Code</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/sauterto/clim_env_hydro"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/sauterto/clim_env_hydro/issues/new?title=Issue%20on%20page%20%2Fdocs/nb/nb_mountain_waves.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/docs/nb/nb_mountain_waves.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Mountain waves and orographic precipitation</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="mountain-waves-and-orographic-precipitation">
+<span id="nb-opm"></span><h1>Mountain waves and orographic precipitation<a class="headerlink" href="#mountain-waves-and-orographic-precipitation" title="Permalink to this headline">#</a></h1>
+<p>When statically stable air flows with speed <span class="math notranslate nohighlight">\(U\)</span> over a hill or ridge, it is set into oscillation at the Brunt-Väisälä frequency, <span class="math notranslate nohighlight">\(N_{BV}\)</span>. These waves are known as mountain waves, gravity waves, buoyancy waves, or lee waves. The can cause damaging winds, and interesting clouds.</p>
+<div class="alert alert-block alert-success">
+<b>Learning objectives:</b><br>
+<ul>
+ <li>Mountain waves over idealized and real topography</li>
+ <li>Orographic precipitation modelling based on mountain wave theory</li>
+</ul>  
+</div><div class="alert alert-block alert-info">
+<b>Prerequisites</b><br>
+<ul>
+<li>Basic knowledge of Python, Jupyter Notebooks, and data analysis</li>
+<li>Familiarity with Scipy, Pandas, Xarray, and Plotly</li>
+<li>Download <a href="https://box.hu-berlin.de/f/6027f3c1e1de41fcbab1/" download>here</a> the hu_models library
+<li>Download <a href="https://box.hu-berlin.de/f/f3f5234733f24f3189b2/" download>here</a> the digital elevation model of Cordillera Darwin
+ <li>More information about the moutain wave and orographic precipitation model can be found in <a href="https://box.hu-berlin.de/f/68d8001980014d27b893/" download>Sauter (2020)</a> and <a href="https://box.hu-berlin.de/f/ebd5781a26094da59622/" download>Smith and Barstad(2004)</a>
+</ul>  
+</div><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">xarray</span> <span class="k">as</span> <span class="nn">xr</span>
+
+<span class="c1"># Import the plotly library</span>
+<span class="kn">from</span> <span class="nn">plotly.subplots</span> <span class="kn">import</span> <span class="n">make_subplots</span>
+<span class="kn">import</span> <span class="nn">plotly.subplots</span> <span class="k">as</span> <span class="nn">sp</span>
+<span class="kn">import</span> <span class="nn">plotly.graph_objs</span> <span class="k">as</span> <span class="nn">go</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>For this exercise, we use a mountain wave model that is provided by the hu_models module. So we need to load the module first with</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import the learning module</span>
+<span class="kn">from</span> <span class="nn">hu_models</span> <span class="kn">import</span> <span class="n">HU_mountain_waves</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>To better understand the behaviour of the model, we generate an artificial topography. Following many classical studies, we create a so-called Gaussian mountain with</p>
+<div class="math notranslate nohighlight">
+\[
+h = h_m \cdot exp^\left(-\left(\frac{(x-x_0)}{a^2}+\frac{(x-x_0)}{a^2}\right)\right),
+\]</div>
+<p>with <span class="math notranslate nohighlight">\(a\)</span> the mountain half width. For our simulation we create a domain of 20x20 km with a grid cell width of 200 m, a half-width of the mountain 1000 m and a height of 500 m. The mountain is placed slightly on the left edge of the domain at the location <span class="math notranslate nohighlight">\(x_0=5000\)</span> and <span class="math notranslate nohighlight">\(y_0=10000\)</span>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create a Gaussian hill as a test case</span>
+<span class="n">hm</span> <span class="o">=</span> <span class="mi">500</span> <span class="c1"># Mountain height</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">1000</span> <span class="c1"># Mountain half width</span>
+<span class="n">dx</span> <span class="o">=</span> <span class="mi">200</span> <span class="c1"># Grid spacing in x-direction</span>
+<span class="n">dy</span> <span class="o">=</span> <span class="mi">200</span> <span class="c1"># Grid spacing in y-direction</span>
+<span class="n">Lx</span> <span class="o">=</span> <span class="mi">20000</span> <span class="c1"># Domain size in x-direction [m]</span>
+<span class="n">Ly</span> <span class="o">=</span> <span class="mi">20000</span> <span class="c1"># Domain size in y-direction [m]</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">Lx</span><span class="p">,</span><span class="n">dx</span><span class="p">)</span> <span class="c1"># Create x-coordinates</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">Ly</span><span class="p">,</span><span class="n">dy</span><span class="p">)</span> <span class="c1"># Create y-coordinates</span>
+<span class="n">x0</span> <span class="o">=</span> <span class="mi">5000</span>  <span class="c1"># x-location</span>
+<span class="n">y0</span> <span class="o">=</span> <span class="mi">10000</span> <span class="c1"># y-location</span>
+
+<span class="c1"># Create 2D coordinates </span>
+<span class="n">X</span><span class="p">,</span><span class="n">Y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+
+<span class="c1"># Gaussian hill</span>
+<span class="n">h</span> <span class="o">=</span> <span class="n">hm</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="p">(</span> <span class="p">(((</span><span class="n">X</span><span class="o">-</span><span class="n">x0</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span> <span class="o">+</span> <span class="p">(((</span><span class="n">Y</span><span class="o">-</span><span class="n">y0</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span> <span class="p">))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>To facilitate the display of the fields we define a plotly function</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plot_fields</span><span class="p">(</span><span class="n">variable</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span><span class="n">colorscale</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+
+    <span class="c1"># Create the subplots</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">make_subplots</span><span class="p">(</span><span class="n">rows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">cols</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">horizontal_spacing</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">)</span>
+
+    <span class="c1"># Add the first contour plot to the first subplot</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Contour</span><span class="p">(</span>
+        <span class="n">z</span><span class="o">=</span><span class="n">variable</span><span class="p">,</span>  <span class="c1"># Pass the values of the first variable</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span>  <span class="c1"># Pass the x-axis values</span>
+        <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span>  <span class="c1"># Pass the y-axis values</span>
+        <span class="n">colorscale</span><span class="o">=</span><span class="n">colorscale</span>
+    <span class="p">))</span>
+
+    <span class="c1"># Set the layout of the subplots</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+        <span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">,</span>
+        <span class="n">xaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Longitude&#39;</span><span class="p">),</span>
+        <span class="n">yaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Latitude&#39;</span><span class="p">),</span>
+        <span class="n">height</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span>  <span class="c1"># Adjust the height of the subplots</span>
+        <span class="n">width</span><span class="o">=</span><span class="mi">800</span><span class="p">,</span>  <span class="c1"># Adjust the width of the subplots</span>
+    <span class="p">)</span>
+
+    <span class="c1"># Display the subplots</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">plot_fields</span><span class="p">(</span><span class="n">h</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="s1">&#39;Topography [m]&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The mountain wave model has some parameters that have to be defined in advance and are passed to the model as a Python dictionary. The parameters include:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Syntax</p></th>
+<th class="text-align:left head"><p>Description</p></th>
+<th class="text-align:center head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(U\)</span></p></td>
+<td class="text-align:left"><p>zonal wind speed</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(m~s^{-1}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(V\)</span></p></td>
+<td class="text-align:left"><p>meridional wind speed</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(m~s^{-1}\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(C_w\)</span></p></td>
+<td class="text-align:left"><p>uplift sensitivity factor</p></td>
+<td class="text-align:center"><p>-</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(H_w\)</span></p></td>
+<td class="text-align:left"><p>water vapor scale height</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(m\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(\tau\)</span></p></td>
+<td class="text-align:left"><p>timescales for the conversion from cloud water to hydrometeors and their precipitation</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(s\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(dx\)</span>, <span class="math notranslate nohighlight">\(dy\)</span></p></td>
+<td class="text-align:left"><p>grid spacing</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(m\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(Nx\)</span>, <span class="math notranslate nohighlight">\(Ny\)</span></p></td>
+<td class="text-align:left"><p>number of grid points</p></td>
+<td class="text-align:center"><p>-</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(lon\)</span></p></td>
+<td class="text-align:left"><p>array with longitude values</p></td>
+<td class="text-align:center"><p>degree</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(lat\)</span></p></td>
+<td class="text-align:left"><p>array with latitude values</p></td>
+<td class="text-align:center"><p>degree</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(ts\)</span></p></td>
+<td class="text-align:left"><p>timestep for precipitation calculation</p></td>
+<td class="text-align:center"><p>s</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>DEM</p></td>
+<td class="text-align:left"><p>digital elevation model</p></td>
+<td class="text-align:center"><p>-</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(output\)</span></p></td>
+<td class="text-align:left"><p>name of the output netcdf file</p></td>
+<td class="text-align:center"><p>-</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><span class="math notranslate nohighlight">\(z\)</span></p></td>
+<td class="text-align:left"><p>height above the ground at which the wave is calculated</p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(m\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define parameter dictionary</span>
+<span class="n">varDict</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">&#39;U&#39;</span><span class="p">:</span><span class="mf">10.0</span><span class="p">,</span>
+        <span class="s1">&#39;V&#39;</span><span class="p">:</span><span class="mf">0.00</span><span class="p">,</span>
+        <span class="s1">&#39;Cw&#39;</span><span class="p">:</span><span class="mf">0.004</span><span class="p">,</span>
+        <span class="s1">&#39;N&#39;</span><span class="p">:</span><span class="mf">6e-2</span><span class="p">,</span>
+        <span class="s1">&#39;Hw&#39;</span><span class="p">:</span><span class="mi">2620</span><span class="p">,</span>
+        <span class="s1">&#39;tau&#39;</span><span class="p">:</span><span class="mi">500</span><span class="p">,</span>
+        <span class="s1">&#39;dx&#39;</span><span class="p">:</span><span class="mf">200.0</span><span class="p">,</span>
+        <span class="s1">&#39;dy&#39;</span><span class="p">:</span><span class="mf">200.0</span><span class="p">,</span>
+        <span class="s1">&#39;Nx&#39;</span><span class="p">:</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">),</span>
+        <span class="s1">&#39;Ny&#39;</span><span class="p">:</span><span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">),</span>
+        <span class="s1">&#39;lon&#39;</span><span class="p">:</span><span class="n">x</span><span class="p">,</span>
+        <span class="s1">&#39;lat&#39;</span><span class="p">:</span><span class="n">y</span><span class="p">,</span>
+        <span class="s1">&#39;ts&#39;</span><span class="p">:</span><span class="mi">3600</span><span class="p">,</span>
+        <span class="s1">&#39;DEM&#39;</span><span class="p">:</span><span class="n">h</span><span class="p">,</span>
+        <span class="s1">&#39;output&#39;</span><span class="p">:</span> <span class="s1">&#39;./opm_result.nc&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;z&#39;</span><span class="p">:</span><span class="mi">500</span><span class="p">,</span>
+        <span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>The Python dictionary is now passed as an argument to the class HU_mountain_waves</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#-----------------------------</span>
+<span class="c1"># Load the learning materials</span>
+<span class="c1">#-----------------------------&quot;</span>
+<span class="n">mv</span> <span class="o">=</span> <span class="n">HU_mountain_waves</span><span class="p">(</span><span class="n">varDict</span><span class="p">)</span>
+
+
+<span class="c1"># Run the model</span>
+<span class="n">mv</span><span class="o">.</span><span class="n">opmRun</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Then we can open the result file <strong>opm_result.nc</strong> and look at the vertical wind speed <span class="math notranslate nohighlight">\(w\)</span></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ds</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;./opm_result.nc&#39;</span><span class="p">)</span>
+<span class="n">plot_fields</span><span class="p">(</span><span class="n">ds</span><span class="o">.</span><span class="n">w</span><span class="p">,</span><span class="n">ds</span><span class="o">.</span><span class="n">lon</span><span class="p">,</span><span class="n">ds</span><span class="o">.</span><span class="n">lat</span><span class="p">,</span><span class="s1">&#39;Vertical velocity [m/s]&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-block alert-warning">
+<b>Broaden Knowledge & Comprehension</b></br>
+<ul>
+<li>Calculate the natural wavelength $\lambda$ and the Froude number
+<li>Change the height $z$ above the ground for which the vertical velocity perturbation is calculated. How does the pattern change with height? Look up in the literature why the pattern is changing
+<li>Change the Brunt-Väisälä frequency such that the Froude number $Fr<1$, $Fr \approx 1$, and $Fr>1$. How does the pattern change? Do the patterns match the Froude numbers?
+</ul>
+</div>
+<p>The model also outputs the orographic precipitation <span class="math notranslate nohighlight">\(P\)</span> in mm per hour. The orographic precipitation model is based on mountain wave theory. Hydrometeors can form in regions where the air parcels rise in the lowest atmospheric layers. The hydrometeors are transported along with the prevailing flow for a certain time <span class="math notranslate nohighlight">\(\tau\)</span> and then fall out. The amount of water that can precipitate depends on the water content of the atmosphere, which is given by the characteristic water vapour height <span class="math notranslate nohighlight">\(H_w\)</span> and the uplift sensitivity factor <span class="math notranslate nohighlight">\(C_w\)</span>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plot_fields</span><span class="p">(</span><span class="n">ds</span><span class="o">.</span><span class="n">P</span><span class="p">,</span><span class="n">ds</span><span class="o">.</span><span class="n">lon</span><span class="p">,</span><span class="n">ds</span><span class="o">.</span><span class="n">lat</span><span class="p">,</span><span class="s1">&#39;Precipitation [mm/h]&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-block alert-warning">
+<b>Broaden Knowledge & Comprehension</b></br>
+<ul>
+<li>Change $C_w$, $H_w$, $U$, $V$ and $\tau$ and try to understand how the parameters influence the precipitation and its distribution. Explain the influence of each parameter on the pattern.
+</ul>
+</div>
+<p>The same model can also be used for real-world applications. Here we use a digital elevation model from the Cordillera Darwin and calculate the mountain waves and orographic precipitation. First, we load the digital elevation model and then run the model</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load digital elevation model</span>
+<span class="n">DEM</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;./CordilleraDarwinSRTM.nc&#39;</span><span class="p">)</span>
+
+<span class="c1"># Define parameters</span>
+<span class="n">varDict</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">&#39;U&#39;</span><span class="p">:</span><span class="mf">10.0</span><span class="p">,</span>
+        <span class="s1">&#39;V&#39;</span><span class="p">:</span><span class="mf">5.00</span><span class="p">,</span>
+        <span class="s1">&#39;Cw&#39;</span><span class="p">:</span><span class="mf">0.004</span><span class="p">,</span>
+        <span class="s1">&#39;N&#39;</span><span class="p">:</span><span class="mf">6e-2</span><span class="p">,</span>
+        <span class="s1">&#39;Hw&#39;</span><span class="p">:</span><span class="mi">2620</span><span class="p">,</span>
+        <span class="s1">&#39;tau&#39;</span><span class="p">:</span><span class="mi">500</span><span class="p">,</span>
+        <span class="s1">&#39;dx&#39;</span><span class="p">:</span><span class="mf">200.0</span><span class="p">,</span>
+        <span class="s1">&#39;dy&#39;</span><span class="p">:</span><span class="mf">200.0</span><span class="p">,</span>
+        <span class="s1">&#39;Nx&#39;</span><span class="p">:</span><span class="n">DEM</span><span class="o">.</span><span class="n">dims</span><span class="p">[</span><span class="s1">&#39;lon&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;Ny&#39;</span><span class="p">:</span><span class="n">DEM</span><span class="o">.</span><span class="n">dims</span><span class="p">[</span><span class="s1">&#39;lat&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;lon&#39;</span><span class="p">:</span><span class="n">DEM</span><span class="o">.</span><span class="n">lon</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>
+        <span class="s1">&#39;lat&#39;</span><span class="p">:</span><span class="n">DEM</span><span class="o">.</span><span class="n">lat</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>
+        <span class="s1">&#39;ts&#39;</span><span class="p">:</span><span class="mi">3600</span><span class="p">,</span>
+        <span class="s1">&#39;DEM&#39;</span><span class="p">:</span><span class="n">DEM</span><span class="p">[</span><span class="s1">&#39;Band1&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>
+        <span class="s1">&#39;output&#39;</span><span class="p">:</span> <span class="s1">&#39;./opm_result.nc&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;z&#39;</span><span class="p">:</span><span class="mi">500</span><span class="p">,</span>
+        <span class="p">}</span>
+
+<span class="c1">#-----------------------------</span>
+<span class="c1"># Load the learning materials</span>
+<span class="c1">#-----------------------------&quot;</span>
+<span class="n">mv</span> <span class="o">=</span> <span class="n">HU_mountain_waves</span><span class="p">(</span><span class="n">varDict</span><span class="p">)</span>
+
+
+<span class="c1"># Run the model</span>
+<span class="n">mv</span><span class="o">.</span><span class="n">opmRun</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Then plot the result</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plot_fields</span><span class="p">(</span><span class="n">variable</span><span class="p">,</span> <span class="n">title</span><span class="p">,</span><span class="n">colorscale</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+
+    <span class="c1"># Create the subplots</span>
+    <span class="n">fig</span> <span class="o">=</span> <span class="n">make_subplots</span><span class="p">(</span><span class="n">rows</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">cols</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">horizontal_spacing</span> <span class="o">=</span> <span class="mf">0.2</span><span class="p">)</span>
+
+    <span class="c1"># Add the first contour plot to the first subplot</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">add_trace</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Contour</span><span class="p">(</span>
+        <span class="n">z</span><span class="o">=</span><span class="n">variable</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>  <span class="c1"># Pass the values of the first variable</span>
+        <span class="n">x</span><span class="o">=</span><span class="n">variable</span><span class="o">.</span><span class="n">coords</span><span class="p">[</span><span class="s1">&#39;lon&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>  <span class="c1"># Pass the x-axis values</span>
+        <span class="n">y</span><span class="o">=</span><span class="n">variable</span><span class="o">.</span><span class="n">coords</span><span class="p">[</span><span class="s1">&#39;lat&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">,</span>  <span class="c1"># Pass the y-axis values</span>
+        <span class="n">colorscale</span><span class="o">=</span><span class="n">colorscale</span>
+    <span class="p">))</span>
+
+    <span class="c1"># Set the layout of the subplots</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+        <span class="n">title</span><span class="o">=</span><span class="n">title</span><span class="p">,</span>
+        <span class="n">xaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Longitude&#39;</span><span class="p">),</span>
+        <span class="n">yaxis</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Latitude&#39;</span><span class="p">),</span>
+        <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>  <span class="c1"># Adjust the height of the subplots</span>
+        <span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>  <span class="c1"># Adjust the width of the subplots</span>
+    <span class="p">)</span>
+
+    <span class="c1"># Display the subplots</span>
+    <span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Load your xarray dataset</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">xr</span><span class="o">.</span><span class="n">open_dataset</span><span class="p">(</span><span class="s1">&#39;./data/opm_result.nc&#39;</span><span class="p">)</span>
+
+<span class="n">plot_fields</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;HGT&#39;</span><span class="p">],</span><span class="s1">&#39;Topography [m]&#39;</span><span class="p">)</span>
+<span class="n">plot_fields</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;P&#39;</span><span class="p">],</span><span class="s1">&#39;Precipitation [mm/h]&#39;</span><span class="p">,</span><span class="n">colorscale</span><span class="o">=</span><span class="s1">&#39;jet&#39;</span><span class="p">)</span>
+<span class="n">plot_fields</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="s1">&#39;w&#39;</span><span class="p">],</span><span class="s1">&#39;Vertical velocity [m/s]&#39;</span><span class="p">,</span><span class="n">colorscale</span><span class="o">=</span><span class="s1">&#39;jet&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="alert alert-block alert-warning">
+<b>Broaden Knowledge & Comprehension</b></br>
+<ul>
+<li>Change $C_w$, $H_w$, $U$, $V$ and $\tau$ and try to understand how the parameters influence the precipitation and its distribution. Explain the influence of each parameter on the pattern.
+</ul>
+</div></section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "sauterto/clim_env_hydro",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "meteo"
+        },
+        kernelOptions: {
+            kernelName: "meteo",
+            path: "./docs/nb"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'meteo'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Tobias Sauter<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

@@ -834,3 +834,5 @@ class HU_learning_material:
            options={'maxiter':10000},method='L-BFGS-B',tol=1e-12)
 
         return res.x
+
+

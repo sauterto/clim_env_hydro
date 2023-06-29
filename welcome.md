@@ -61,7 +61,7 @@ Explore notebook &rarr;
 :gutter: 3
 
 :::{grid-item-card} 
-:link: 
+:link: wind 
 :link-type: ref
 <center><b>Regional Wind Systems</b></center>
 ^^^
