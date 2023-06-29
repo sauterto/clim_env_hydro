@@ -1,3 +1,0 @@
-(glacier)=
-# Glaciers and Snow 
-
