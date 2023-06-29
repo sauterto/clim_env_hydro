@@ -34,7 +34,7 @@ Explore notebook &rarr;
 :::
 ::::
 
-{Download}`Here <./presentations/Lecture_03.pdf>` you will find the
+{Download}`Here <https://box.hu-berlin.de/f/adcdd54897094c7a8bc3/>` you will find the
 corresponding lecture slides.
 
 ```{admonition} Exercises 
