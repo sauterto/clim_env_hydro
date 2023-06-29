@@ -20,7 +20,7 @@ Explore notebook &rarr;
 :::
 ::::
 
-{Download}`Here <./presentations/Lecture_01.pdf>` you will find the
+{Download}`Here <https://box.hu-berlin.de/f/f9184480b9a1486b8b74/>` you will find the
 corresponding lecture slides.
 
 ```{admonition} Homework Assignment  

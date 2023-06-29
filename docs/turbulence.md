@@ -35,7 +35,7 @@ Explore notebook &rarr;
 :::
 ::::
 
-{Download}`Here <./presentations/Lecture_02.pdf>` you will find the
+{Download}`Here <https://box.hu-berlin.de/f/88bde524f5584203827d/>` you will find the
 corresponding lecture slides.
 
 
