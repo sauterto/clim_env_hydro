@@ -30,6 +30,8 @@ import numpy as np
 import pandas as pd
 import math
 import xarray as xr
+import matplotlib.pyplot as plt
+import scipy.stats as stats
 from rosely import WindRose
 
 # Import the plotly library
@@ -186,3 +188,21 @@ print('Return period: {:.2f} years'.format(number_of_years/(len(df.WS)-len(df.WS
 # <li>Assume that the distribution is obtained from a timeseries of length 100 year. How does the return period change? Why?
 # </ul>
 # </div>
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
