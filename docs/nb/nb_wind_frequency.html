@@ -146,18 +146,23 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../wind_system.html">
+   3. Regional wind systems
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../glacier.html">
-   3. Glaciers and Snow
+   4. Glaciers and Snow
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../hydrology.html">
-   4. Hydrology
+   5. Hydrology
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../weather_maps.html">
-   5. Weather maps
+   6. Weather maps
   </a>
  </li>
 </ul>
@@ -512,12 +517,12 @@ title="Print to PDF"
 </div>
 </div>
 </div>
-<p>The probability distribution of mean wind speeds <span class="math notranslate nohighlight">\(U\)</span> is described by the Weibull distribution:</p>
+<p>The probability distribution of mean wind speeds <span class="math notranslate nohighlight">\(M\)</span> is described by the Weibull distribution:</p>
 <div class="math notranslate nohighlight">
 \[
-Pr = \frac{\alpha \cdot \Delta U \cdot U^{\alpha-1}}{M_0^{\alpha}} \cdot exp \left[ - \left( \frac{M}{M_0} \right)^{\alpha}\right],
+Pr = \frac{\alpha \cdot \Delta M \cdot M^{\alpha-1}}{M_0^{\alpha}} \cdot exp \left[ - \left( \frac{M}{M_0} \right)^{\alpha}\right],
 \]</div>
-<p>where Pr is the probability of wind speed <span class="math notranslate nohighlight">\(U \pm 0.5 \cdot \Delta U\)</span>. We can estimate the location parameter <span class="math notranslate nohighlight">\(M_0\)</span> and the spread <span class="math notranslate nohighlight">\(\alpha\)</span> with</p>
+<p>where Pr is the probability of wind speed <span class="math notranslate nohighlight">\(M \pm 0.5 \cdot \Delta M\)</span>. We can estimate the location parameter <span class="math notranslate nohighlight">\(M_0\)</span> and the spread <span class="math notranslate nohighlight">\(\alpha\)</span> with</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Fit the Weibull distribution to the wind speed data</span>
