@@ -55,7 +55,7 @@ Weibull distribution to the data. Calculate the return period
 **Exercise 3**: Find the steady-state updraft speed in the middle of (a) a
 thermal in a boundary layer that is 1 km thick; and (b) a thunderstorm in a 11
 km thick troposphere. The virtual temperature excess is 2ºC for the thermal and
-5ºC for the thunderstorm, and $|g|/ \overline{T_v} = 0.00333~m \cdot s^{-2}
+5ºC for the thunderstorm, and $|g|/ \overline{T_v} = 0.0333~m \cdot s^{-2}
 \cdot K^{-1}$. 
 
 **Exercise 4**: Find the equilibrium updraft speed ($m~s^{-1}$) of a thermal
