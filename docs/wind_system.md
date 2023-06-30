@@ -1,4 +1,5 @@
 (wind)=
+# Regional wind systems
 
 ::::{grid}
 :::{grid-item}
