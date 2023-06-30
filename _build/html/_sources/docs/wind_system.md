@@ -52,11 +52,11 @@ km thick troposphere. The virtual temperature excess is 2ºC for the thermal and
 \cdot K^{-1}$. 
 
 **Exercise 3**: Find the equilibrium updraft speed ($m~s^{-1}$) of a thermal
-in a 2 im boundary layer with environmental temperature 15ºC and a thermal
+in a 2 km boundary layer with environmental temperature 15ºC and a thermal
 temperture of 19.5 ºC.
 
 **Exercise 4**: Winds of 10 $m~s^{-1}$ are flowing in a valley of 10 km width.
-Further downstream, teh valley narrows to the width of 2.5 km. Find the wind
+Further downstream, the valley narrows to the width of 2.5 km. Find the wind
 speed in the constriction, assuming constant flow depth.
 
 **Exercise 5**: Assume $g/T_v=0.0333~m \cdot s^{-2} \cdot K^{-1}$. For a
