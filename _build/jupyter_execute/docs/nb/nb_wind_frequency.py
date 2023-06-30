@@ -115,13 +115,13 @@ WR.plot(
 )
 
 
-# The probability distribution of mean wind speeds $U$ is described by the Weibull distribution:
+# The probability distribution of mean wind speeds $M$ is described by the Weibull distribution:
 # 
 # $$
-# Pr = \frac{\alpha \cdot \Delta U \cdot U^{\alpha-1}}{M_0^{\alpha}} \cdot exp \left[ - \left( \frac{M}{M_0} \right)^{\alpha}\right],
+# Pr = \frac{\alpha \cdot \Delta M \cdot M^{\alpha-1}}{M_0^{\alpha}} \cdot exp \left[ - \left( \frac{M}{M_0} \right)^{\alpha}\right],
 # $$
 # 
-# where Pr is the probability of wind speed $U \pm 0.5 \cdot \Delta U$. We can estimate the location parameter $M_0$ and the spread $\alpha$ with
+# where Pr is the probability of wind speed $M \pm 0.5 \cdot \Delta M$. We can estimate the location parameter $M_0$ and the spread $\alpha$ with
 
 # In[ ]:
 
