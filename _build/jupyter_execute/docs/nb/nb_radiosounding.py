@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# (radiosounding:exercise)=
+# (nb_radiosounding)=
 # # Upper air analysis
 # 
 # Upper air analysis is fundamental for many synoptic and mesoscale analysis problems. In this tutorial we will gather weather balloon data from the  Integrated Global Radiosonde Archive (IGRA) database \[[link](https://www.ncei.noaa.gov/products/weather-balloon/integrated-global-radiosonde-archive)\]. The database consists of radiosonde and pilot balloon observations from more than 2,800 globally distributed stations. Recent data become available in near real time from about 800 stations worldwide. Observations are available at standard and variable pressure levels, fixed and variable-height wind levels, and the surface and tropopause. Variables include pressure, temperature, geopotential height, relative humidity, dew point depression, wind direction and speed, and elapsed time since launch.
@@ -14,20 +14,22 @@
 #  <li>How to access the IGRA database via Python</li>
 #  <li>Understand the sturcture of the IGRA radiosounding data</li>
 #  <li>Get a better understanding of the atmospheric stratification</li>
-# </ul>  
-# </div>
-
-# <div class="alert alert-block alert-info">
-# <b>Approach:</b><br>
-# <ul>
-#  <li>Download IGRA radiosounding data</li>
 #  <li>Create a skew-T diagram from the data</li>
 #  <li>Thermodynamic calculation</li>
 #  <li>Summize the results</li>
 # </ul>  
 # </div>
 
-# In[134]:
+# <div class="alert alert-block alert-info">
+# <b>Prerequisites:</b><br>
+# <ul>
+# <li>Basic knowledge of Python, Jupyter Notebooks, and data analysis</li>
+# <li>Familiarity with Scipy, MetPy, Pandas, Xarray, and Plotly</li>
+# <li>The additional package <b>igra</b> must be installed
+# </ul>  
+# </div>
+
+# In[1]:
 
 
 # Import some auxiliary packages
@@ -44,7 +46,7 @@ import matplotlib.pyplot as plt
 # 
 # Read the station list into pandas DataFrame (from file igra2-station-list.txt in the IGRAv2 repository). In case you are not familiar with pandas, please check out the pandas webpage \[[link](https://pandas.pydata.org)\] 
 
-# In[135]:
+# In[2]:
 
 
 # Load the IGRAv2 radiosonde tools
@@ -57,7 +59,7 @@ import pandas
 stations = igra.download.stationlist('./tmp')
 
 
-# In[136]:
+# In[3]:
 
 
 # Have a look at the data
@@ -72,7 +74,7 @@ stations
 # 
 # Download a radiosonde station with the *id* from the station list into tmp directory.
 
-# In[137]:
+# In[4]:
 
 
 id = "GMM00010868"
@@ -87,7 +89,7 @@ igra.download.station(id, "./tmp")
 # 
 # The downloaded station file can be read to standard pressure levels (default). In case you prefer to download all significant levels (different amount of levels per sounding) use return_table=True. 
 
-# In[201]:
+# In[5]:
 
 
 data, station = igra.read.igra(id, "./tmp/<id>-data.txt.zip".replace('<id>',id), return_table=True)
@@ -95,7 +97,7 @@ data, station = igra.read.igra(id, "./tmp/<id>-data.txt.zip".replace('<id>',id),
 
 # Have a look at the data
 
-# In[202]:
+# In[6]:
 
 
 data
@@ -117,7 +119,7 @@ data
 # 
 # **Parcel Path** - Path followed by a hypothetical parcel of air, beginning at the surface temperature/pressure and rising dry adiabatically until reaching the LCL, then rising moist adiabatially.
 
-# In[203]:
+# In[7]:
 
 
 # Load the metpy package. MetPy is a collection of tools 
@@ -140,7 +142,7 @@ from metpy.plots import SkewT
 
 #    We pre-process the balloon data to meet the requirements of the MetPy functions. 
 
-# In[228]:
+# In[8]:
 
 
 # For which day should the calculations be carried out?
@@ -186,7 +188,7 @@ wind_dir = wind_dir[~np.isnan(wind_dir)][::-1]
 # With the following command, the wind components can be calculated from the wind speed and wind direction.
 # 
 
-# In[223]:
+# In[9]:
 
 
 u, v = mpcalc.wind_components(wind_speed, wind_dir)
@@ -198,7 +200,7 @@ u, v = mpcalc.wind_components(wind_speed, wind_dir)
 
 # Finally, the LCL and parcel profile can be calculated with the pre-processed data.
 
-# In[224]:
+# In[10]:
 
 
 # Calculate the LCL
@@ -213,7 +215,7 @@ print('LCL temperatur: {:.2f}'.format(lcl_temperature))
 
 # With the calculated and processed data we can finally create the Skew-T diagram.
 
-# In[229]:
+# In[11]:
 
 
 # Create a new figure. The dimensions here give a good aspect ratio
@@ -254,8 +256,15 @@ plt.show()
 # <b>Exercise:</b> Take a close look at the diagram and try to understand the structure. 
 # <ul>
 # <li>What do the different coloured lines show? 
-# <li>What is the shaded area?  
+# <li>What are the shaded area?  
 # <li>Which areas are stable or unstable stratified? 
 # <li>Where does condensation take place? 
+# <li>Calculate CAPE (use metpy). Do you expect a severe thunderstorm activity?
 # </ul>
 # </div>
+
+# In[ ]:
+
+
+
+

@@ -19,4 +19,4 @@ parts:
   - file: docs/wind_system.md  
   - file: docs/glacier.md  
   - file: docs/hydrology.md  
-  - file: docs/weather_maps.md  
+  - file: docs/weather_analysis.md  
