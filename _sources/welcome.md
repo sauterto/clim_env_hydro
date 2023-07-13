@@ -108,7 +108,7 @@ Explore notebook &rarr;
 :::{grid-item}
 :columns: 4
 ````{card} 
-:link: weather
+:link: weather_analysis
 :link-type: ref
 <center><b>Weather analysis</b></center>
 ^^^
