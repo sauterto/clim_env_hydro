@@ -1,4 +1,4 @@
-(wind)=
+(regional_wind_systems)=
 # Regional wind systems
 
 ::::{grid}
@@ -11,7 +11,6 @@
 ^^^
 ```{figure} ./figures/wind.png
 :width: 100px
-:name: wind_icon
 ```
 +++
 Explore notebook &rarr;
@@ -27,7 +26,6 @@ Explore notebook &rarr;
 ^^^
 ```{figure} ./figures/wind.png
 :width: 100px
-:name: wind_icon
 ```
 +++
 Explore notebook &rarr;

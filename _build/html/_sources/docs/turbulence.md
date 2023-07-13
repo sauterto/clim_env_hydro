@@ -1,4 +1,4 @@
-(turbulence)=
+(boundary_layer)=
 # Turbulence and Energy Fluxes 
 
 ::::{grid}
@@ -11,7 +11,6 @@
 ^^^
 ```{figure} ./figures/mess.png
 :width: 100px
-:name: turbulence_icon
 ```
 +++
 Explore notebook &rarr;
@@ -27,7 +26,6 @@ Explore notebook &rarr;
 ^^^
 ```{figure} ./figures/mess.png
 :width: 100px
-:name: turbulence_icon
 ```
 +++
 Explore notebook &rarr;

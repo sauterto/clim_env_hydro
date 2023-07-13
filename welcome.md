@@ -43,13 +43,12 @@ Explore notebook &rarr;
 :::
 
 :::{grid-item-card} 
-:link: turbulence 
+:link: boundary_layer
 :link-type: ref
 <center><b>Turbulence and Energy Balance</b></center>
 ^^^
 ```{figure} ./docs/figures/mess.png
 :width: 100px
-:name: turbulence_icon
 ```
 <center>turbulence closure, surface energy balance, and soil</center>
 +++
@@ -61,13 +60,12 @@ Explore notebook &rarr;
 :gutter: 3
 
 :::{grid-item-card} 
-:link: wind 
+:link: regional_wind_systems
 :link-type: ref
 <center><b>Regional Wind Systems</b></center>
 ^^^
 ```{figure} ./docs/figures/wind.png
 :width: 100px
-:name: wind_icon
 ```
 <center>atmospheric motions and microclimates</center>
 +++
