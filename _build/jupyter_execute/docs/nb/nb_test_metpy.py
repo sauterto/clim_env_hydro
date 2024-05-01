@@ -294,13 +294,18 @@ print(u, v)
 # <div class="alert alert-block alert-info">
 # <b>Reminder</b> 
 # <ul>
-#     <li>Import the package, aka <b>import pandas as pd</b>
-#     <li>A table of data is stored as a pandas DataFrame
-#     <li>Each column in a DataFrame is a Series
-#     <li>You can do things by applying a method to a DataFrame or Series
+#     <li>Import the package, aka <b>import metpy</b>
+#     <li>Metpy works with units
+#     <li>MetPy aims to have three primary purposes: read and write meteorological data (I/O), calculate meteorological quantities with well-documented equations, and create publication-quality plots of meteorological data
 # </ul> 
 # </div>
 
 # <div class="alert alert-block alert-warning">
-# <b>Homework:</b> Check out the pandas <a href="https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html">tutorial</a> and get familiar with the syntax.
+# <b>Homework:</b> Check out the metpy <a href="https://unidata.github.io/MetPy/latest/index.html">tutorial</a> and get familiar with the syntax.
 # </div>
+
+# In[ ]:
+
+
+
+
