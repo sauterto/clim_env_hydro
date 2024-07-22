@@ -27,7 +27,7 @@
 # Start using pandas. To load the pandas package and start working with it, import the package. The community agreed alias for pandas is pd. 
 # 
 
-# In[ ]:
+# In[1]:
 
 
 # Load the pandas package
@@ -45,7 +45,7 @@ import pandas as pd
 
 # Let's start and load a automatic weather station file into a pandas dataframe
 
-# In[ ]:
+# In[2]:
 
 
 # Read the data into a DataFrame
@@ -54,7 +54,7 @@ df = pd.read_csv("https://raw.githubusercontent.com/sauterto/clim_env_hydro/main
 
 # and have a look at the dataframe
 
-# In[ ]:
+# In[3]:
 
 
 # A simple way to plot the DataFrame
