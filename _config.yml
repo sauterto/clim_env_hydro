@@ -52,7 +52,7 @@ html:
 
 launch_buttons:
   notebook_interface: "jupyterlab"  # or "classic"
-  jupyterhub_url: "ihttps://yjuftn213bnc1ucjzj2psfl4sqmm291iljdwxgw.azimuth.cms.hu-berlin.de/user/tobias-sauter/lab"
+  jupyterhub_url: "https://yjuftn213bnc1ucjzj2psfl4sqmm291iljdwxgw.azimuth.cms.hu-berlin.de/user/tobias-sauter/lab"
   binderhub_url: "https://mybinder.org"
   binder_repo_org                  : "sauterto"  # The username or organization that owns this repository
   binder_repo_name                 : "clim_env_hydro"  # The name of the repository on the web
