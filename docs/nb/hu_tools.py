@@ -201,7 +201,7 @@ class HU_learning_material:
         return T, dz
 
 
-    def heat_equation(self, bc_surface, bc_bottom, depth, Nz, integration, dt, alpha):
+    def heat_equation(self, bc_surface, bc_bottom, depth, Nz, integration, dt, alpha, Tini=None):
         """
         Solves the heat equation using index arrays (faster than conventional solution)
 
@@ -225,7 +225,10 @@ class HU_learning_material:
 
 
         # Initialize temperature and depth field
-        T = np.zeros(Nz)
+        if Tini is not None:
+            T = Tini
+        else:
+            T = np.zeros(Nz)
 
         T[0] = bc_surface     # Set pen-ultima array to bc value (because the last grid cell
                               # is required to calculate the second order derivative)

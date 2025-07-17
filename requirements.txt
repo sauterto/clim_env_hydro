@@ -4,4 +4,4 @@ numpy
 pandas
 xarray
 MetPy
-netcdf4
+netCDF4

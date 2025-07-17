@@ -23,7 +23,7 @@
 # </ul>  
 # </div>
 
-# In[ ]:
+# In[1]:
 
 
 import numpy as np
@@ -40,7 +40,7 @@ import plotly.graph_objs as go
 
 # This exercise uses functions from the module HU_learning_material. The module was developed for this course and consists of a collection of functions discussed in the course. The module can be used with
 
-# In[ ]:
+# In[2]:
 
 
 # Import the learning module
@@ -49,7 +49,7 @@ from hu_tools import HU_learning_material
 
 # This is a so-called Python class. The class is called **HU_learning_material** and must be instantiated. This is done with
 
-# In[ ]:
+# In[3]:
 
 
 #-----------------------------
@@ -60,7 +60,7 @@ hu = HU_learning_material()
 
 # Eddy covariance (EC) stations measure turbulent flows directly with an ultrasonic anemometer and open path gas analysers. The sensors work fast and allow measurement frequencies of 25 Hz and more. EC stations are very expensive, so most weather stations are only equipped with low-frequency sensors. Standard weather stations measure temperature and relative humidity at several measurement levels. Average turbulent fluxes can be parameterised with the bulk approach by using the temperature and humidity measurements. The bulk approach depends on the temperature gradient, the humidity gradient, the wind velocity and the roughness length. Before we can parameterise the turbulent flows, we need to define some parameters
 
-# In[ ]:
+# In[4]:
 
 
 # Define simulation parameters
@@ -73,7 +73,7 @@ albedo = 0.5     # Albedo [-]
 # Furthermore, we need the measured atmospheric quantities
 # 
 
-# In[ ]:
+# In[5]:
 
 
 # Radiation, Wind velocity and pressure
@@ -97,7 +97,7 @@ cp = 1004.0      # specific heat [J kg^-1 K^-1]
 
 # For the calculation of the turbulent latent heat flow, the relative humidity must still be converted into the mixing ratio. This conversion can be done with the function **mixing_ratio()** which requires relative humidity, temperature, and pressure 
 
-# In[ ]:
+# In[6]:
 
 
 # Mixing ratio at level z (2 m) and near the surface
@@ -112,7 +112,7 @@ q0 = hu.mixing_ratio(f0,T0,p)
 
 # The bulk coefficients $C_h$ and $C_e$ for the sensible and latent heat can be derived with the function **bulk_coeff_shf()** and **bulk_coeff_lhf()**. The functions require the measurement heigth *z* and the roughness length *$z_0$*.
 
-# In[ ]:
+# In[7]:
 
 
 # Bulk coefficient for latent heat
@@ -123,7 +123,7 @@ Ch = hu.bulk_coeff_shf(z, z0)
 
 # Finally, the turbulent fluxes can then be calculated
 
-# In[ ]:
+# In[8]:
 
 
 # Sensible heat flux
@@ -137,7 +137,7 @@ print('LHF: {:.2f}'.format(lhf))
 
 # The energy balance of surfaces assumes that the sum of all energy fluxes is zero, i.e. Q+H+L+B=0 with Q the radiation balance, H the turbulent flux of sensible heat, L the latent heat flux and B the ground heat flux. The quantity via which the equation can be closed is the surface temperature. Strictly speaking, we are looking for the surface temperature at which this equation is fulfilled. This temperature can be found with the function **get_surface_temp()**.
 
-# In[ ]:
+# In[9]:
 
 
 # Optimize for surface temperature neglecting the ground heat flux
@@ -147,7 +147,7 @@ print('T0: {:.2f} K'.format(T_0[0]))
 
 # In this example it was assumed that the soil heat flux does not play a role (B=0). We can now calculate the sensible heat flux based on the surface temperature
 
-# In[ ]:
+# In[11]:
 
 
 # Get the melt and sublimation rates
@@ -178,7 +178,7 @@ print('Net radiation: {:.2f}'.format(Q_0[0]))
 
 # We can now examine the sensitivity of the fluxes. For example, we can easily investigate how the wind velocity affects the surface temperature and the turbulent sensible heat flux.
 
-# In[ ]:
+# In[12]:
 
 
 # Define result arrays
@@ -208,7 +208,7 @@ for U in np.arange(0,10,0.1):
 
 # We can now plot the results
 
-# In[ ]:
+# In[13]:
 
 
 #----------------------
