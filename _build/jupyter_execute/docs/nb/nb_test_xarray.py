@@ -32,7 +32,7 @@
 
 # To begin, import numpy, pandas and xarray using their customary abbreviations:
 
-# In[ ]:
+# In[1]:
 
 
 # Import packages
@@ -40,6 +40,7 @@ import numpy as np
 import pandas as pd
 import xarray as xr
 import matplotlib.pyplot as plt
+import netCDF4
 
 
 # Xarray has two core data structures, which build upon and extend the core strengths of NumPy and pandas. Both data structures are fundamentally N-dimensional:
